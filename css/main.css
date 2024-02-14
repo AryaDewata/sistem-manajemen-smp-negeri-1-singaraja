@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* > body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  color: #a3aed0;
+  font-size: 14.25px;
+  font-family: "Poppins";
+}
+@media (max-width: 1140px) {
+  * > body {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+* > body > header {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-bottom-left-radius: 128px;
+  background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url("/assets/images/patung-saraswati-smp-negeri-1-singaraja.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 1140px) {
+  * > body > header {
+    padding: 84px 0;
+    width: 100%;
+    height: max-content;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+  }
+}
+@media (max-width: 540px) {
+  * > body > header {
+    padding: 64px 0;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+  }
+}
+@media (max-width: 480px) {
+  * > body > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+}
+* > body > header > img {
+  width: 112px;
+}
+@media (max-width: 480px) {
+  * > body > header > img {
+    width: 96px;
+  }
+}
+@media (max-width: 480px) {
+  * > body > header > h1 {
+    font-size: 24px;
+  }
+}
+* > body > form {
+  padding: 0 128px;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 8px;
+}
+@media (max-width: 1340px) {
+  * > body > form {
+    padding: 0 84px;
+  }
+}
+@media (max-width: 1140px) {
+  * > body > form {
+    padding: 28px 84px;
+    width: 100%;
+    height: max-content;
+  }
+}
+@media (max-width: 540px) {
+  * > body > form {
+    padding: 28px 48px;
+  }
+}
+@media (max-width: 420px) {
+  * > body > form {
+    padding: 28px;
+  }
+}
+* > body > form > h2 {
+  color: #2b3674;
+  font-size: 28px;
+}
+* > body > form > label {
+  margin-top: 8px;
+  color: #2b3674;
+  font-weight: bold;
+}
+* > body > form > label > span {
+  color: #4318ff;
+}
+* > body > form > input {
+  padding: 12px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid rgba(163, 174, 208, 0.2784313725);
+  color: #a3aed0;
+  font-size: 16px;
+}
+* > body > form > button {
+  cursor: pointer;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4318ff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+* > body > form > button:hover {
+  opacity: 85%;
+}
+@media (max-width: 1140px) {
+  * > body > form > button {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 480px) {
+  * > body > form > button {
+    margin-top: 12px;
+  }
+}
+* > body > footer {
+  position: fixed;
+  bottom: 0;
+  padding: 16px 174px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+}
+@media (max-width: 1140px) {
+  * > body > footer {
+    padding: 8px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
+@media (max-width: 480px) {
+  * > body > footer {
+    text-align: center;
+  }
+}
+* > body > footer > p {
+  font-size: 13px;
+}
+* > body > footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 28px;
+  list-style: none;
+}
+@media (max-width: 480px) {
+  * > body > footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 14px;
+  }
+}
+* > body > footer > ul > li > a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+@media (max-width: 1140px) {
+  * > body > footer > ul > li > a {
+    color: #a3aed0;
+  }
+}
