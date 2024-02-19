@@ -11,7 +11,7 @@
   align-items: stretch;
   gap: 0;
   color: #a3aed0;
-  font-size: 14.25px;
+  font-size: 14px;
   font-family: "Poppins";
 }
 @media (max-width: 1140px) {
@@ -41,7 +41,7 @@
 @media (max-width: 1140px) {
   * > body > header {
     padding: 84px 0;
-    width: 100%;
+    width: 100vw;
     height: max-content;
     border-bottom-left-radius: 48px;
     border-bottom-right-radius: 48px;
@@ -52,15 +52,6 @@
     padding: 64px 0;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
-  }
-}
-@media (max-width: 480px) {
-  * > body > header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
   }
 }
 * > body > header > img {
@@ -94,7 +85,7 @@
 @media (max-width: 1140px) {
   * > body > form {
     padding: 28px 84px;
-    width: 100%;
+    width: 100vw;
     height: max-content;
   }
 }
@@ -113,7 +104,7 @@
   font-size: 28px;
 }
 * > body > form > label {
-  margin-top: 8px;
+  margin-top: 12px;
   color: #2b3674;
   font-weight: bold;
 }
@@ -126,40 +117,116 @@
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
   color: #a3aed0;
-  font-size: 16px;
+  font-size: 14.75px;
+  font-family: "Poppins";
+}
+* > body > form > ul {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  color: #2b3674;
+  font-size: 12.75px;
+  font-weight: bold;
+}
+* > body > form > ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 6px;
+}
+* > body > form > ul > li > input[type=checkbox] {
+  accent-color: #4318ff;
+}
+* > body > form > ul > li > a {
+  color: #2b3674;
+  text-decoration: none;
+}
+* > body > form > ul > li > a:hover {
+  opacity: 90%;
 }
 * > body > form > button {
   cursor: pointer;
   padding: 12px;
-  margin-top: 8px;
+  margin-top: 12px;
   border: none;
-  border-radius: 8px;
+  border-radius: 84px;
   background-color: #4318ff;
   color: white;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14.75px;
+  font-family: "Poppins";
+  letter-spacing: 0.5px;
 }
 * > body > form > button:hover {
-  opacity: 85%;
+  opacity: 90%;
+}
+* > body > #popup {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: rgba(0, 0, 0, 0.33);
+  backdrop-filter: blur(1.4px);
+}
+* > body > #popup > div {
+  padding: 28px;
+  width: max-content;
+  max-width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  background-color: white;
+  color: #a3aed0;
+  text-align: center;
 }
 @media (max-width: 1140px) {
-  * > body > form > button {
-    margin-top: 16px;
+  * > body > #popup > div {
+    max-width: 50%;
   }
 }
-@media (max-width: 480px) {
-  * > body > form > button {
-    margin-top: 12px;
+@media (max-width: 768px) {
+  * > body > #popup > div {
+    max-width: 66.6%;
   }
+}
+* > body > #popup > div > i {
+  color: #4318ff;
+  font-size: 42px;
+}
+* > body > #popup > div > button {
+  cursor: pointer;
+  padding: 8px 28px;
+  width: max-content;
+  border: none;
+  border-radius: 84px;
+  background-color: #4318ff;
+  color: white;
+  font-family: "Poppins";
+  letter-spacing: 0.5px;
+}
+* > body > #popup > div > button:hover {
+  opacity: 90%;
 }
 * > body > footer {
   position: absolute;
   bottom: 0;
-  padding: 16px 174px;
+  padding: 16px 0;
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
   gap: 0;
 }
@@ -182,14 +249,14 @@
   }
 }
 * > body > footer > p {
-  font-size: 13px;
+  font-size: 12.75px;
 }
 * > body > footer > ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 28px;
+  gap: 24px;
   list-style: none;
 }
 @media (max-width: 480px) {
@@ -203,7 +270,7 @@
 }
 * > body > footer > ul > li > a {
   color: white;
-  font-size: 13px;
+  font-size: 12.75px;
   text-decoration: none;
 }
 @media (max-width: 1140px) {

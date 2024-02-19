@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Siswa SMK TI Bali Global Singaraja">
     <meta name="title" content="Masuk - Sistem Manajemen SMP Negeri 1 Singaraja">
     <meta name="description" content="Halaman Masuk Sistem Manajemen SMP Negeri 1 Singaraja">
 
@@ -17,7 +16,8 @@
     <meta property="og:locale" content="id">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://smpn1sgr.sch.id/">
-    <meta property="og:image" content="https://smpn1sgr.sch.id/">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/AryaDewata/sistem-manajemen-smp-negeri-1-singaraja/main/assets/images/logo-smp-negeri-1-singaraja.png">
 
     <!-- Title -->
     <title>Masuk - Sistem Manajemen | SMP Negeri 1 Singaraja</title>
@@ -29,13 +29,13 @@
     <link rel="icon" href="assets/images/icons/64x64.ico" type="image/x-icon" sizes="64x64">
     <link rel="icon" href="assets/images/icons/128x128.ico" type="image/x-icon" sizes="128x128">
 
-    <!-- Main Cascading Style Sheets -->
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Login Cascading Style Sheets -->
+    <link rel="stylesheet" href="css/login.css">
 
     <!-- Google Fonts Content Delivery Network -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" crossorigin="anonymous">
 
     <!-- Font Awesome Content Delivery Network -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -53,7 +53,7 @@
     </header>
 
     <!-- Login Form -->
-    <form action="#" method="#">
+    <form action="dashboard.html" method="#">
 
         <!-- Form Title -->
         <h2>Masuk</h2>
@@ -67,10 +67,31 @@
         <label for="password">Kata Sandi<span>*</span></label>
         <input type="password" id="password" name="password" autocomplete="off" required>
 
+        <!-- Remember Me  & Forgot Password-->
+        <ul>
+            <li>
+                <input type="checkbox" id="remember_me" name="remember_me"> <label for="remember_me">Ingat Saya</label>
+            </li>
+            <li>
+                <a href="#" onclick="document.getElementById('popup').style.visibility = 'visible';">
+                    Lupa Kata Sandi?
+                </a>
+            </li>
+        </ul>
+
         <!-- Submit Button -->
         <button type="submit" name="login" title="klik untuk masuk">Masuk</button>
 
     </form>
+
+    <!-- Forgot Password's Popup Box -->
+    <div id="popup">
+        <div>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Silakan hubungi pihak operator untuk mendapatkan kata sandi baru anda!</p>
+            <button type="button" onclick="this.parentNode.parentNode.style.visibility = 'hidden';">Tutup</button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
