@@ -82,7 +82,7 @@
 
         <!-- Submit Button -->
         <button type="submit" name="login" title="klik untuk masuk"
-            onclick="document.getElementById('popup').style.visibility = 'visible'; document.getElementById('id-user-access').classList.add('show');">Masuk</button>
+            onclick="document.getElementById('popup').style.visibility = 'visible'; document.getElementById('user-access-id').classList.add('show');">Masuk</button>
 
     </form>
 
@@ -98,17 +98,20 @@
         </div>
 
         <!-- User Access -->
-        <div id="id-user-access" class="pilihAkses">
-            <form action="/tukarAkses" method="POST">
-                <label for="idAksesUser">Pilih akses masuk anda:</label>
-                <select name="id_akses_user" id="idAksesUser">
+        <div id="user-access-id">
+
+            <!-- Switch Access Form -->
+            <form action="/switchAccess" method="#">
+                <label for="user_access_id">Pilih akses masuk anda:</label>
+                <select name="user_access_id" id="user_access_id">
                     <option value="#">Administrator</option>
                     <option value="#">Wali Kelas</option>
                     <option value="#">Guru</option>
                     <option value="#">Staf</option>
                 </select>
-                <button type="submit">Pilih</button>
+                <button type="submit" name="switch_access">Pilih</button>
             </form>
+
         </div>
 
     </div>
