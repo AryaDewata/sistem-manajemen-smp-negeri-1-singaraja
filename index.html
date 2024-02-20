@@ -73,24 +73,44 @@
                 <input type="checkbox" id="remember_me" name="remember_me"> <label for="remember_me">Ingat Saya</label>
             </li>
             <li>
-                <a href="#" onclick="document.getElementById('popup').style.visibility = 'visible';">
+                <a href="#"
+                    onclick="document.getElementById('popup').style.visibility = 'visible'; document.getElementById('forgot-password').classList.add('show');">
                     Lupa Kata Sandi?
                 </a>
             </li>
         </ul>
 
         <!-- Submit Button -->
-        <button type="submit" name="login" title="klik untuk masuk">Masuk</button>
+        <button type="submit" name="login" title="klik untuk masuk"
+            onclick="document.getElementById('popup').style.visibility = 'visible'; document.getElementById('id-user-access').classList.add('show');">Masuk</button>
 
     </form>
 
-    <!-- Forgot Password's Popup Box -->
+    <!-- Popup Box -->
     <div id="popup">
-        <div>
+
+        <!-- Forgot Password -->
+        <div id="forgot-password">
             <i class="fas fa-exclamation-circle"></i>
             <p>Silakan hubungi pihak operator untuk mendapatkan kata sandi baru anda!</p>
-            <button type="button" onclick="this.parentNode.parentNode.style.visibility = 'hidden';">Tutup</button>
+            <button type="button"
+                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">Tutup</button>
         </div>
+
+        <!-- User Access -->
+        <div id="id-user-access" class="pilihAkses">
+            <form action="/tukarAkses" method="POST">
+                <label for="idAksesUser">Pilih akses masuk anda:</label>
+                <select name="id_akses_user" id="idAksesUser">
+                    <option value="#">Administrator</option>
+                    <option value="#">Wali Kelas</option>
+                    <option value="#">Guru</option>
+                    <option value="#">Staf</option>
+                </select>
+                <button type="submit">Pilih</button>
+            </form>
+        </div>
+
     </div>
 
     <!-- Footer -->
