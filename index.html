@@ -63,11 +63,11 @@
         <p>Lengkapi formulir ini untuk masuk ke akun anda!</p>
 
         <!-- Username -->
-        <label for="username">Nama Pengguna<span>*</span></label>
+        <label for="username"><i class="fas fa-user"></i> Nama Pengguna<span>*</span></label>
         <input type="text" id="username" name="username" autocomplete="off" required autofocus>
 
         <!-- Password -->
-        <label for="password">Kata Sandi<span>*</span></label>
+        <label for="password"><i class="fas fa-key"></i> Kata Sandi<span>*</span></label>
         <input type="password" id="password" name="password" autocomplete="off" required>
 
         <!-- Remember Me  & Forgot Password-->
@@ -77,7 +77,7 @@
             </li>
             <li>
                 <a href="#"
-                    onclick="document.getElementById('popup').style.visibility = 'visible'; document.getElementById('forgot-password').classList.add('show');">
+                    onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('forgot-password').classList.add('show');">
                     Lupa Kata Sandi?
                 </a>
             </li>
@@ -85,7 +85,9 @@
 
         <!-- Submit Button -->
         <button type="submit" name="login" title="klik untuk masuk"
-            onclick="document.getElementById('popup').style.visibility = 'visible'; document.getElementById('user-access-id').classList.add('show');">Masuk</button>
+            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">
+            <i class="fas fa-door-open"></i> Masuk
+        </button>
 
     </form>
 
@@ -97,7 +99,19 @@
             <i class="fas fa-exclamation-circle"></i>
             <p>Silakan hubungi pihak operator untuk mendapatkan kata sandi baru anda!</p>
             <button type="button"
-                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">Tutup</button>
+                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">
+                <i class="fas fa-cancel"></i> Tutup
+            </button>
+        </div>
+
+        <!-- Login Failed -->
+        <div id="login-failed" class="show">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Nama pengguna atau kata sandi yang anda masukkan tidak sesuai!</p>
+            <button type="button"
+                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">
+                <i class="fas fa-cancel"></i> Tutup
+            </button>
         </div>
 
         <!-- User Access -->
@@ -112,7 +126,15 @@
                     <option value="#">Guru</option>
                     <option value="#">Staf</option>
                 </select>
-                <button type="submit" name="switch_access">Pilih</button>
+                <ul>
+                    <li>
+                        <button type="button"
+                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
+                            <i class="fas fa-cancel"></i> Batal
+                        </button>
+                    </li>
+                    <li><button type="submit" name="switch_access">Pilih <i class="fas fa-check"></i></button></li>
+                </ul>
             </form>
 
         </div>
