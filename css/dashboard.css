@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* > body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: nowrap;
+  color: #a3aed0;
+  font-size: 14px;
+  font-family: "Poppins";
+}
+* > body > nav {
+  padding: 28px 12px;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+@media (max-width: 846px) {
+  * > body > nav {
+    display: none;
+  }
+}
+* > body > nav > img {
+  width: 64px;
+}
+* > body > nav > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px;
+  flex-wrap: nowrap;
+  text-align: start;
+}
+* > body > nav > ul > li > a {
+  color: #a3aed0;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+* > body > nav > ul > li > a.active {
+  color: #4318ff;
+}
+* > body > main {
+  padding: 28px;
+  width: 85%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #f4f7fe;
+}
+@media (max-width: 1280px) {
+  * > body > main {
+    width: 100%;
+  }
+}
+* > body > main > #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  * > body > main > #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: stretch;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+}
+* > body > main > #header > #breadcrumbs > h2 {
+  color: #2b3674;
+}
+@media (max-width: 768px) {
+  * > body > main > #header > #breadcrumbs {
+    display: none;
+  }
+}
+* > body > main > #header > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+* > body > main > #header > ul > li > button {
+  cursor: pointer;
+  padding: 6px 24px;
+  border-radius: 28px;
+  border: 2px solid rgba(163, 174, 208, 0.2784313725);
+  background-color: transparent;
+  color: #4318ff;
+  text-decoration: none;
+}
+* > body > main > #header > ul > li > #profile {
+  padding: 6px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: nowrap;
+  border-radius: 28px;
+  box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
+  background-color: white;
+}
+* > body > main > #header > ul > li > #profile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+* > body > main > #header > ul > li > #profile > div > p {
+  font-size: 12px;
+}
+* > body > main > #header > ul > li > #profile > div > p:nth-child(1) {
+  color: #2b3674;
+  font-weight: bold;
+}
+* > body > main > #header > ul > li > #profile > i {
+  font-size: 28px;
+}
+* > body > main > article {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: wrap;
+  row-gap: 18px;
+}
+* > body > main > article > a {
+  padding: 64px 18px;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 4px;
+  flex-wrap: nowrap;
+  border-radius: 8px;
+  border: 4px solid white;
+  box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
+  background: linear-gradient(to bottom right, rgba(74, 24, 255, 0.8), rgba(32, 29, 34, 0.8)), url(../assets/images/card-background-image.jpg);
+  background-size: cover;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+@media (max-width: 1280px) {
+  * > body > main > article > a {
+    width: 49%;
+  }
+}
+@media (max-width: 540px) {
+  * > body > main > article > a {
+    width: 100%;
+  }
+}
+* > body > #popup {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  background-color: rgba(0, 0, 0, 0.33);
+  backdrop-filter: blur(1.4px);
+}
+* > body > #popup > div {
+  padding: 28px;
+  width: max-content;
+  max-width: 33.3%;
+  display: none;
+  border-radius: 8px;
+  background-color: white;
+  color: #a3aed0;
+  text-align: center;
+}
+@media (max-width: 1140px) {
+  * > body > #popup > div {
+    max-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  * > body > #popup > div {
+    max-width: 66.6%;
+  }
+}
+@media (max-width: 540px) {
+  * > body > #popup > div {
+    max-width: 85%;
+  }
+}
+* > body > #popup > div.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  animation: fade-in 150ms;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+* > body > #popup > div#login-failed > i {
+  color: #d04848;
+}
+* > body > #popup > div#login-failed button {
+  background-color: #d04848;
+}
+* > body > #popup > div > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 12px;
+  flex-wrap: nowrap;
+  text-align: start;
+}
+* > body > #popup > div > form > select {
+  padding: 12px;
+  min-width: 248px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid rgba(163, 174, 208, 0.2784313725);
+  color: #a3aed0;
+  font-size: 14.75px;
+  font-family: "Poppins";
+}
+* > body > #popup > div > form > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: stretch;
+  gap: 8px;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+* > body > #popup > div > form > ul button[type=button] {
+  box-shadow: inset 0 0 0 2px #4318ff;
+  background-color: white;
+  color: #4318ff;
+  font-weight: bold;
+}
+* > body > #popup > div > i {
+  color: #4318ff;
+  font-size: 42px;
+}
+* > body > #popup > div button {
+  cursor: pointer;
+  padding: 8px 28px;
+  margin: 0 auto;
+  width: max-content;
+  border: none;
+  border-radius: 84px;
+  background-color: #4318ff;
+  color: white;
+  font-family: "Poppins";
+  letter-spacing: 0.5px;
+}
+* > body > #popup > div button:hover {
+  opacity: 90%;
+}
