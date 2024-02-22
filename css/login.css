@@ -207,6 +207,17 @@
   justify-content: flex-start;
   align-items: center;
   gap: 12px;
+  animation: fade-in 150ms;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 * > body > #popup > div#login-failed > i {
   color: #d04848;
