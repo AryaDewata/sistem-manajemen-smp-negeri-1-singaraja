@@ -50,22 +50,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav>
-
-        <!-- Navigation Logo -->
-        <img src="assets/images/logo-smp-negeri-1-singaraja.png" alt="">
-        <p>Sistem Manajemen <br> SMP Negeri 1 Singaraja</p>
-
-        <!-- Navigation Menus -->
-        <ul>
-            <li><a href="dashboard.html">Dasbor</a></li>
-            <li><a href="#" class="active">Master Data Pengguna</a></li>
-            <li><a href="#">Master Data Kelas</a></li>
-            <li><a href="#">Master Data Pelajaran</a></li>
-            <li><a href="#">Master Data Siswa</a></li>
-        </ul>
-
-    </nav>
+    <nav></nav>
 
     <!-- Main -->
     <main>
@@ -81,11 +66,15 @@
 
             <!-- Header Menus -->
             <ul>
+
+                <!-- Switch User Access Button -->
                 <li>
                     <button type="button"
                         onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">Tukar
                         Akses</button>
                 </li>
+
+                <!-- User Profile -->
                 <li>
                     <div id="profile">
                         <div>
@@ -95,6 +84,7 @@
                         <i class="fas fa-user-circle"></i>
                     </div>
                 </li>
+
             </ul>
 
         </section>
