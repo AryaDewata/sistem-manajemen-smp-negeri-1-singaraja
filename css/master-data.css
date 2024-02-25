@@ -133,10 +133,20 @@
     box-shadow: none;
   }
 }
-* > body > main > article > h2 {
+* > body > main > article > ul:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+* > body > main > article > ul:nth-child(1) li > h2 {
   color: #2b3674;
 }
-* > body > main > article > ul {
+* > body > main > article > ul:nth-child(2) {
+  margin-top: 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -147,7 +157,7 @@
   list-style: none;
 }
 @media (max-width: 1140px) {
-  * > body > main > article > ul {
+  * > body > main > article > ul:nth-child(2) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -157,7 +167,7 @@
     row-gap: 18px;
   }
 }
-* > body > main > article > ul > li {
+* > body > main > article > ul:nth-child(2) > li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -165,8 +175,16 @@
   gap: 0;
   flex-wrap: wrap;
 }
+* > body > main > article > ul:nth-child(2) > li:nth-child(even):not(:first-child) {
+  background-color: #f4f7fe;
+}
 @media (max-width: 1140px) {
-  * > body > main > article > ul > li {
+  * > body > main > article > ul:nth-child(2) > li:nth-child(even):not(:first-child) {
+    background-color: white;
+  }
+}
+@media (max-width: 1140px) {
+  * > body > main > article > ul:nth-child(2) > li {
     width: 49%;
     display: flex;
     flex-direction: column;
@@ -177,22 +195,48 @@
     background-color: white;
     box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
   }
-  * > body > main > article > ul > li:nth-child(1) {
+  * > body > main > article > ul:nth-child(2) > li:nth-child(1) {
     display: none;
   }
 }
 @media (max-width: 540px) {
-  * > body > main > article > ul > li {
+  * > body > main > article > ul:nth-child(2) > li {
     padding: 18px;
     width: 100%;
     border-radius: 8px;
   }
 }
-* > body > main > article > ul > li > p {
+* > body > main > article > ul:nth-child(2) > li > p {
   width: 14%;
 }
+* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
 @media (max-width: 1140px) {
-  * > body > main > article > ul > li > p {
+  * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+}
+* > body > main > article > ul:nth-child(2) > li > p > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1140px) {
+  * > body > main > article > ul:nth-child(2) > li > p {
     padding: 4px 0;
     width: 100%;
     display: flex;
@@ -203,45 +247,51 @@
     flex-wrap: nowrap;
     color: #2b3674;
     font-weight: bold;
+    text-align: right;
   }
-  * > body > main > article > ul > li > p:has(button) {
+  * > body > main > article > ul:nth-child(2) > li > p:has(button) {
     justify-content: flex-end;
   }
-  * > body > main > article > ul > li > p:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before {
     content: "Nama";
     color: #a3aed0;
   }
-  * > body > main > article > ul > li > p:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before {
     content: "Jenis Kelamin";
     color: #a3aed0;
   }
-  * > body > main > article > ul > li > p:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(4)::before {
     content: "Status";
     color: #a3aed0;
   }
-  * > body > main > article > ul > li > p:nth-child(5)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(5)::before {
     content: "TTL";
     color: #a3aed0;
   }
 }
-* > body > main > article > ul > li > p > button {
+* > body > main > article button {
   cursor: pointer;
-  padding: 8px 28px;
-  margin: 0 auto;
-  width: max-content;
+  padding: 8px 16px;
+  margin: 0;
+  width: 100%;
   border: none;
   border-radius: 84px;
   background-color: #4318ff;
   color: white;
   font-family: "Poppins";
+  text-align: start;
   letter-spacing: 0.5px;
 }
-* > body > main > article > ul > li > p > button:hover {
+* > body > main > article button:hover {
   opacity: 90%;
 }
+* > body > main > article button:has(i.fa-cancel) {
+  background-color: #d04848;
+}
 @media (max-width: 1140px) {
-  * > body > main > article > ul > li > p > button {
+  * > body > main > article button {
     margin: 0;
+    width: max-content;
   }
 }
 * > body > #popup {

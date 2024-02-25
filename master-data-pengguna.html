@@ -91,7 +91,12 @@
 
         <!-- Application List -->
         <article>
-            <h2>Data Pengguna</h2>
+            <ul>
+                <li>
+                    <h2>Data Pengguna</h2>
+                </li>
+                <li><button type="button">Tambah Data <i class="fas fa-add"></i></button></li>
+            </ul>
             <ul>
                 <li>
                     <p>Nama Pengguna <i class="fas fa-arrow-down-wide-short"></i></p>
@@ -100,43 +105,50 @@
                     <p>Status <i class="fas fa-arrow-down-wide-short"></i></p>
                     <p>Tempat, Tanggal Lahir <i class="fas fa-arrow-down-wide-short"></i></p>
                     <p>Aksi</p>
-                    <p></p>
                 </li>
                 <li>
-                    <p>Kepsek123</p>
-                    <p>Kepsek1</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, blanditiis!</p>
                     <p>Laki-laki</p>
                     <p>Kepala Sekolah</p>
                     <p>Singaraja, 8 September 1978</p>
-                    <p><button type="button"><i class="fas fa-edit"></i> Ubah</button></p>
-                    <p><button type="button"><i class="fas fa-cancel"></i> Disable</button></p>
+                    <p>
+                        <button type="button"><i class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
+                    </p>
                 </li>
                 <li>
-                    <p>Kepsek123</p>
-                    <p>Kepsek1</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, blanditiis!</p>
                     <p>Laki-laki</p>
                     <p>Kepala Sekolah</p>
                     <p>Singaraja, 8 September 1978</p>
-                    <p><button type="button"><i class="fas fa-edit"></i> Ubah</button></p>
-                    <p><button type="button"><i class="fas fa-cancel"></i> Disable</button></p>
+                    <p>
+                        <button type="button"><i class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
+                    </p>
                 </li>
                 <li>
-                    <p>Kepsek123</p>
-                    <p>Kepsek1</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, blanditiis!</p>
                     <p>Laki-laki</p>
                     <p>Kepala Sekolah</p>
                     <p>Singaraja, 8 September 1978</p>
-                    <p><button type="button"><i class="fas fa-edit"></i> Ubah</button></p>
-                    <p><button type="button"><i class="fas fa-cancel"></i> Disable</button></p>
+                    <p>
+                        <button type="button"><i class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
+                    </p>
                 </li>
                 <li>
-                    <p>Kepsek123</p>
-                    <p>Kepsek1</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, blanditiis!</p>
                     <p>Laki-laki</p>
                     <p>Kepala Sekolah</p>
                     <p>Singaraja, 8 September 1978</p>
-                    <p><button type="button"><i class="fas fa-edit"></i> Ubah</button></p>
-                    <p><button type="button"><i class="fas fa-cancel"></i> Disable</button></p>
+                    <p>
+                        <button type="button"><i class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
+                    </p>
                 </li>
             </ul>
         </article>
@@ -146,31 +158,40 @@
     <!-- Popup Box -->
     <div id="popup">
 
-        <!-- Forgot Password -->
-        <div id="forgot-password">
-            <i class="fas fa-exclamation-circle"></i>
-            <p>Silakan hubungi pihak operator untuk mendapatkan kata sandi baru anda!</p>
-            <button type="button"
-                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">
-                <i class="fas fa-cancel"></i> Tutup
-            </button>
-        </div>
-
-        <!-- Login Failed -->
-        <div id="login-failed">
-            <i class="fas fa-exclamation-circle"></i>
-            <p>Nama pengguna atau kata sandi yang anda masukkan tidak sesuai!</p>
-            <button type="button"
-                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">
-                <i class="fas fa-cancel"></i> Tutup
-            </button>
-        </div>
-
         <!-- User Access -->
         <div id="user-access-id">
 
             <!-- Switch Access Form -->
             <form action="/switchAccess" method="#">
+                <label for="user_access_id">Pilih akses masuk anda:</label>
+                <select name="user_access_id" id="user_access_id">
+                    <option value="#">Administrator</option>
+                    <option value="#">Wali Kelas</option>
+                    <option value="#">Guru</option>
+                    <option value="#">Staf</option>
+                </select>
+                <ul>
+                    <li>
+                        <button type="button"
+                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
+                            <i class="fas fa-cancel"></i> Batal
+                        </button>
+                    </li>
+                    <li><button type="submit" name="switch_access">Pilih <i class="fas fa-check"></i></button></li>
+                </ul>
+            </form>
+
+        </div>
+
+        <!-- User Form -->
+        <div id="user-form">
+
+            <!-- User Form -->
+            <form action="/addUser" method="#">
+                <ul>
+                    <li><label for="#">Nama Pengguna <span>*</span></label></li>
+                    <li><input type="text"></li>
+                </ul>
                 <label for="user_access_id">Pilih akses masuk anda:</label>
                 <select name="user_access_id" id="user_access_id">
                     <option value="#">Administrator</option>
