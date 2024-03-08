@@ -205,7 +205,7 @@
     <div id="popup">
 
         <!-- User Access -->
-        <div id="user-access-id">
+        <div id="user-access-id-form">
 
             <!-- Switch Access Form -->
             <form action="/switchAccess" method="#">
@@ -229,35 +229,12 @@
 
         </div>
 
-        <!-- Document Upload Form -->
-        <div id="document-upload-form">
-
-            <!-- Document Upload Form -->
-            <form action="/upload" method="#">
-                <h2>Unggah Dokumen</h2>
-                <label for="document">Pilih dokumen:</label>
-                <input type="file" id="document" name="document" accept="application/pdf">
-                <ul>
-                    <li>
-                        <button type="button"
-                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
-                            <i class="fas fa-cancel"></i> Batal
-                        </button>
-                    </li>
-                    <li><button type="submit" name="upload_document">Unggah Dokumen <i
-                                class="fas fa-file-export"></i></button></li>
-                </ul>
-            </form>
-
-        </div>
-
-        <!-- Export Data Form -->
+        <!-- Data Export Form -->
         <div id="data-export-form">
 
             <!-- Export Data Form -->
-            <form action="/export" method="#">
-                <h2>Ekspor Data</h2>
-                <label for="kelas_siswa">Pilih Kelas:</label>
+            <form action="/exportData" method="#">
+                <label for="kelas_siswa">Pilih kelas:</label>
                 <select name="kelas_siswa" id="kelas_siswa">
                     <option value="#">Semua Kelas</option>
                     <option value="#">7A</option>
@@ -270,7 +247,7 @@
                     <option value="#">9B</option>
                     <option value="#">9C</option>
                 </select>
-                <label for="file_format">Pilih Format:</label>
+                <label for="file_format">Pilih format dokumen:</label>
                 <select name="file_format" id="file_format">
                     <option value="#">PDF</option>
                     <option value="#">XLSX</option>
@@ -282,56 +259,15 @@
                             <i class="fas fa-cancel"></i> Batal
                         </button>
                     </li>
-                    <li><button type="submit" name="export-data">Ekspor Data <i class="fas fa-file-export"></i></button>
-                    </li>
-                </ul>
-            </form>
-
-        </div>
-
-        <!-- Student Point Form -->
-        <div id="student-point-form">
-
-            <!-- Student Point Form -->
-            <form action="/changePoint" method="#">
-                <h2>Ubah Poin Siswa</h2>
-                <ul>
-                    <li><label for="nama_siswa">Nama <span>*</span></label></li>
-                    <li><input type="text" id="nama_siswa" name="nama_siswa" value="Amir Syarif" disabled></li>
-                </ul>
-                <ul>
-                    <li><label for="jenis_kelamin_siswa">Jenis Kelamin <span>*</span></label></li>
-                    <li><input type="text" id="jenis_kelamin_siswa" name="jenis_kelamin_siswa" value="Laki-laki"
-                            disabled></li>
-                </ul>
-                <ul>
-                    <li><label for="kelas_siswa">Kelas <span>*</span></label></li>
-                    <li><input type="text" id="kelas_siswa" name="kelas_siswa" value="7A" disabled></li>
-                </ul>
-                <ul>
-                    <li><label for="poin_sebelumnya">Poin Sebelumnya <span>*</span></label></li>
-                    <li><input type="number" id="poin_sebelumnya" name="poin_sebelumnya" value="93" disabled></li>
-                </ul>
-                <ul>
-                    <li><label for="perubahan_poin">Perubahan Poin <span>*</span></label></li>
-                    <li><input type="number" id="perubahan_poin" name="perubahan_poin"></li>
-                </ul>
-                <ul>
-                    <li><label for="catatan_perubahan">Catatan<span>*</span></label></li>
-                    <li><input type="text" id="catatan_perubahan" name="catatan_perubahan"></li>
-                </ul>
-                <ul>
                     <li>
-                        <button type="button"
-                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
-                            <i class="fas fa-cancel"></i> Batal
-                        </button>
+                        <button type="submit" name="export_data">Ekspor Data <i class="fas fa-file-export"></i></button>
                     </li>
-                    <li><button type="submit" name="change-point">Simpan <i class="fas fa-check"></i></button></li>
                 </ul>
             </form>
 
         </div>
+
+    </div>
 
     </div>
 
