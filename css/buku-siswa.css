@@ -15,18 +15,19 @@
   font-size: 12.75px;
   font-family: "Poppins";
 }
+* > body h1,
 * > body h2 {
   color: #2b3674;
 }
 * > body label {
-  font-size: 13.25px;
+  font-size: 13.75px;
 }
 * > body label > span {
   color: #d04848;
 }
 * > body input,
 * > body select {
-  padding: 8px 12px;
+  padding: 6px 8px;
   min-width: 248px;
   outline: none;
   border-radius: 8px;
@@ -47,7 +48,6 @@
   background-color: #4318ff;
   color: white;
   font-family: "Poppins";
-  text-align: start;
 }
 * > body button:hover {
   opacity: 80%;
@@ -55,16 +55,10 @@
 * > body button:has(i.fa-cancel) {
   background-color: #d04848;
 }
-@media (max-width: 1140px) {
-  * > body button {
-    margin: 0;
-    width: max-content;
-  }
-}
 * > body > nav {
   width: 284px;
 }
-@media (max-width: 1084px) {
+@media (max-width: 1140px) {
   * > body > nav {
     display: none;
   }
@@ -91,7 +85,7 @@
   gap: 0;
   flex-wrap: nowrap;
 }
-@media (max-width: 1084px) {
+@media (max-width: 1140px) {
   * > body > main > #header {
     display: flex;
     flex-direction: column-reverse;
@@ -139,7 +133,7 @@
   font-weight: bold;
 }
 * > body > main > #header > ul > li > #profile > div > p:nth-child(2) {
-  font-size: 11px;
+  font-size: 12px;
 }
 * > body > main > #header > ul > li > #profile > i {
   font-size: 34px;
@@ -152,18 +146,13 @@
   align-items: stretch;
   gap: 0;
   flex-wrap: nowrap;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: white;
-  box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
 }
 @media (max-width: 1140px) {
-  * > body > main > article {
-    padding: 12px;
-  }
   * > body > main > article:not(:has(embed)) {
     padding: 0;
-    row-gap: 18px;
-    box-shadow: none;
+    row-gap: 28px;
     background-color: transparent;
   }
 }
@@ -176,7 +165,10 @@
   flex-wrap: nowrap;
   list-style: none;
 }
-* > body > main > article > ul:nth-child(1) > li:first-of-type form {
+* > body > main > article > ul:nth-child(1):has(form) {
+  align-items: flex-end;
+}
+* > body > main > article > ul:nth-child(1) > li:first-of-type > form {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -184,31 +176,34 @@
   gap: 12px;
   flex-wrap: nowrap;
 }
-* > body > main > article > ul:nth-child(1) > li:first-of-type form > input,
-* > body > main > article > ul:nth-child(1) > li:first-of-type form > select {
+* > body > main > article > ul:nth-child(1) > li:first-of-type > form > select {
   min-width: initial;
 }
-@media (max-width: 768px) {
+@media (max-width: 842px) {
+  * > body > main > article > ul:nth-child(1):has(form) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+@media (max-width: 728px) {
   * > body > main > article > ul:nth-child(1) {
     flex-direction: column;
     gap: 12px;
   }
-  * > body > main > article > ul:nth-child(1) > li:first-of-type form {
+  * > body > main > article > ul:nth-child(1):has(form) {
+    align-items: center;
+  }
+  * > body > main > article > ul:nth-child(1) > li:first-of-type > form {
     flex-wrap: wrap;
   }
-  * > body > main > article > ul:nth-child(1) > li:first-of-type form > input,
-  * > body > main > article > ul:nth-child(1) > li:first-of-type form > select {
+  * > body > main > article > ul:nth-child(1) > li:first-of-type > form > input,
+  * > body > main > article > ul:nth-child(1) > li:first-of-type > form > select {
     width: 100%;
   }
-}
-* > body > main > article > ul:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 0;
-  flex-wrap: nowrap;
-  list-style: none;
+  * > body > main > article > ul:nth-child(1) > li:first-of-type > form > button {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) {
@@ -221,24 +216,77 @@
     row-gap: 18px;
   }
 }
+* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p {
+  width: 14.28%;
+}
+* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(1), * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(4) {
+  width: 5%;
+  text-align: center;
+}
+* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(2) {
+  width: 30%;
+}
+* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(3) {
+  width: 10%;
+}
+* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(5) {
+  width: 15%;
+  text-align: left;
+}
+* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(6) {
+  width: 12%;
+}
+* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(7) {
+  width: 23%;
+}
+@media (max-width: 1140px) {
+  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(1)::before {
+    content: "No";
+    color: #a3aed0;
+  }
+  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(2)::before {
+    content: "Nama Siswa";
+    color: #a3aed0;
+  }
+  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(3)::before {
+    content: "Jenis Kelamin";
+    color: #a3aed0;
+  }
+  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(4)::before {
+    content: "Kelas";
+    color: #a3aed0;
+  }
+  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(5)::before {
+    content: "Waktu";
+    color: #a3aed0;
+  }
+  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(6)::before {
+    content: "Perubahan Poin";
+    color: #a3aed0;
+  }
+  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(7)::before {
+    content: "Catatan";
+    color: #a3aed0;
+  }
+}
 * > body > main > article > ul:nth-child(2) > li {
-  padding: 18px 8px;
+  padding: 14px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 10;
+  gap: 0;
   flex-wrap: wrap;
   border-radius: 8px;
 }
 * > body > main > article > ul:nth-child(2) > li:has(embed) {
-  padding: 18px 0;
+  padding: 18px 0 0;
   width: 100%;
   border: 0 !important;
 }
 * > body > main > article > ul:nth-child(2) > li:has(embed) > embed {
   width: 100%;
-  height: 486px;
+  height: 468px;
   border-radius: 8px;
 }
 * > body > main > article > ul:nth-child(2) > li:first-child {
@@ -253,20 +301,32 @@
 }
 * > body > main > article > ul:nth-child(2) > li:last-child > p:first-of-type,
 * > body > main > article > ul:nth-child(2) > li:last-child p:last-of-type {
-  min-width: 20% !important;
   width: max-content !important;
+}
+* > body > main > article > ul:nth-child(2) > li#pagination {
+  padding-left: 2%;
+}
+* > body > main > article > ul:nth-child(2) > li#pagination > p:last-of-type > button {
+  padding: 2px 12px;
+}
+* > body > main > article > ul:nth-child(2) > li#pagination > p:last-of-type > button:not(.active) {
+  background-color: transparent;
+  color: #a3aed0;
+}
+* > body > main > article > ul:nth-child(2) > li#pagination > p:last-of-type > button:not(.active):hover {
+  background-color: rgba(163, 174, 208, 0.2784313725);
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) > li {
+    padding: 14px;
     width: 49%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
     gap: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: white !important;
-    box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
   }
   * > body > main > article > ul:nth-child(2) > li:nth-child(1):not(:has(embed)) {
     display: none;
@@ -275,47 +335,51 @@
     flex-direction: column-reverse;
     justify-content: flex-end;
     background-color: transparent !important;
-    box-shadow: none;
   }
   * > body > main > article > ul:nth-child(2) > li:last-child > p::before {
     content: "" !important;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   * > body > main > article > ul:nth-child(2) > li {
-    padding: 18px;
     width: 100%;
-    border-radius: 8px;
   }
 }
 * > body > main > article > ul:nth-child(2) > li > p {
-  width: 16.6%;
-}
-* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:first-of-type {
-  background-color: #256fff;
-}
-@media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
-    flex-wrap: nowrap;
-  }
+  width: 16.67%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(1), * > body > main > article > ul:nth-child(2) > li > p:nth-child(4), * > body > main > article > ul:nth-child(2) > li > p:nth-child(5) {
   width: 5%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(2) {
-  width: 53%;
+  width: 45%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(3) {
-  width: 12%;
+  width: 10%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:last-child {
-  width: 20%;
+  width: 30%;
+}
+* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:first-of-type {
+  background-color: #256fff;
+}
+* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:last-of-type {
+  background-color: #a3aed0;
+}
+@media (max-width: 1140px) {
+  * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) > li > p {
@@ -329,20 +393,14 @@
     flex-wrap: nowrap;
     color: #2b3674;
     font-weight: bold;
-    text-align: right;
-  }
-  * > body > main > article > ul:nth-child(2) > li > p:has(button) {
-    justify-content: flex-end;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(1)::before {
     content: "No";
     color: #a3aed0;
-    text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before {
     content: "Nama Siswa";
     color: #a3aed0;
-    text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before {
     content: "Jenis Kelamin";
@@ -356,16 +414,6 @@
     content: "Jumlah Poin";
     color: #a3aed0;
   }
-}
-* > body > main > article #pagination p:last-of-type button {
-  padding: 2px 12px;
-}
-* > body > main > article #pagination p:last-of-type button:not(.active) {
-  background-color: transparent;
-  color: #a3aed0;
-}
-* > body > main > article #pagination p:last-of-type button:not(.active):hover {
-  background-color: rgba(163, 174, 208, 0.2784313725);
 }
 * > body > #popup {
   position: fixed;
@@ -438,7 +486,7 @@
 * > body > #popup > div > form > ul {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: stretch;
   gap: 8px;
   flex-wrap: nowrap;
