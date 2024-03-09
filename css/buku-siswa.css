@@ -148,11 +148,13 @@
   flex-wrap: nowrap;
   border-radius: 20px;
   background-color: white;
+  box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
 }
 @media (max-width: 1140px) {
   * > body > main > article:not(:has(embed)) {
     padding: 0;
     row-gap: 28px;
+    box-shadow: none;
     background-color: transparent;
   }
 }
@@ -326,6 +328,7 @@
     align-items: center;
     gap: 0;
     flex-wrap: nowrap;
+    box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
     background-color: white !important;
   }
   * > body > main > article > ul:nth-child(2) > li:nth-child(1):not(:has(embed)) {
