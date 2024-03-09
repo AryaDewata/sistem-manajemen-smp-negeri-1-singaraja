@@ -12,13 +12,53 @@
   gap: 0;
   flex-wrap: nowrap;
   color: #a3aed0;
-  font-size: 14px;
+  font-size: 12.75px;
   font-family: "Poppins";
+}
+* > body h1,
+* > body h2 {
+  color: #2b3674;
+}
+* > body label {
+  font-size: 13.75px;
+}
+* > body label > span {
+  color: #d04848;
+}
+* > body input,
+* > body select {
+  padding: 6px 8px;
+  min-width: 248px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid rgba(163, 174, 208, 0.2784313725);
+  color: #a3aed0;
+  font-family: "Poppins";
+}
+* > body input:disabled,
+* > body select:disabled {
+  background-color: rgba(163, 174, 208, 0.2784313725);
+}
+* > body button {
+  cursor: pointer;
+  padding: 8px 16px;
+  width: max-content;
+  border: none;
+  border-radius: 84px;
+  background-color: #4318ff;
+  color: white;
+  font-family: "Poppins";
+}
+* > body button:hover {
+  opacity: 80%;
+}
+* > body button:has(i.fa-cancel) {
+  background-color: #d04848;
 }
 * > body > nav {
   width: 284px;
 }
-@media (max-width: 1028px) {
+@media (max-width: 1140px) {
   * > body > nav {
     display: none;
   }
@@ -29,6 +69,12 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 28px;
+  flex-wrap: nowrap;
   background-color: #f4f7fe;
 }
 * > body > main > #header {
@@ -39,7 +85,7 @@
   gap: 0;
   flex-wrap: nowrap;
 }
-@media (max-width: 1028px) {
+@media (max-width: 1140px) {
   * > body > main > #header {
     display: flex;
     flex-direction: column-reverse;
@@ -50,77 +96,49 @@
     row-gap: 18px;
   }
 }
-* > body > main > #header > #breadcrumbs > h2 {
-  color: #2b3674;
-}
 * > body > main > #header > ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   flex-wrap: nowrap;
   list-style: none;
 }
-@media (max-width: 1028px) {
-  * > body > main > #header > ul {
-    justify-content: flex-end;
-  }
-}
 * > body > main > #header > ul > li > button {
-  cursor: pointer;
-  padding: 8px 24px;
-  border-radius: 28px;
+  border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
   background-color: transparent;
   color: #4318ff;
-  font-family: "Poppins";
-  text-decoration: none;
 }
 @media (max-width: 540px) {
   * > body > main > #header > ul > li > button {
-    padding: 6px 18px;
+    display: none;
   }
 }
 * > body > main > #header > ul > li > #profile {
   padding: 8px 24px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   flex-wrap: nowrap;
   border-radius: 28px;
   box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
   background-color: white;
-}
-@media (max-width: 540px) {
-  * > body > main > #header > ul > li > #profile {
-    padding: 6px 24px;
-  }
 }
 * > body > main > #header > ul > li > #profile > div > p:nth-child(1) {
   color: #2b3674;
   font-weight: bold;
 }
 * > body > main > #header > ul > li > #profile > div > p:nth-child(2) {
-  font-size: 13px;
-}
-@media (max-width: 540px) {
-  * > body > main > #header > ul > li > #profile > div > p:nth-child(2) {
-    font-size: 12px;
-  }
+  font-size: 12px;
 }
 * > body > main > #header > ul > li > #profile > i {
-  font-size: 46px;
-}
-@media (max-width: 540px) {
-  * > body > main > #header > ul > li > #profile > i {
-    font-size: 42px;
-  }
+  font-size: 34px;
 }
 * > body > main > article {
-  margin-top: 28px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -130,15 +148,15 @@
   row-gap: 18px;
 }
 * > body > main > article > a {
-  padding: 48px 16px;
+  padding: 64px 16px;
   width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 6px;
+  gap: 8px;
   flex-wrap: nowrap;
-  border-radius: 8px;
+  border-radius: 16px;
   border: 4px solid white;
   box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
   background: linear-gradient(to bottom right, rgba(74, 24, 255, 0.8), rgba(32, 29, 34, 0.8)), url(../assets/images/card-background-image.jpg);
@@ -147,7 +165,7 @@
   text-decoration: none;
   text-align: center;
 }
-@media (max-width: 1280px) {
+@media (max-width: 978px) {
   * > body > main > article > a {
     width: 49%;
   }
@@ -225,20 +243,10 @@
   flex-wrap: nowrap;
   text-align: start;
 }
-* > body > #popup > div > form > select {
-  padding: 12px;
-  min-width: 248px;
-  outline: none;
-  border-radius: 8px;
-  border: 2px solid rgba(163, 174, 208, 0.2784313725);
-  color: #a3aed0;
-  font-size: 14.75px;
-  font-family: "Poppins";
-}
 * > body > #popup > div > form > ul {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: stretch;
   gap: 8px;
   flex-wrap: nowrap;
@@ -253,19 +261,4 @@
 * > body > #popup > div > i {
   color: #4318ff;
   font-size: 42px;
-}
-* > body > #popup > div button {
-  cursor: pointer;
-  padding: 8px 28px;
-  margin: 0 auto;
-  width: max-content;
-  border: none;
-  border-radius: 84px;
-  background-color: #4318ff;
-  color: white;
-  font-family: "Poppins";
-  letter-spacing: 0.5px;
-}
-* > body > #popup > div button:hover {
-  opacity: 90%;
 }

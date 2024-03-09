@@ -32,7 +32,7 @@
     <!-- Scrollbar Cascading Style Sheets -->
     <link rel="stylesheet" href="css/scrollbar.css">
 
-    <!-- Dashboard Cascading Style Sheets -->
+    <!-- Main Cascading Style Sheets -->
     <link rel="stylesheet" href="css/dashboard.css">
 
     <!-- Google Fonts Content Delivery Network -->
@@ -60,8 +60,8 @@
 
             <!-- Breadcrumbs -->
             <div id="breadcrumbs">
-                <p>Sistem Manajemen SMP Negeri 1 Singaraja / Dasbor</p>
-                <h2>Dasbor</h2>
+                <p>Sistem Manajemen SMP Negeri 1 Singaraja / Sistem Akademik / Dasbor</p>
+                <h1>Dasbor</h1>
             </div>
 
             <!-- Header Menus -->
@@ -70,15 +70,16 @@
                 <!-- Switch User Access Button -->
                 <li>
                     <button type="button"
-                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">Tukar
-                        Akses</button>
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id-form').classList.add('show');">
+                        <i class="fas fa-repeat"></i> Tukar Akses
+                    </button>
                 </li>
 
                 <!-- User Profile -->
                 <li>
                     <div id="profile">
                         <div>
-                            <p>Adela Parkson</p>
+                            <p>Ketut Suwirya</p>
                             <p>Administrator</p>
                         </div>
                         <i class="fas fa-user-circle"></i>
@@ -134,11 +135,11 @@
     <!-- Popup Box -->
     <div id="popup">
 
-        <!-- User Access -->
-        <div id="user-access-id">
+        <!-- User Access ID Form -->
+        <div id="user-access-id-form">
 
             <!-- Switch Access Form -->
-            <form action="#" method="#">
+            <form action="/switchAccess" method="#">
                 <label for="user_access_id">Pilih akses masuk anda:</label>
                 <select name="user_access_id" id="user_access_id">
                     <option value="#">Administrator</option>
