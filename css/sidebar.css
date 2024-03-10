@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+.offcanvas .btn-close {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+}
+@media (min-width: 769px) {
+  .offcanvas {
+    position: relative;
+    visibility: visible;
+    --bs-offcanvas-width: auto;
+    height: 100vh;
+    max-height: 100vh;
+  }
+  .offcanvas.offcanvas-start {
+    transform: translateX(0);
+  }
+  .offcanvas .btn-close {
+    display: none;
+  }
+}
+
+aside {
+  max-height: 100vh;
+}
+aside .image-container {
+  text-align: center;
+  padding: 1rem 0;
+  padding: 20px;
+  padding-top: 30px;
+}
+aside div.nolistHighlight {
+  color: #fff;
+  text-decoration: none;
+}
+aside div.nolistHighlight a {
+  color: #fff;
+}
+aside .left-nav {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  background: linear-gradient(white 30%, rgba(255, 255, 255, 0)) center top, linear-gradient(rgba(255, 255, 255, 0), white 70%) center bottom, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)) center top, radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)) center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  background-attachment: local, local, scroll, scroll;
+  direction: rtl;
+}
+aside .left-nav ul {
+  direction: ltr;
+  margin-left: 0;
+  padding-left: 0;
+  text-decoration: none !important;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+  list-style: none;
+  cursor: pointer;
+}
+aside .left-nav ul li {
+  font-size: 1.75rem;
+}
+aside .left-nav ul li ul {
+  display: none;
+}
+aside .left-nav ul li .list {
+  position: relative;
+  background: none;
+  color: #010100;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+aside .left-nav ul li .list a {
+  text-decoration: none;
+}
+aside .left-nav ul li .list a:active {
+  color: #010100;
+}
+aside .left-nav ul li .list:hover, aside .left-nav ul li ul li:hover {
+  background: #fafafa;
+}
+aside .left-nav ul span {
+  margin-left: 5px;
+}
+aside .left-nav ul a {
+  text-decoration: none;
+}
+aside .left-nav ul .active-link::after {
+  content: "";
+  position: absolute;
+  background-color: #4318FF;
+  right: -20px;
+  top: 15%;
+  border-radius: 10px;
+  width: 5px;
+  height: 70%;
+}
+aside .left-nav ul .not-active-link .icon {
+  color: #A3AED0;
+}
+aside .left-nav ul .active-link .icon {
+  color: #4318ff;
+}
+aside .left-nav ul .list.collapse {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+aside .left-nav ul .list.collapse .arrow-down {
+  transform: rotate(0);
+  transition: 0.2s;
+}
+aside .left-nav ul .list.collapse.active .arrow-down {
+  transform: rotateX(180deg);
+}
+aside .left-nav ul .not-active-link {
+  color: #A3AED0;
+  font-weight: 500;
+}
+aside .left-nav ul li ul li {
+  position: relative;
+  margin: 0 20px;
+  margin-left: 35px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+aside .left-nav ul li ul li div {
+  display: flex;
+  align-items: center;
+}
+aside .switch-user-btn {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+aside .switch-user-btn > button {
+  width: 100%;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 28px;
+  border: 2px solid rgba(163, 174, 208, 0.2784313725);
+  background-color: transparent;
+  color: #4318ff;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+@media (max-width: 540px) {
+  aside .switch-user-btn > button {
+    padding: 6px 18px;
+  }
+}
+aside .logout-btn {
+  text-align: center;
+  padding: 20px;
+}
+aside .logout-btn button {
+  width: 100%;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin: 0;
+  width: 100%;
+  border: none;
+  border-radius: 84px;
+  background-color: #4318ff;
+  color: white;
+  font-family: "Poppins";
+  letter-spacing: 0.5px;
+}/*# sourceMappingURL=sidebar.css.map */
