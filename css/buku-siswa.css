@@ -206,6 +206,14 @@
   * > body > main > article > ul:nth-child(1) > li:first-of-type > form > button {
     margin: 0 auto;
   }
+  * > body > main > article > ul:nth-child(1) li:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) {
