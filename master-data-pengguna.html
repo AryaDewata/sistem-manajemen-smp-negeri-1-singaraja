@@ -32,7 +32,7 @@
     <!-- Scrollbar Cascading Style Sheets -->
     <link rel="stylesheet" href="css/scrollbar.css">
 
-    <!-- Dashboard Cascading Style Sheets -->
+    <!-- Main Cascading Style Sheets -->
     <link rel="stylesheet" href="css/master-data.css">
 
     <!-- Google Fonts Content Delivery Network -->
@@ -61,7 +61,7 @@
             <!-- Breadcrumbs -->
             <div id="breadcrumbs">
                 <p>Sistem Manajemen SMP Negeri 1 Singaraja / Master Data / Pengguna</p>
-                <h2>Master Data Pengguna</h2>
+                <h1>Master Data Pengguna</h1>
             </div>
 
             <!-- Header Menus -->
@@ -70,15 +70,16 @@
                 <!-- Switch User Access Button -->
                 <li>
                     <button type="button"
-                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">Tukar
-                        Akses</button>
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id-form').classList.add('show');">
+                        <i class="fas fa-repeat"></i> Tukar Akses
+                    </button>
                 </li>
 
                 <!-- User Profile -->
                 <li>
                     <div id="profile">
                         <div>
-                            <p>Adela Parkson</p>
+                            <p>Ketut Suwirya</p>
                             <p>Administrator</p>
                         </div>
                         <i class="fas fa-user-circle"></i>
@@ -89,68 +90,142 @@
 
         </section>
 
-        <!-- Application List -->
+        <!-- Article -->
         <article>
+
+            <!-- Header -->
             <ul>
+
                 <li>
-                    <h2>Data Pengguna</h2>
+                    <h2>Daftar Pengguna</h2>
                 </li>
-                <li><button type="button">Tambah Data <i class="fas fa-add"></i></button></li>
-            </ul>
-            <ul>
+
                 <li>
-                    <p>Nama Pengguna <i class="fas fa-arrow-down-wide-short"></i></p>
-                    <p>Nama Lengkap <i class="fas fa-arrow-down-wide-short"></i></p>
-                    <p>Jenis Kelamin <i class="fas fa-arrow-down-wide-short"></i></p>
-                    <p>Status <i class="fas fa-arrow-down-wide-short"></i></p>
-                    <p>Tempat, Tanggal Lahir <i class="fas fa-arrow-down-wide-short"></i></p>
+                    <button type="button"
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                        Tambah Data <i class="fas fa-add"></i>
+                    </button>
+                    <button type="button"
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('data-export-form').classList.add('show');">
+                        Ekspor Data <i class="fas fa-file-export"></i>
+                    </button>
+                </li>
+
+            </ul>
+
+            <!-- Contents -->
+            <ul>
+
+                <li>
+                    <p>No</p>
+                    <p>Nama Pengguna</p>
+                    <p>Nama Lengkap</p>
+                    <p>Jenis Kelamin</p>
+                    <p>Status</p>
+                    <p>Tempat, Tanggal Lahir</p>
                     <p>Aksi</p>
                 </li>
+
                 <li>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, blanditiis!</p>
+                    <p>1</p>
+                    <p>Suwinten123</p>
+                    <p>Nyoman Suwinten</p>
                     <p>Laki-laki</p>
                     <p>Kepala Sekolah</p>
                     <p>Singaraja, 8 September 1978</p>
                     <p>
-                        <button type="button"><i class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
                         <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
                     </p>
                 </li>
+
                 <li>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, blanditiis!</p>
-                    <p>Laki-laki</p>
-                    <p>Kepala Sekolah</p>
-                    <p>Singaraja, 8 September 1978</p>
+                    <p>2</p>
+                    <p>Indriani123</p>
+                    <p>Kadek Indriani</p>
+                    <p>Perempuan</p>
+                    <p>Guru</p>
+                    <p>Denpasar, 12 Oktober 1982</p>
                     <p>
-                        <button type="button"><i class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
                         <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
                     </p>
                 </li>
+
                 <li>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, blanditiis!</p>
+                    <p>3</p>
+                    <p>Astina123</p>
+                    <p>Made Astina</p>
                     <p>Laki-laki</p>
-                    <p>Kepala Sekolah</p>
-                    <p>Singaraja, 8 September 1978</p>
+                    <p>Guru</p>
+                    <p>Klungkung, 23 Mei 1981</p>
                     <p>
-                        <button type="button"><i class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
                         <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
                     </p>
                 </li>
+
                 <li>
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, blanditiis!</p>
-                    <p>Laki-laki</p>
-                    <p>Kepala Sekolah</p>
-                    <p>Singaraja, 8 September 1978</p>
+                    <p>4</p>
+                    <p>Irmayanti123</p>
+                    <p>Putu Irmayanti</p>
+                    <p>Perempuan</p>
+                    <p>Guru</p>
+                    <p>Singaraja, 15 Agustus 1987</p>
                     <p>
-                        <button type="button"><i class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
                         <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
                     </p>
                 </li>
+
+                <li>
+                    <p>5</p>
+                    <p>Murniasih123</p>
+                    <p>Wayan Murniasih</p>
+                    <p>Perempuan</p>
+                    <p>Staf</p>
+                    <p>Singaraja, 13 Februari 1979</p>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
+                    </p>
+                </li>
+
+                <!-- Contents Pagination -->
+                <li id="pagination">
+                    <p>Menampilkan 1-5/20 Data</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p>
+                        <button type="button"><i class="fas fa-angle-left"></i></button>
+                        <button type="button" class="active">1</button>
+                        <button type="button">2</button>
+                        <button type="button">3</button>
+                        <button type="button">5</button>
+                        <button type="button">10</button>
+                        <button type="button"><i class="fas fa-angle-right"></i></button>
+                    </p>
+                </li>
+
             </ul>
+
         </article>
 
     </main>
@@ -158,8 +233,8 @@
     <!-- Popup Box -->
     <div id="popup">
 
-        <!-- User Access -->
-        <div id="user-access-id">
+        <!-- User Access ID Form -->
+        <div id="user-access-id-form">
 
             <!-- Switch Access Form -->
             <form action="/switchAccess" method="#">
@@ -183,21 +258,115 @@
 
         </div>
 
-        <!-- User Form -->
-        <div id="user-form">
+        <!-- Master Data Form -->
+        <div id="master-data-form">
 
             <!-- User Form -->
             <form action="/addUser" method="#">
                 <ul>
-                    <li><label for="#">Nama Pengguna <span>*</span></label></li>
-                    <li><input type="text"></li>
+                    <li>
+                        <ul>
+                            <li><label for="nama_pengguna">Nama Pengguna <span>*</span></label></li>
+                            <li><input type="text" id="nama_pengguna" name="nama_pengguna"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><label for="nama_lengkap">Nama Lengkap <span>*</span></label></li>
+                            <li><input type="text" id="nama_lengkap" name="nama_lengkap"></li>
+                        </ul>
+                    </li>
                 </ul>
-                <label for="user_access_id">Pilih akses masuk anda:</label>
-                <select name="user_access_id" id="user_access_id">
-                    <option value="#">Administrator</option>
-                    <option value="#">Wali Kelas</option>
-                    <option value="#">Guru</option>
-                    <option value="#">Staf</option>
+                <ul>
+                    <li>
+                        <ul>
+                            <li><label for="kata_sandi">Kata Sandi <span>*</span></label></li>
+                            <li><input type="text" id="kata_sandi" name="kata_sandi"></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <ul>
+                            <li><label for="jenis_kelamin">Jenis Kelamin <span>*</span></label></li>
+                            <li>
+                                <select id="jenis_kelamin" id="jenis_kelamin">
+                                    <option value="Laki-laki">Laki-laki</option>
+                                    <option value="Perempuan">Perempuan</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <ul>
+                            <li><label for="tempat_lahir">Tempat Lahir <span>*</span></label></li>
+                            <li><input type="text" id="tempat_lahir" name="tempat_lahir"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><label for="tanggal_lahir">Tanggal Lahir <span>*</span></label></li>
+                            <li><input type="date" id="tanggal_lahir" name="tanggal_lahir"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <ul>
+                            <li><label for="status">Status <span>*</span></label></li>
+                            <select id="status" name="status">
+                                <option value="#">Administrator</option>
+                                <option value="#">Kepala Sekolah</option>
+                                <option value="#">Guru</option>
+                                <option value="#">Staf</option>
+                            </select>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><label for="keterangan">Keterangan <span>*</span></label></li>
+                            <li><input type="text" id="keterangan" name="keterangan"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <ul>
+                            <li><label for="mata_pelajaran">Mata Pelajaran Yang Diampu <span>*</span></label></li>
+                            <select id="mata_pelajaran" name="mata_pelajaran">
+                                <option value="#">Bahasa Indonesia</option>
+                                <option value="#">Bahasa Inggris</option>
+                                <option value="#">Matematika</option>
+                                <option value="#">Pendidikan Kewarganegaraan</option>
+                            </select>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <button type="button"
+                                    onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.classList.remove('show');">
+                                    <i class="fas fa-cancel"></i> Batal
+                                </button>
+                            </li>
+                            <li><button type="submit" name="add_user">Simpan <i class="fas fa-check"></i></button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
+        <!-- Data Export Form -->
+        <div id="data-export-form">
+
+            <!-- Export Data Form -->
+            <form action="/exportData" method="#">
+                <label for="file_format">Pilih format dokumen:</label>
+                <select name="file_format" id="file_format">
+                    <option value="#">PDF</option>
+                    <option value="#">XLSX</option>
                 </select>
                 <ul>
                     <li>
@@ -206,7 +375,9 @@
                             <i class="fas fa-cancel"></i> Batal
                         </button>
                     </li>
-                    <li><button type="submit" name="switch_access">Pilih <i class="fas fa-check"></i></button></li>
+                    <li>
+                        <button type="submit" name="export_data">Ekspor Data <i class="fas fa-file-export"></i></button>
+                    </li>
                 </ul>
             </form>
 
