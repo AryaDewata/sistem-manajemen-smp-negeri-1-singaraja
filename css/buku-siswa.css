@@ -337,6 +337,7 @@
   * > body > main > article > ul:nth-child(2) > li:last-child {
     flex-direction: column-reverse;
     justify-content: flex-end;
+    box-shadow: none;
     background-color: transparent !important;
   }
   * > body > main > article > ul:nth-child(2) > li:last-child > p::before {
