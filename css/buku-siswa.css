@@ -15,9 +15,16 @@
   font-size: 12.75px;
   font-family: "Poppins";
 }
+* > body ul,
+* > body p {
+  padding: 0;
+  margin: 0;
+}
 * > body h1,
 * > body h2 {
   color: #2b3674;
+  font-size: 18px;
+  font-weight: bold;
 }
 * > body label {
   font-size: 13.75px;
@@ -54,14 +61,6 @@
 }
 * > body button:has(i.fa-cancel) {
   background-color: #d04848;
-}
-* > body > nav {
-  width: 284px;
-}
-@media (max-width: 1140px) {
-  * > body > nav {
-    display: none;
-  }
 }
 * > body > main {
   padding: 28px;
@@ -105,15 +104,23 @@
   flex-wrap: nowrap;
   list-style: none;
 }
-* > body > main > #header > ul > li > button {
-  border-radius: 8px;
-  border: 2px solid rgba(163, 174, 208, 0.2784313725);
-  background-color: transparent;
-  color: #4318ff;
+@media (max-width: 768px) {
+  * > body > main > #header > ul {
+    justify-content: space-between;
+  }
 }
 @media (max-width: 540px) {
-  * > body > main > #header > ul > li > button {
-    display: none;
+  * > body > main > #header > ul > li:nth-child(2) {
+    width: 100%;
+  }
+}
+* > body > main > #header > ul > li > .hamburger-menu {
+  display: none;
+  border: none;
+}
+@media (max-width: 768px) {
+  * > body > main > #header > ul > li > .hamburger-menu {
+    display: block;
   }
 }
 * > body > main > #header > ul > li > #profile {
@@ -429,7 +436,7 @@
 }
 * > body > #popup {
   position: fixed;
-  z-index: 1;
+  z-index: 9999;
   width: 100%;
   height: 100%;
   visibility: hidden;
