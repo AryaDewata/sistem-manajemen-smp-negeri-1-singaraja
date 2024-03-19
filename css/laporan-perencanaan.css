@@ -315,14 +315,23 @@
 * > body > main > article > ul:nth-child(2) > li#pagination {
   padding-left: 2%;
 }
-* > body > main > article > ul:nth-child(2) > li#pagination > p:last-of-type > button {
+* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a {
+  cursor: pointer;
   padding: 2px 12px;
+  margin: 0 4px;
+  border-radius: 84px;
+  background-color: #4318ff;
+  color: white;
+  text-decoration: none;
 }
-* > body > main > article > ul:nth-child(2) > li#pagination > p:last-of-type > button:not(.active) {
+* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:hover {
+  opacity: 80%;
+}
+* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
   color: #a3aed0;
 }
-* > body > main > article > ul:nth-child(2) > li#pagination > p:last-of-type > button:not(.active):hover {
+* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
 }
 @media (max-width: 1140px) {
