@@ -287,6 +287,15 @@
 * > body article > div:nth-child(2) > div > div > ul > li ~ li:nth-child(odd) {
   background: none;
 }
+* > body article > div:nth-child(2) > div > div > ul > li ~ li > p > button {
+  background: #4318ff;
+  padding: 8px 16px;
+  margin: 0;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
 @media (max-width: 1024px) {
   * > body article > div:nth-child(2) > div > div > ul {
     flex-direction: row;
@@ -316,6 +325,15 @@
   * > body article > div:nth-child(2) > div > div > ul li ~ li {
     width: 100%;
   }
+}
+* > body article > div:nth-child(2) > div > div > button {
+  background: #4318ff;
+  padding: 8px 16px;
+  margin: 0;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 * > body > #popup {
   position: fixed;

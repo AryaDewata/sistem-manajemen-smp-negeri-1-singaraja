@@ -69,14 +69,16 @@
   overflow-x: hidden;
   overflow-y: scroll;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: stretch;
-  gap: 28px;
-  flex-wrap: nowrap;
+  gap: 0;
+  flex-wrap: wrap;
+  row-gap: 28px;
   background-color: #f4f7fe;
 }
 * > body > main > #header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -147,6 +149,7 @@
 }
 * > body > main > article {
   padding: 24px;
+  width: 49%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -158,11 +161,13 @@
   box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
 }
 @media (max-width: 1140px) {
-  * > body > main > article:not(:has(embed)) {
-    padding: 0;
-    row-gap: 28px;
-    box-shadow: none;
-    background-color: transparent;
+  * > body > main > article {
+    padding: 12px;
+  }
+}
+@media (max-width: 768px) {
+  * > body > main > article {
+    width: 100%;
   }
 }
 * > body > main > article > ul:nth-child(1) {
@@ -174,10 +179,7 @@
   flex-wrap: nowrap;
   list-style: none;
 }
-* > body > main > article > ul:nth-child(1):has(form) {
-  align-items: flex-end;
-}
-* > body > main > article > ul:nth-child(1) > li:first-of-type > form {
+* > body > main > article > ul:nth-child(1) > li:first-of-type form {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -185,42 +187,31 @@
   gap: 12px;
   flex-wrap: nowrap;
 }
-* > body > main > article > ul:nth-child(1) > li:first-of-type > form > select {
+* > body > main > article > ul:nth-child(1) > li:first-of-type form > input,
+* > body > main > article > ul:nth-child(1) > li:first-of-type form > select {
   min-width: initial;
 }
-@media (max-width: 842px) {
-  * > body > main > article > ul:nth-child(1):has(form) {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-}
-@media (max-width: 728px) {
+@media (max-width: 768px) {
   * > body > main > article > ul:nth-child(1) {
     flex-direction: column;
     gap: 12px;
   }
-  * > body > main > article > ul:nth-child(1):has(form) {
-    align-items: center;
-  }
-  * > body > main > article > ul:nth-child(1) > li:first-of-type > form {
+  * > body > main > article > ul:nth-child(1) > li:first-of-type form {
     flex-wrap: wrap;
   }
-  * > body > main > article > ul:nth-child(1) > li:first-of-type > form > input,
-  * > body > main > article > ul:nth-child(1) > li:first-of-type > form > select {
+  * > body > main > article > ul:nth-child(1) > li:first-of-type form > input,
+  * > body > main > article > ul:nth-child(1) > li:first-of-type form > select {
     width: 100%;
   }
-  * > body > main > article > ul:nth-child(1) > li:first-of-type > form > button {
-    margin: 0 auto;
-  }
-  * > body > main > article > ul:nth-child(1) li:last-child {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
+}
+* > body > main > article > ul:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: nowrap;
+  list-style: none;
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) {
@@ -233,77 +224,15 @@
     row-gap: 18px;
   }
 }
-* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p {
-  width: 14.28%;
-}
-* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(1), * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(4) {
-  width: 5%;
-  text-align: center;
-}
-* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(2) {
-  width: 30%;
-}
-* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(3) {
-  width: 10%;
-}
-* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(5) {
-  width: 15%;
-  text-align: left;
-}
-* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(6) {
-  width: 12%;
-}
-* > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(7) {
-  width: 23%;
-}
-@media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(1)::before {
-    content: "No";
-    color: #a3aed0;
-  }
-  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(2)::before {
-    content: "Nama Siswa";
-    color: #a3aed0;
-  }
-  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(3)::before {
-    content: "Jenis Kelamin";
-    color: #a3aed0;
-  }
-  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(4)::before {
-    content: "Kelas";
-    color: #a3aed0;
-  }
-  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(5)::before {
-    content: "Waktu";
-    color: #a3aed0;
-  }
-  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(6)::before {
-    content: "Perubahan Poin";
-    color: #a3aed0;
-  }
-  * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(7)::before {
-    content: "Catatan";
-    color: #a3aed0;
-  }
-}
 * > body > main > article > ul:nth-child(2) > li {
-  padding: 14px 0;
+  padding: 18px 8px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0;
+  gap: 10;
   flex-wrap: wrap;
-  border-radius: 8px;
-}
-* > body > main > article > ul:nth-child(2) > li:has(embed) {
-  padding: 18px 0 0;
-  width: 100%;
-  border: 0 !important;
-}
-* > body > main > article > ul:nth-child(2) > li:has(embed) > embed {
-  width: 100%;
-  height: 468px;
   border-radius: 8px;
 }
 * > body > main > article > ul:nth-child(2) > li:first-child {
@@ -320,94 +249,63 @@
 * > body > main > article > ul:nth-child(2) > li:last-child p:last-of-type {
   width: max-content !important;
 }
-* > body > main > article > ul:nth-child(2) > li#pagination {
-  padding-left: 2%;
-}
-* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a {
-  cursor: pointer;
-  padding: 2px 12px;
-  margin: 0 4px;
-  border-radius: 84px;
-  background-color: #4318ff;
-  color: white;
-  text-decoration: none;
-}
-* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:hover {
-  opacity: 80%;
-}
-* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active) {
-  background-color: transparent;
-  color: #a3aed0;
-}
-* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active):hover {
-  background-color: rgba(163, 174, 208, 0.2784313725);
-}
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) > li {
-    padding: 14px;
     width: 49%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
     gap: 0;
-    flex-wrap: nowrap;
-    box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
+    flex-wrap: wrap;
     background-color: white !important;
-  }
-  * > body > main > article > ul:nth-child(2) > li:nth-child(1):not(:has(embed)) {
-    display: none;
+    box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
   }
   * > body > main > article > ul:nth-child(2) > li:last-child {
     flex-direction: column-reverse;
     justify-content: flex-end;
-    box-shadow: none;
     background-color: transparent !important;
+    box-shadow: none;
   }
   * > body > main > article > ul:nth-child(2) > li:last-child > p::before {
     content: "" !important;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 540px) {
   * > body > main > article > ul:nth-child(2) > li {
+    padding: 18px;
     width: 100%;
+    border-radius: 8px;
   }
 }
 * > body > main > article > ul:nth-child(2) > li > p {
-  width: 16.67%;
+  width: 16.6%;
+}
+* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:first-of-type {
+  background-color: #256fff;
+}
+@media (max-width: 1140px) {
+  * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(1), * > body > main > article > ul:nth-child(2) > li > p:nth-child(4), * > body > main > article > ul:nth-child(2) > li > p:nth-child(5) {
   width: 5%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(2) {
-  width: 45%;
+  width: 43%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(3) {
-  width: 10%;
+  width: 12%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:last-child {
   width: 30%;
-}
-* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: nowrap;
-}
-* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:first-of-type {
-  background-color: #256fff;
-}
-* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:last-of-type {
-  background-color: #a3aed0;
-}
-@media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
-    justify-content: space-between;
-    gap: 0;
-  }
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) > li > p {
@@ -421,14 +319,20 @@
     flex-wrap: nowrap;
     color: #2b3674;
     font-weight: bold;
+    text-align: right;
+  }
+  * > body > main > article > ul:nth-child(2) > li > p:has(button) {
+    justify-content: flex-end;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(1)::before {
     content: "No";
     color: #a3aed0;
+    text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before {
     content: "Nama Siswa";
     color: #a3aed0;
+    text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before {
     content: "Jenis Kelamin";
@@ -443,7 +347,17 @@
     color: #a3aed0;
   }
 }
-* > body > #popup {
+* > body > main > article #pagination p:last-of-type button {
+  padding: 2px 12px;
+}
+* > body > main > article #pagination p:last-of-type button:not(.active) {
+  background-color: transparent;
+  color: #a3aed0;
+}
+* > body > main > article #pagination p:last-of-type button:not(.active):hover {
+  background-color: rgba(163, 174, 208, 0.2784313725);
+}
+* > #popup {
   position: fixed;
   z-index: 9999;
   width: 100%;
@@ -458,7 +372,7 @@
   background-color: rgba(0, 0, 0, 0.33);
   backdrop-filter: blur(1.4px);
 }
-* > body > #popup > div {
+* > #popup > div {
   padding: 28px;
   width: max-content;
   max-width: 33.3%;
@@ -469,21 +383,21 @@
   text-align: center;
 }
 @media (max-width: 1140px) {
-  * > body > #popup > div {
+  * > #popup > div {
     max-width: 50%;
   }
 }
 @media (max-width: 768px) {
-  * > body > #popup > div {
+  * > #popup > div {
     max-width: 66.6%;
   }
 }
 @media (max-width: 540px) {
-  * > body > #popup > div {
+  * > #popup > div {
     max-width: 85%;
   }
 }
-* > body > #popup > div.show {
+* > #popup > div.show {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -502,7 +416,7 @@
     transform: translateY(0%);
   }
 }
-* > body > #popup > div > form {
+* > #popup > div > form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -511,7 +425,7 @@
   flex-wrap: nowrap;
   text-align: start;
 }
-* > body > #popup > div > form > ul {
+* > #popup > div > form > ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -520,18 +434,13 @@
   flex-wrap: nowrap;
   list-style: none;
 }
-* > body > #popup > div > form > ul button[type=button] {
+* > #popup > div > form > ul button[type=button] {
   box-shadow: inset 0 0 0 2px #4318ff;
   background-color: white;
   color: #4318ff;
   font-weight: bold;
 }
-@media (max-width: 540px) {
-  * > body > #popup > div#student-point-form > form > ul:not(:has(button)) {
-    flex-direction: column;
-  }
-}
-* > body > #popup > div > i {
+* > #popup > div > i {
   color: #4318ff;
   font-size: 42px;
 }

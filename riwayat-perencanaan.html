@@ -7,12 +7,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Buku Siswa - Sistem Manajemen SMP Negeri 1 Singaraja">
-    <meta name="description" content="Halaman Buku Siswa Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta name="title" content="Laporan Perencanaan - Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta name="description" content="Halaman Laporan Perencanaan Sistem Manajemen SMP Negeri 1 Singaraja">
 
     <!-- Site's Open Graph Protocol -->
-    <meta property="og:title" content="Buku Siswa - Sistem Manajemen SMP Negeri 1 Singaraja">
-    <meta property="og:description" content="Halaman Buku Siswa Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta property="og:title" content="Laporan Perencanaan - Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta property="og:description" content="Halaman Laporan Perencanaan Sistem Manajemen SMP Negeri 1 Singaraja">
     <meta property="og:locale" content="id">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://smpn1sgr.sch.id/">
@@ -20,7 +20,7 @@
         content="https://raw.githubusercontent.com/AryaDewata/sistem-manajemen-smp-negeri-1-singaraja/main/assets/images/logo-smp-negeri-1-singaraja.png">
 
     <!-- Title -->
-    <title>Buku Siswa - Sistem Manajemen | SMP Negeri 1 Singaraja</title>
+    <title>Laporan Perencanaan - Sistem Manajemen | SMP Negeri 1 Singaraja</title>
 
     <!-- Site's Icon -->
     <link rel="icon" href="assets/images/icons/16x16.ico" type="image/x-icon" sizes="16x16">
@@ -36,8 +36,8 @@
     <!-- Scrollbar Cascading Style Sheets -->
     <link rel="stylesheet" href="css/scrollbar.css">
 
-    <!-- Main Cascading Style Sheets -->
-    <link rel="stylesheet" href="css/buku-siswa.css">
+    <!-- Dashboard Cascading Style Sheets -->
+    <link rel="stylesheet" href="css/laporan-perencanaan.css">
 
     <!-- Sidebar Cascading Style Sheets -->
     <link rel="stylesheet" href="css/sidebar.css">
@@ -103,7 +103,7 @@
                     <ul class="nolist" style="display: block;">
                         <li>
                             <a href="laporan-perencanaan.html">
-                                <div class="not-active-link">
+                                <div class="active-link">
                                     <iconify-icon icon="ph:calendar-check-bold" width="24" height="24"
                                         class="icon"></iconify-icon>
                                     <span>Perencanaan</span>
@@ -121,7 +121,7 @@
                         </li>
                         <li>
                             <a href="buku-siswa.html">
-                                <div class="active-link">
+                                <div class="not-active-link">
                                     <iconify-icon icon="solar:book-linear" width="24" height="24"
                                         class="icon"></iconify-icon>
                                     <span>Buku Siswa</span>
@@ -198,9 +198,8 @@
 
             <!-- Breadcrumbs -->
             <div id="breadcrumbs">
-                <p>Sistem Manajemen SMP Negeri 1 Singaraja / Sistem Akademik / Buku Siswa / Riwayat Perubahan Poin Siswa
-                </p>
-                <h1>Buku Siswa</h1>
+                <p>Sistem Manajemen SMP Negeri 1 Singaraja / Sistem Akademik / Laporan Perencanaan</p>
+                <h1>Laporan Perencanaan</h1>
             </div>
 
             <!-- Header Menus -->
@@ -235,85 +234,115 @@
             <!-- Header -->
             <ul>
 
-                <!-- Title -->
+                <!-- Search Form -->
                 <li>
-                    <h2>Riwayat Perubahan Poin Siswa</h2>
+                    <h2>Daftar Perencanaan</h2>
+                    <form action="/searchReports" method="#">
+                        <label for="keterangan_perencanaan">Keterangan:</label>
+                        <input type="text" id="keterangan_perencanaan" name="keterangan_perencanaan">
+                        <button type="submit" name="search_reports">
+                            Temukan Perencanaan <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </li>
 
-                <!-- Data Export Button -->
                 <li>
-                    <button type="button" onclick="document.location = 'buku-siswa.html';">
-                        Lihat Seluruh Siswa <i class="fas fa-receipt"></i>
-                    </button>
+                    <button type="button" onclick="document.location = 'laporan-perencanaan.html'">
+                        Lihat Semua Modul <i class="fas fa-receipt"></i></button>
                     <button type="button"
-                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('data-export-form').classList.add('show');">
-                        Ekspor Data <i class="fas fa-file-export"></i>
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('link-upload-form').classList.add('show');">
+                        Unggah Modul <i class="fas fa-cloud-upload"></i>
                     </button>
                 </li>
 
             </ul>
 
             <!-- Contents -->
-            <ul id="riwayat-perubahan-poin">
+            <ul id="riwayat-perencanaan">
 
                 <li>
                     <p>No</p>
-                    <p>Nama Siswa</p>
-                    <p>Jenis Kelamin</p>
-                    <p>Kelas</p>
-                    <p>Waktu</p>
-                    <p>Perubahan Poin</p>
-                    <p>Catatan</p>
+                    <p>Keterangan</p>
+                    <p>Pemilik</p>
+                    <p>Waktu Pengunggahan</p>
+                    <p>Perubahan Terakhir</p>
+                    <p>Tautan</p>
+                    <p>Aksi</p>
                 </li>
 
                 <li>
                     <p>1</p>
+                    <p>Perencanaan 1</p>
                     <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>12 November 2024 12:39</p>
-                    <p>90 -> 88</p>
-                    <p>Bolos Sekolah</p>
+                    <p>8 Mei 2023 14:07:54</p>
+                    <p>14 Oktober 2023 09:23:18</p>
+                    <p><a href="#"><i class="fas fa-link"></i></a></p>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('link-upload-form').classList.add('show');"><i
+                                class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Hapus</button>
+                    </p>
                 </li>
 
                 <li>
                     <p>2</p>
-                    <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>8 November 2024 08:41</p>
-                    <p>91 -> 90</p>
-                    <p>Telat</p>
+                    <p>Perencanaan 2</p>
+                    <p>Kadek Indriani</p>
+                    <p>8 Mei 2023 14:07:54</p>
+                    <p>14 Oktober 2023 09:23:18</p>
+                    <p><a href="#"><i class="fas fa-link"></i></a></p>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('link-upload-form').classList.add('show');"><i
+                                class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Hapus</button>
+                    </p>
                 </li>
 
                 <li>
                     <p>3</p>
-                    <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>21 Oktober 2024 13:08</p>
-                    <p>88 -> 91</p>
-                    <p>Memenangkan perlombaan</p>
+                    <p>Perencanaan 3</p>
+                    <p>Made Astina</p>
+                    <p>8 Mei 2023 14:07:54</p>
+                    <p>14 Oktober 2023 09:23:18</p>
+                    <p><a href="#"><i class="fas fa-link"></i></a></p>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('link-upload-form').classList.add('show');"><i
+                                class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Hapus</button>
+                    </p>
                 </li>
 
                 <li>
                     <p>4</p>
-                    <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>18 Oktober 2024 07:34</p>
-                    <p>89 -> 88</p>
-                    <p>Telat</p>
+                    <p>Perencanaan 4</p>
+                    <p>Putu Irmayanti</p>
+                    <p>8 Mei 2023 14:07:54</p>
+                    <p>14 Oktober 2023 09:23:18</p>
+                    <p><a href="#"><i class="fas fa-link"></i></a></p>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('link-upload-form').classList.add('show');"><i
+                                class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Hapus</button>
+                    </p>
                 </li>
 
                 <li>
                     <p>5</p>
-                    <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>17 Oktober 2024 08:13</p>
-                    <p>90 -> 89</p>
-                    <p>Telat</p>
+                    <p>Perencanaan 5</p>
+                    <p>Anwar Qorim</p>
+                    <p>8 Mei 2023 14:07:54</p>
+                    <p>14 Oktober 2023 09:23:18</p>
+                    <p><a href="#"><i class="fas fa-link"></i></a></p>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('link-upload-form').classList.add('show');"><i
+                                class="fas fa-edit"></i> Ubah</button>
+                        <button type="button"><i class="fas fa-cancel"></i> Hapus</button>
+                    </p>
                 </li>
 
                 <!-- Contents Pagination -->
@@ -349,7 +378,7 @@
     <!-- Popup Box -->
     <div id="popup">
 
-        <!-- User Access -->
+        <!-- User Access ID Form -->
         <div id="user-access-id-form">
 
             <!-- Switch Access Form -->
@@ -374,29 +403,19 @@
 
         </div>
 
-        <!-- Data Export Form -->
-        <div id="data-export-form">
+        <!-- Link Upload Form -->
+        <div id="link-upload-form">
 
-            <!-- Export Data Form -->
-            <form action="/exportData" method="#">
-                <label for="kelas_siswa">Pilih kelas:</label>
-                <select name="kelas_siswa" id="kelas_siswa">
-                    <option value="#">Semua Kelas</option>
-                    <option value="#">7A</option>
-                    <option value="#">7B</option>
-                    <option value="#">7C</option>
-                    <option value="#">8A</option>
-                    <option value="#">8B</option>
-                    <option value="#">8C</option>
-                    <option value="#">9A</option>
-                    <option value="#">9B</option>
-                    <option value="#">9C</option>
-                </select>
-                <label for="file_format">Pilih format dokumen:</label>
-                <select name="file_format" id="file_format">
-                    <option value="#">PDF</option>
-                    <option value="#">XLSX</option>
-                </select>
+            <!-- Upload Form -->
+            <form action="/uploadLink" method="#">
+                <ul>
+                    <li><label for="keterangan">Keterangan<span>*</span></label></li>
+                    <li><input type="text" name="keterangan" id="keterangan"></li>
+                </ul>
+                <ul>
+                    <li><label for="tautan">Tautan<span>*</span></label></li>
+                    <li><input type="text" name="tautan" id="tautan"></li>
+                </ul>
                 <ul>
                     <li>
                         <button type="button"
@@ -405,7 +424,9 @@
                         </button>
                     </li>
                     <li>
-                        <button type="submit" name="export_data">Ekspor Data <i class="fas fa-file-export"></i></button>
+                        <button type="submit" name="upload_link">
+                            Unggah Modul <i class="fas fa-cloud-upload"></i>
+                        </button>
                     </li>
                 </ul>
             </form>
