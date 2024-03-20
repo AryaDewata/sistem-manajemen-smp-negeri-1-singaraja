@@ -1,0 +1,29 @@
+<aside class="side-menu offcanvas offcanvas-md offcanvas-start col-9 col-sm-6 col-md-4 col-lg-3" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel" >
+    <div class="nolistHighlight image-container">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="image-logo">
+          <img src="sidebar/img/logo.png"/>
+
+          <h5 style="color: #010100; font-weight: bold; font-family:'Poppins', sans-serif; margin-top: 5px;">Sistem Manajemen <br>
+            SMP Negeri 1 Singaraja</h5>
+        </div>
+    </div>
+    <nav class="left-nav hidden-sm overflow-y-auto">
+        <ul class="nolist">
+            <a href=""><li>
+                <div class="active-link list"><iconify-icon icon="ic:round-home" width="24" height="24" class="icon"></iconify-icon><span>Dasbor</span></div>
+              </li></a>
+            <a href=""><li>
+                <iconify-icon icon="wpf:check-book" width="24" height="24"  ></iconify-icon><span>Pengajuan Izin</span></div>
+              </li></a>
+        </ul>
+    </nav>
+    <div class="switch-user-btn mt-auto">
+      <button type="button"
+          onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">Tukar
+          Akses</button>
+    </div>
+    <div class="logout-btn">
+        <button type="button"><i class=""></i>Keluar</button>
+    </div>
+ </aside>

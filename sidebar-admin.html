@@ -1,0 +1,93 @@
+<aside class="side-menu offcanvas offcanvas-md offcanvas-start col-9 col-sm-6 col-md-4 col-lg-3" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel" >
+    <div class="nolistHighlight image-container">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="image-logo">
+          <img src="sidebar/img/logo.png"/>
+
+          <h5 style="color: #010100; font-weight: bold; font-family:'Poppins', sans-serif; margin-top: 5px;">Sistem Manajemen <br>
+            SMP Negeri 1 Singaraja</h5>
+        </div>
+    </div>
+    <nav class="left-nav hidden-sm overflow-y-auto">
+        <ul class="nolist">
+            <a href=""><li>
+                <div class="active-link list"><iconify-icon icon="ic:round-home" width="24" height="24" class="icon"></iconify-icon><span>Dasbor</span></div>
+              </li></a>
+              <li>
+                <div class="list collapse"><span>Sistem Akademik</span> <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24" class="arrow-down icon"></iconify-icon></div>
+                <ul class="nolist">
+                  <a href="#a"><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="ph:calendar-check-bold" width="24" height="24" class="icon"></iconify-icon><span>Perencanaan</span>
+                    </div>
+                  </li></a>
+                  <a href="#b"><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="carbon:chart-evaluation" width="24" height="24" class="icon"></iconify-icon><span>Penilaian</span>
+                    </div>
+                  </li></a>
+                  <a href="#c"><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="solar:book-linear" width="24" height="24" class="icon"></iconify-icon><span> Buku Siswa</span>
+                    </div>
+                  </li></a>
+                </ul>
+              </li>
+              <li>
+                <div class="list collapse"><span>Absensi</span> <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24" class="arrow-down icon"></iconify-icon></div>
+                <ul class="nolist">
+                  <a href=""><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="gg:chart" width="24" height="24"></iconify-icon><span>Statistik</span>
+                    </div>
+                  </li></a>
+                  <a href=""><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="mdi:selfie-outline" width="24" height="24"></iconify-icon><span>Guru & Staff</span>
+                    </div>
+                  </li></a>
+                  <a href=""><li>
+                    <div class="not-active-link">
+                      
+                      <iconify-icon icon="streamline:class-lesson" width="24" height="24" class="icon"></iconify-icon><span>Kelas</span>
+                    </div>
+                  </li></a>
+                </ul>
+              </li>
+              <li>
+                <div class="list collapse"><span>Master Data</span> <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24" class="arrow-down icon"></iconify-icon></div>
+                <ul class="nolist">
+                  <a href=""><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="mdi:user-outline" width="24" height="24"></iconify-icon><span>User</span>
+                    </div>
+                  </li></a>
+                  <a href=""><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="streamline:class-lesson" width="24" height="24"></iconify-icon><span>Kelas</span>
+                    </div>
+                  </li></a>
+                  <a href=""><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="iconoir:book-solid" width="24" height="24"></iconify-icon><span>Pelajaran</span>
+                    </div>
+                  </li></a>
+                  <a href=""><li>
+                    <div class="not-active-link">
+                      <iconify-icon icon="ph:student" width="24" height="24"></iconify-icon><span>Siswa</span>
+                    </div>
+                  </li></a>
+                </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="switch-user-btn mt-auto">
+      <button type="button"
+          onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">Tukar
+          Akses</button>
+    </div>
+    <div class="logout-btn">
+        <button type="button"><i class=""></i>Keluar</button>
+    </div>
+ </aside>

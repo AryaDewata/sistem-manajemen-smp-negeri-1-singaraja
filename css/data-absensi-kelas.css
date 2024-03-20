@@ -128,153 +128,296 @@
     font-size: 42px;
   }
 }
-* > body article > div ul {
+* > body article > #subject-schedule {
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+* > body article > #subject-schedule > div {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 49.5%;
+}
+@media (max-width: 768px) {
+  * > body article > #subject-schedule > div {
+    width: 100%;
+  }
+}
+* > body article > #subject-schedule > div:nth-child(1) > p {
+  font-weight: bold;
+  font-size: x-large;
+  color: #2b3674;
+}
+* > body article > #subject-schedule > div:nth-child(1) > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+* > body article > #subject-schedule > div:nth-child(1) > ul > li {
+  display: flex;
+}
+* > body article > #subject-schedule > div:nth-child(1) > ul > li > p {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li {
+  padding: 5px 0;
+}
+* > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li > p {
+  color: #2b3674;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+* > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li:nth-child(odd) {
+  background: rgba(163, 174, 208, 0.2784313725);
+}
+@media (max-width: 1024px) {
+  * > body article > #subject-schedule > div:nth-child(1) > ul {
+    gap: 10px;
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li {
+    display: none;
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(163, 174, 208, 0.2784313725);
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li:nth-child(odd) {
+    background: none;
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li > p {
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    width: unset;
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li > p:nth-child(1)::before {
+    content: "Kelas";
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li > p:nth-child(2)::before {
+    content: "Mapel";
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li > p:nth-child(3)::before {
+    content: "Waktu";
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li > p:nth-child(4)::before {
+    content: "Link";
+  }
+  * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li > p::before {
+    color: #a3aed0;
+    font-weight: normal;
+    text-align: left;
+  }
+}
+* > body article > #subject-schedule > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: start;
+  flex-direction: row;
+}
+* > body article > #subject-schedule > div:nth-child(2) > p {
+  font-weight: bold;
+  font-size: x-large;
+  color: #2b3674;
+  margin: 0;
+  margin-bottom: 10px;
+}
+* > body article > #subject-schedule > div:nth-child(2) > button {
+  background: #4318ff;
+  padding: 8px 16px;
+  margin: 0;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+* > body article > #subject-schedule > div:nth-child(2) > ul {
+  width: 100%;
   list-style: none;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0;
-  flex-wrap: nowrap;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  gap: 5px;
 }
-@media (max-width: 1140px) {
-  * > body article > div ul {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  * > body article > div ul li:nth-child(1) {
-    display: none;
-  }
-  * > body article > div ul li ~ li {
-    display: flex;
-    width: 49%;
-    flex-direction: column;
-    align-items: end;
-  }
-  * > body article > div ul li ~ li > p {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  * > body article > div ul li ~ li > p:nth-child(1)::before {
-    content: "Nama";
-  }
-  * > body article > div ul li ~ li > p:nth-child(2)::before {
-    content: "Tanggal";
-  }
-  * > body article > div ul li ~ li > p:nth-child(3)::before {
-    content: "Waktu";
-  }
-  * > body article > div ul li ~ li > p::before {
-    color: #a3aed0;
+@media (max-width: 1024px) {
+  * > body article > #subject-schedule > div:nth-child(2) > ul {
+    flex-wrap: wrap;
   }
 }
-@media (max-width: 1140px) and (max-width: 540px) {
-  * > body article > div ul li ~ li {
-    width: 100%;
+@media (max-width: 768px) {
+  * > body article > #subject-schedule > div:nth-child(2) > ul {
+    flex-wrap: nowrap;
   }
 }
-* > body article > div ul li {
+@media (max-width: 425px) {
+  * > body article > #subject-schedule > div:nth-child(2) > ul {
+    flex-wrap: wrap;
+  }
+}
+* > body article > #subject-schedule > div:nth-child(2) > ul > li {
+  border-radius: 10px;
+  border: 1px solid rgba(163, 174, 208, 0.2784313725);
   padding: 15px;
-  width: 100%;
+  width: 48.5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
+  gap: 30px;
   flex-wrap: nowrap;
 }
-* > body article > div ul li p {
-  margin: 0;
-  width: 14%;
+@media (max-width: 1024px) {
+  * > body article > #subject-schedule > div:nth-child(2) > ul > li {
+    width: 100%;
+  }
+}
+* > body article > #subject-schedule > div:nth-child(2) > ul > li > p {
   text-align: center;
-}
-* > body article > div ul li ~ li {
-  margin-bottom: 20px;
-  color: #2b3674;
+  font-size: large;
   font-weight: bold;
-  box-shadow: 0px 0px 6px 4px rgba(112, 144, 176, 0.0823529412);
+  color: #2b3674;
+  margin: 0;
 }
-* > body article > div ul li ~ li > p > span {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-}
-* > body article > div ul li button {
+* > body article > #subject-schedule > div:nth-child(2) > ul > li > p > button {
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 5px 10px;
   margin: 0;
   width: 100%;
   border: none;
   border-radius: 5px;
   background-color: #4318ff;
+  font-size: small;
   color: white;
   font-family: "Poppins";
   text-align: center;
   letter-spacing: 0.5px;
 }
-* > body article > div > div > button {
-  margin: 0 0 0 auto;
-  border-radius: 10px;
-  background: #4318ff;
-  border: none;
-  padding: 8px 16px;
-  color: white;
-  flex-basis: max-content;
+* > body article #history {
+  background: white;
 }
-* > body article > div > div > div {
-  margin-bottom: 20px;
-}
-* > body article > div > div > div textarea {
-  max-height: 100px;
-}
-* > body article > div > div > div:nth-child(2) {
-  display: flex;
-}
-* > body article > div > div > div:nth-child(2) > div > div {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-}
-* > body article > div > div > div:nth-child(2) > div > div:nth-child(1) {
-  padding-top: 12%;
-  border-radius: 10px;
-  border: 3px rgb(229, 229, 229) dashed;
-  background: rgb(254, 254, 254);
-}
-* > body article > div > div > div:nth-child(2) > div > div:nth-child(1) iconify-icon {
-  margin: 0 auto !important;
-}
-* > body article > div > div > div:nth-child(2) > div > div:nth-child(1) > p {
-  margin: 0;
-  text-align: center;
-  margin-top: 10px;
-}
-* > body article > div > div > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(2) {
+* > body article #history > div > p {
   font-weight: bold;
-  font-size: medium;
-  color: #4318ff;
-}
-* > body article > div > div > div:nth-child(2) > div > div:nth-child(2) {
-  padding-right: 0;
-}
-* > body article > div > div > div:nth-child(2) > div > div:nth-child(2) > p:nth-child(1) {
-  font-weight: bold;
-  font-size: large;
+  font-size: x-large;
   color: #2b3674;
 }
-* > body article > div > div > div:nth-child(2) > div > div:nth-child(2) > button {
-  border-radius: 10px;
+* > body article #history > div > ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+* > body article #history > div > ul > li {
+  display: flex;
+  padding: 10px !important;
+}
+* > body article #history > div > ul > li > p {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+* > body article #history > div > ul > li ~ li {
+  padding: 5px 0;
+}
+* > body article #history > div > ul > li ~ li > p {
+  color: #2b3674;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+* > body article #history > div > ul > li ~ li:nth-child(odd) {
+  background: rgba(163, 174, 208, 0.2784313725);
+}
+* > body article #history > div > ul > li ~ li:nth-child(even) {
+  background: #f4f7fe;
+}
+* > body article #history > div > ul > li ~ li:nth-child(odd) {
+  background: none;
+}
+* > body article #history > div > ul > li ~ li > p > button {
   background: #4318ff;
-  border: none;
   padding: 8px 16px;
+  margin: 0;
   color: white;
+  border: none;
+  margin: 10px 0;
+  border-radius: 28px;
+}
+@media (max-width: 1024px) {
+  * > body article #history > div > ul {
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  * > body article #history > div > ul > li {
+    display: none;
+  }
+  * > body article #history > div > ul li ~ li {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background: none !important;
+    width: 48%;
+    border: 1px solid rgba(163, 174, 208, 0.2784313725);
+  }
+  * > body article #history > div > ul li ~ li > p {
+    width: 100%;
+    justify-content: space-between;
+  }
+  * > body article #history > div > ul li ~ li > p::before {
+    color: #a3aed0;
+  }
+  * > body article #history > div > ul li ~ li > p:nth-child(1)::before {
+    content: "Kelas";
+  }
+  * > body article #history > div > ul li ~ li > p:nth-child(2)::before {
+    content: "Mapel";
+  }
+  * > body article #history > div > ul li ~ li > p:nth-child(3)::before {
+    content: "Guru";
+  }
+  * > body article #history > div > ul li ~ li > p:nth-child(4)::before {
+    content: "Tanggal";
+  }
+  * > body article #history > div > ul li ~ li > p:nth-child(5)::before {
+    content: "Waktu";
+  }
+  * > body article #history > div > ul li ~ li > p:nth-child(6)::before {
+    content: "Status Guru";
+  }
+  * > body article #history > div > ul li ~ li > p:nth-child(7)::before {
+    content: "Pengabsen";
+  }
+  * > body article #history > div > ul li ~ li > p > button {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1024px) and (max-width: 540px) {
+  * > body article #history > div > ul li ~ li {
+    width: 100%;
+  }
+}
+* > body article #history > div > button {
+  background: #4318ff;
+  padding: 8px 16px;
+  margin: 0;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 * > body > #popup {
   position: fixed;
@@ -282,10 +425,11 @@
   width: 100%;
   height: 100%;
   visibility: hidden;
+  overflow-y: scroll;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 0;
   flex-wrap: nowrap;
   background-color: rgba(0, 0, 0, 0.33);
@@ -480,4 +624,69 @@
 }
 * > body > #popup > div#detail-izin > ul > li > p:nth-child(6)::before {
   content: "Status";
+}
+* > body > #popup > div#absensi-kelas {
+  position: relative;
+  width: 100%;
+  color: #a3aed0;
+}
+@media (max-width: 540px) {
+  * > body > #popup > div#absensi-kelas {
+    padding: 10px 20px;
+  }
+}
+* > body > #popup > div#absensi-kelas > form {
+  width: 100%;
+}
+* > body > #popup > div#absensi-kelas > form > p:nth-child(1) {
+  font-size: x-large;
+  color: #2b3674;
+  font-weight: bold;
+}
+* > body > #popup > div#absensi-kelas > form > p:nth-child(2) {
+  position: absolute;
+  right: 28px;
+  cursor: pointer;
+}
+@media (max-width: 540px) {
+  * > body > #popup > div#absensi-kelas > form > p:nth-child(2) {
+    right: 15px;
+  }
+}
+* > body > #popup > div#absensi-kelas > form > ul > li {
+  padding: 0;
+}
+* > body > #popup > div#absensi-kelas > form > ul > li > p {
+  font-weight: bold;
+  font-size: large;
+  color: #a3aed0;
+  margin: 0;
+}
+* > body > #popup > div#absensi-kelas > form > ul > li > div {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+* > body > #popup > div#absensi-kelas > form > ul > li > div > input[type=radio] {
+  width: 18px;
+  height: 18px;
+}
+* > body > #popup > div#absensi-kelas > form > ul > li > div > input[type=radio]:checked {
+  background-color: #4318ff;
+  border-color: #a3aed0;
+  box-shadow: none;
+}
+* > body > #popup > div#absensi-kelas > form > ul > li > div > label {
+  color: #2b3674;
+  font-size: medium;
+  margin-left: 5px;
+  font-weight: bold;
+}
+* > body > #popup > div#absensi-kelas > form > ul > li input[type=text] {
+  margin-bottom: 10px;
+}
+* > body > #popup > div#absensi-kelas > form > ul > li input[type=text]:focus {
+  border-color: #4318ff;
+}
+* > body > #popup > div#absensi-kelas > form > ul > li button[type=submit] {
+  float: right;
 }/*# sourceMappingURL=data-absensi-kelas.css.map */
