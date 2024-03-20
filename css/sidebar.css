@@ -90,6 +90,9 @@ aside .left-nav ul span {
 aside .left-nav ul a {
   text-decoration: none;
 }
+aside .left-nav ul .active-link {
+  color: #2b3674 !important;
+}
 aside .left-nav ul .active-link::after {
   content: "";
   position: absolute;
