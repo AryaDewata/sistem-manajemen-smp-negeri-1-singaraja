@@ -119,7 +119,7 @@ aside .left-nav ul .list.collapse.active .arrow-down {
   transform: rotateX(180deg);
 }
 aside .left-nav ul .not-active-link {
-  color: #A3AED0;
+  color: #A3AED0 !important;
   font-weight: 500;
 }
 aside .left-nav ul li ul li {
