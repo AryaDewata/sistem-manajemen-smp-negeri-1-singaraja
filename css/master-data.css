@@ -412,6 +412,51 @@
     content: none;
   }
 }
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p,
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul {
+  width: 25%;
+}
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(1) {
+  width: 5%;
+  text-align: center;
+}
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(2) {
+  width: 25%;
+}
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(3) {
+  width: 45%;
+}
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(4) {
+  width: 25%;
+}
+@media (max-width: 1140px) {
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(1)::before {
+    content: "No";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(2)::before {
+    content: "Nama Ruangan";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(3)::before {
+    content: "Deskripsi";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(4)::before {
+    content: none;
+  }
+}
 * > body > main > article > ul:nth-child(2) > li {
   padding: 14px 0;
   display: flex;
