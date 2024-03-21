@@ -458,59 +458,45 @@
             <!-- User Form -->
             <form action="/addStudent" method="#">
 
+                <!-- Nama SIswa -->
                 <ul>
-                    <!-- Nama SIswa -->
+                    <li><label for="nama_siswa">Nama Siswa<span>*</span></label></li>
+                    <li><input type="text" id="nama_siswa" name="nama_siswa"></li>
+                </ul>
+
+                <!-- Jenis Kelamin -->
+                <ul>
+                    <li><label for="jenis_kelamin">Jenis Kelamin<span>*</span></label></li>
                     <li>
-                        <ul>
-                            <li><label for="nama_siswa">Nama Siswa<span>*</span></label></li>
-                            <li><input type="text" id="nama_siswa" name="nama_siswa"></li>
-                        </ul>
-                    </li>
-                    <!-- Jenis Kelamin -->
-                    <li>
-                        <ul>
-                            <li><label for="jenis_kelamin">Jenis Kelamin<span>*</span></label></li>
-                            <li>
-                                <select id="jenis_kelamin" name="jenis_kelamin">
-                                    <option value="#">Laki-laki</option>
-                                    <option value="#">Perempuan</option>
-                                </select>
-                            </li>
-                        </ul>
+                        <select id="jenis_kelamin" name="jenis_kelamin">
+                            <option value="#">Laki-laki</option>
+                            <option value="#">Perempuan</option>
+                        </select>
                     </li>
                 </ul>
 
+                <!-- Tempat Lahir -->
                 <ul>
-                    <!-- Tempat Lahir -->
-                    <li>
-                        <ul>
-                            <li><label for="tempat_lahir">Tempat Lahir<span>*</span></label></li>
-                            <li><input type="text" id="tempat_lahir" name="tempat_lahir"></li>
-                        </ul>
-                    </li>
-                    <!-- Tanggal Lahir -->
-                    <li>
-                        <ul>
-                            <li><label for="tanggal_lahir">Tanggal Lahir<span>*</span></label></li>
-                            <li><input type="date" id="tanggal_lahir" name="tanggal_lahir"></li>
-                        </ul>
-                    </li>
+                    <li><label for="tempat_lahir">Tempat Lahir<span>*</span></label></li>
+                    <li><input type="text" id="tempat_lahir" name="tempat_lahir"></li>
                 </ul>
 
+                <!-- Tanggal Lahir -->
                 <ul>
-                    <!-- Kelas -->
+                    <li><label for="tanggal_lahir">Tanggal Lahir<span>*</span></label></li>
+                    <li><input type="date" id="tanggal_lahir" name="tanggal_lahir"></li>
+                </ul>
+
+                <!-- Kelas -->
+                <ul>
+                    <li><label for="kelas">Kelas<span>*</span></label></li>
                     <li>
-                        <ul>
-                            <li><label for="kelas">Kelas<span>*</span></label></li>
-                            <li>
-                                <select id="kelas" name="kelas">
-                                    <option value="#">7A</option>
-                                    <option value="#">7B</option>
-                                    <option value="#">7C</option>
-                                    <option value="#">7D</option>
-                                </select>
-                            </li>
-                        </ul>
+                        <select id="kelas" name="kelas">
+                            <option value="#">7A</option>
+                            <option value="#">7B</option>
+                            <option value="#">7C</option>
+                            <option value="#">7D</option>
+                        </select>
                     </li>
                 </ul>
 
