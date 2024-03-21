@@ -690,6 +690,7 @@
 * > #popup > div > form > ul ul > li:not(:nth-child(2)) input,
 * > #popup > div > form > ul ul > li:not(:nth-child(2)) select {
   margin-top: 16px;
+  width: 100%;
 }
 * > #popup > div > form > ul button[type=button] {
   box-shadow: inset 0 0 0 2px #4318ff;
