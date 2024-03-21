@@ -29,11 +29,18 @@
     <link rel="icon" href="assets/images/icons/64x64.ico" type="image/x-icon" sizes="64x64">
     <link rel="icon" href="assets/images/icons/128x128.ico" type="image/x-icon" sizes="128x128">
 
+    <!-- Bootstrap 5 Content Delivery Network -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- Scrollbar Cascading Style Sheets -->
     <link rel="stylesheet" href="css/scrollbar.css">
 
-    <!-- Dashboard Cascading Style Sheets -->
+    <!-- Main Cascading Style Sheets -->
     <link rel="stylesheet" href="css/master-data.css">
+
+    <!-- Sidebar Cascading Style Sheets -->
+    <link rel="stylesheet" href="css/sidebar.css">
 
     <!-- Google Fonts Content Delivery Network -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
@@ -45,12 +52,191 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
+    <!-- Iconify Content Delivery Network -->
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery Content Delivery Network -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav></nav>
+    <aside class="side-menu offcanvas offcanvas-md offcanvas-start col-9 col-sm-6 col-md-4 col-lg-3"
+        data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+
+        <!-- Header -->
+        <div class="nolistHighlight image-container">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="image-logo">
+                <img src="assets/images/logo-smp-negeri-1-singaraja.png" width="75">
+                <h2 style="color: #010100; font-weight: bold; font-family:'Poppins', sans-serif; margin-top: 5px;">
+                    Sistem
+                    Manajemen <br>
+                    SMP Negeri 1 Singaraja</h2>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="left-nav hidden-sm overflow-y-auto">
+            <ul class="nolist">
+
+                <li>
+                    <a href="dashboard.html">
+                        <div class="list">
+                            <iconify-icon icon="ic:round-home" width="24" height="24" class="icon"></iconify-icon>
+                            <span>Dasbor</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+
+                    <div class="list collapse">
+                        <span>Sistem Akademik</span>
+                        <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"
+                            class="arrow-down icon"></iconify-icon>
+                    </div>
+
+                    <ul class="nolist">
+                        <li>
+                            <a href="laporan-perencanaan.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="ph:calendar-check-bold" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Perencanaan</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="laporan-penilaian.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="carbon:chart-evaluation" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Penilaian</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="buku-siswa.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="solar:book-linear" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Buku Siswa</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+
+                    <div class="list collapse">
+                        <span>Absensi</span>
+                        <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"
+                            class="arrow-down icon"></iconify-icon>
+                    </div>
+
+                    <ul class="nolist">
+                        <li>
+                            <a href="#">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="carbon:diagram" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Statistik</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="mdi:selfie-outline" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Guru & Staf</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="streamline:class-lesson" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Kelas</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+
+                    <div class="list collapse">
+                        <span>Master Data</span>
+                        <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"
+                            class="arrow-down icon"></iconify-icon>
+                    </div>
+
+                    <ul class="nolist" style="display: block;">
+                        <li>
+                            <a href="master-data-pengguna.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="streamline:class-lesson" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Pengguna</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-kelas.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="wpf:check-book" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Kelas</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-pelajaran.html">
+                                <div class="active-link">
+                                    <iconify-icon icon="material-symbols:play-lesson-outline" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Mata Pelajaran</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-siswa.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="ph:student" width="24" height="24" class="icon"></iconify-icon>
+                                    <span>Siswa</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Switch User Access Button -->
+        <div class="switch-user-btn mt-auto">
+            <button type="button"
+                onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id-form').classList.add('show');">
+                Tukar Akses
+            </button>
+        </div>
+
+        <!-- Log Out Button -->
+        <div class="logout-btn">
+            <button type="button"><i class=""></i>Keluar</button>
+        </div>
+
+    </aside>
 
     <!-- Main -->
     <main>
@@ -61,24 +247,25 @@
             <!-- Breadcrumbs -->
             <div id="breadcrumbs">
                 <p>Sistem Manajemen SMP Negeri 1 Singaraja / Master Data / Mata Pelajaran</p>
-                <h2>Master Data Mata Pelajaran</h2>
+                <h1>Master Data Mata Pelajaran</h1>
             </div>
 
             <!-- Header Menus -->
             <ul>
 
-                <!-- Switch User Access Button -->
+                <!-- Hamburger Button for Mobile Device -->
                 <li>
-                    <button type="button"
-                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">Tukar
-                        Akses</button>
+                    <button class="btn hamburger-menu" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                        <iconify-icon icon="icon-park:hamburger-button" width="24" height="24"></iconify-icon>
+                    </button>
                 </li>
 
                 <!-- User Profile -->
                 <li>
                     <div id="profile">
                         <div>
-                            <p>Adela Parkson</p>
+                            <p>Ketut Suwirya</p>
                             <p>Administrator</p>
                         </div>
                         <i class="fas fa-user-circle"></i>
@@ -89,60 +276,153 @@
 
         </section>
 
-        <!-- Application List -->
+        <!-- Article -->
         <article>
-            <h2>Data Pelajaran</h2>
+
+            <!-- Header -->
             <ul>
+
+                <!-- Search Form -->
                 <li>
-                    <p>No <i class="fas fa-arrow-down-wide-short"></i></p>
-                    <p>Mata Pelajaran <i class="fas fa-arrow-down-wide-short"></i></p>
-                    <p>Guru Pengajar <i class="fas fa-arrow-down-wide-short"></i></p>
-                    <p>Aksi</p>
-                    <p></p>
+                    <h2>Daftar Mata Pelajaran</h2>
+                    <form action="/searchMajors" method="#">
+                        <label for="mata_pelajaran">Mata Pelajaran:</label>
+                        <input type="text" id="mata_pelajaran" name="mata_pelajaran">
+                        <button type="submit" name="search_majors">
+                            Temukan Mata Pelajaran <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </li>
+
+                <li>
+                    <button type="button"
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                        Tambah Data <i class="fas fa-add"></i>
+                    </button>
+                    <button type="button"
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('data-export-form').classList.add('show');">
+                        Ekspor Data <i class="fas fa-file-export"></i>
+                    </button>
+                </li>
+
+            </ul>
+
+            <!-- Contents -->
+            <ul id="master-data-pelajaran">
+
+                <li>
+                    <p>No</p>
+                    <p>Mata Pelajaran</p>
+                    <p>Guru Pengajar</p>
+                    <p>Aksi</p>
+                </li>
+
                 <li>
                     <p>1</p>
-                    <p>Bahasa Indonesia</p>
-                    <p>
+                    <p>Bahasa Inggris</p>
                     <ul>
-                        <li>Lorem.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem.</li>
-                        <li>Lorem, ipsum.</li>
+                        <li>Putu Ardhana</li>
+                        <li>Nuraini</li>
+                        <li>Ojat</li>
                     </ul>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
                     </p>
-                    <p><button type="button"><i class="fas fa-edit"></i> Ubah</button></p>
-                    <p><button type="button"><i class="fas fa-cancel"></i> Disable</button></p>
                 </li>
+
                 <li>
                     <p>2</p>
-                    <p>Bahasa Indonesia</p>
-                    <p>
+                    <p>Matematika</p>
                     <ul>
-                        <li>Lorem.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem.</li>
-                        <li>Lorem, ipsum.</li>
+                        <li>Putu Ardhana</li>
+                        <li>Nuraini</li>
                     </ul>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
                     </p>
-                    <p><button type="button"><i class="fas fa-edit"></i> Ubah</button></p>
-                    <p><button type="button"><i class="fas fa-cancel"></i> Disable</button></p>
                 </li>
+
                 <li>
                     <p>3</p>
-                    <p>Bahasa Indonesia</p>
-                    <p>
+                    <p>Pendidikan Kewarganegaraan</p>
                     <ul>
-                        <li>Lorem.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem.</li>
-                        <li>Lorem, ipsum.</li>
+                        <li>Putu Ardhana</li>
                     </ul>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
                     </p>
-                    <p><button type="button"><i class="fas fa-edit"></i> Ubah</button></p>
-                    <p><button type="button"><i class="fas fa-cancel"></i> Disable</button></p>
                 </li>
+
+                <li>
+                    <p>4</p>
+                    <p>Ilmu Pengetahuan Sosial</p>
+                    <ul>
+                        <li>Putu Ardhana</li>
+                        <li>Nuraini</li>
+                        <li>Ojat</li>
+                    </ul>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
+                    </p>
+                </li>
+
+                <li>
+                    <p>5</p>
+                    <p>Seni Budaya</p>
+                    <ul>
+                        <li>Putu Ardhana</li>
+                    </ul>
+                    <p>
+                        <button type="button"
+                            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
+                            <i class="fas fa-edit"></i> Ubah
+                        </button>
+                        <button type="button"><i class="fas fa-cancel"></i> Nonaktifkan</button>
+                    </p>
+                </li>
+
+                <!-- Contents Pagination -->
+                <li id="pagination">
+                    <p>Menampilkan 1-5/20 Data</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <nav>
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" rel="prev"><i class="fas fa-angle-left"></i></a>
+                            </li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">10</a></li>
+                            <li>
+                                <a href="#" rel="next"><i class="fas fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+
             </ul>
+
         </article>
 
     </main>
@@ -150,28 +430,8 @@
     <!-- Popup Box -->
     <div id="popup">
 
-        <!-- Forgot Password -->
-        <div id="forgot-password">
-            <i class="fas fa-exclamation-circle"></i>
-            <p>Silakan hubungi pihak operator untuk mendapatkan kata sandi baru anda!</p>
-            <button type="button"
-                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">
-                <i class="fas fa-cancel"></i> Tutup
-            </button>
-        </div>
-
-        <!-- Login Failed -->
-        <div id="login-failed">
-            <i class="fas fa-exclamation-circle"></i>
-            <p>Nama pengguna atau kata sandi yang anda masukkan tidak sesuai!</p>
-            <button type="button"
-                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">
-                <i class="fas fa-cancel"></i> Tutup
-            </button>
-        </div>
-
-        <!-- User Access -->
-        <div id="user-access-id">
+        <!-- User Access ID Form -->
+        <div id="user-access-id-form">
 
             <!-- Switch Access Form -->
             <form action="/switchAccess" method="#">
@@ -195,7 +455,117 @@
 
         </div>
 
+        <!-- Master Data Form -->
+        <div id="master-data-form">
+
+            <!-- User Form -->
+            <form action="/addMajor" method="#">
+
+                <ul>
+                    <!-- Mata Pelajaran -->
+                    <li>
+                        <ul>
+                            <li><label for="mata_pelajaran">Mata Pelajaran<span>*</span></label></li>
+                            <li><input type="text" id="mata_pelajaran" name="mata_pelajaran"></li>
+                        </ul>
+                    </li>
+                    <!-- Guru Pengajar -->
+                    <li>
+                        <ul>
+                            <li>
+                                <label>Guru Pengajar:</label>
+                            </li>
+                            <li>
+                                <select name="guru_pengajar_1">
+                                    <option value="1">Putu Ardhana</option>
+                                    <option value="2">Nuraini</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select name="guru_pengajar_2">
+                                    <option value="1">Putu Ardhana</option>
+                                    <option value="2">Nuraini</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Submit Button -->
+                <ul>
+                    <li>
+                        <button type="button"
+                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
+                            <i class="fas fa-cancel"></i> Batal
+                        </button>
+                    </li>
+                    <li>
+                        <button type="submit" name="add_user" onclick="checkRoleSelected(event)">
+                            Simpan <i class="fas fa-check"></i>
+                        </button>
+                    </li>
+                </ul>
+
+            </form>
+
+        </div>
+
+        <!-- Data Export Form -->
+        <div id="data-export-form">
+
+            <!-- Export Data Form -->
+            <form action="/exportData" method="#">
+                <label for="file_format">Pilih format dokumen:</label>
+                <select name="file_format" id="file_format">
+                    <option value="#">PDF</option>
+                    <option value="#">XLSX</option>
+                </select>
+                <ul>
+                    <li>
+                        <button type="button"
+                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
+                            <i class="fas fa-cancel"></i> Batal
+                        </button>
+                    </li>
+                    <li>
+                        <button type="submit" name="export_data">Ekspor Data <i class="fas fa-file-export"></i></button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
     </div>
+
+    <!-- Bootstrap 5 Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Navigation Script -->
+    <script>
+        $(".side-menu li").on("click", ".list", function (e) {
+            if ($(this).parent().children("ul").length) {
+                e.preventDefault();
+                $(this).addClass("active");
+                $(this).parent().children("ul").slideDown();
+                setTimeout(function () {
+                    $.fn.matchHeight._update();
+                    $.fn.matchHeight._maintainScroll = true;
+                }, 1000);
+            }
+        });
+
+        $(".side-menu li").on("click", ".list.active", function (e) {
+            e.preventDefault();
+            $(this).removeClass("active");
+            $(this).parent().children("ul").slideUp();
+            setTimeout(function () {
+                $.fn.matchHeight._update();
+                $.fn.matchHeight._maintainScroll = true;
+            }, 1000);
+        });
+    </script>
 
 </body>
 

@@ -29,11 +29,18 @@
     <link rel="icon" href="assets/images/icons/64x64.ico" type="image/x-icon" sizes="64x64">
     <link rel="icon" href="assets/images/icons/128x128.ico" type="image/x-icon" sizes="128x128">
 
+    <!-- Bootstrap 5 Content Delivery Network -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- Scrollbar Cascading Style Sheets -->
     <link rel="stylesheet" href="css/scrollbar.css">
 
     <!-- Main Cascading Style Sheets -->
     <link rel="stylesheet" href="css/master-data.css">
+
+    <!-- Sidebar Cascading Style Sheets -->
+    <link rel="stylesheet" href="css/sidebar.css">
 
     <!-- Google Fonts Content Delivery Network -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
@@ -45,12 +52,191 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
+    <!-- Iconify Content Delivery Network -->
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery Content Delivery Network -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav></nav>
+    <aside class="side-menu offcanvas offcanvas-md offcanvas-start col-9 col-sm-6 col-md-4 col-lg-3"
+        data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+
+        <!-- Header -->
+        <div class="nolistHighlight image-container">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="image-logo">
+                <img src="assets/images/logo-smp-negeri-1-singaraja.png" width="75">
+                <h2 style="color: #010100; font-weight: bold; font-family:'Poppins', sans-serif; margin-top: 5px;">
+                    Sistem
+                    Manajemen <br>
+                    SMP Negeri 1 Singaraja</h2>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="left-nav hidden-sm overflow-y-auto">
+            <ul class="nolist">
+
+                <li>
+                    <a href="dashboard.html">
+                        <div class="list">
+                            <iconify-icon icon="ic:round-home" width="24" height="24" class="icon"></iconify-icon>
+                            <span>Dasbor</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+
+                    <div class="list collapse">
+                        <span>Sistem Akademik</span>
+                        <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"
+                            class="arrow-down icon"></iconify-icon>
+                    </div>
+
+                    <ul class="nolist">
+                        <li>
+                            <a href="laporan-perencanaan.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="ph:calendar-check-bold" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Perencanaan</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="laporan-penilaian.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="carbon:chart-evaluation" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Penilaian</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="buku-siswa.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="solar:book-linear" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Buku Siswa</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+
+                    <div class="list collapse">
+                        <span>Absensi</span>
+                        <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"
+                            class="arrow-down icon"></iconify-icon>
+                    </div>
+
+                    <ul class="nolist">
+                        <li>
+                            <a href="#">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="carbon:diagram" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Statistik</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="mdi:selfie-outline" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Guru & Staf</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="streamline:class-lesson" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Kelas</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+
+                    <div class="list collapse">
+                        <span>Master Data</span>
+                        <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"
+                            class="arrow-down icon"></iconify-icon>
+                    </div>
+
+                    <ul class="nolist" style="display: block;">
+                        <li>
+                            <a href="master-data-pengguna.html">
+                                <div class="active-link">
+                                    <iconify-icon icon="streamline:class-lesson" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Pengguna</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-kelas.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="wpf:check-book" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Kelas</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-pelajaran.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="material-symbols:play-lesson-outline" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Mata Pelajaran</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-siswa.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="ph:student" width="24" height="24" class="icon"></iconify-icon>
+                                    <span>Siswa</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Switch User Access Button -->
+        <div class="switch-user-btn mt-auto">
+            <button type="button"
+                onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id-form').classList.add('show');">
+                Tukar Akses
+            </button>
+        </div>
+
+        <!-- Log Out Button -->
+        <div class="logout-btn">
+            <button type="button"><i class=""></i>Keluar</button>
+        </div>
+
+    </aside>
 
     <!-- Main -->
     <main>
@@ -67,11 +253,11 @@
             <!-- Header Menus -->
             <ul>
 
-                <!-- Switch User Access Button -->
+                <!-- Hamburger Button for Mobile Device -->
                 <li>
-                    <button type="button"
-                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id-form').classList.add('show');">
-                        <i class="fas fa-repeat"></i> Tukar Akses
+                    <button class="btn hamburger-menu" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                        <iconify-icon icon="icon-park:hamburger-button" width="24" height="24"></iconify-icon>
                     </button>
                 </li>
 
@@ -96,8 +282,16 @@
             <!-- Header -->
             <ul>
 
+                <!-- Search Form -->
                 <li>
                     <h2>Daftar Pengguna</h2>
+                    <form action="/searchUsers" method="#">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama">
+                        <button type="submit" name="search_users">
+                            Temukan Pengguna <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </li>
 
                 <li>
@@ -120,9 +314,7 @@
                     <p>No</p>
                     <p>Nama Pengguna</p>
                     <p>Nama Lengkap</p>
-                    <p>Jenis Kelamin</p>
                     <p>Status</p>
-                    <p>Tempat, Tanggal Lahir</p>
                     <p>Aksi</p>
                 </li>
 
@@ -130,9 +322,10 @@
                     <p>1</p>
                     <p>Suwinten123</p>
                     <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>Kepala Sekolah</p>
-                    <p>Singaraja, 8 September 1978</p>
+                    <ul>
+                        <li>Kepala Sekolah</li>
+                        <li>Guru</li>
+                    </ul>
                     <p>
                         <button type="button"
                             onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
@@ -146,9 +339,10 @@
                     <p>2</p>
                     <p>Indriani123</p>
                     <p>Kadek Indriani</p>
-                    <p>Perempuan</p>
-                    <p>Guru</p>
-                    <p>Denpasar, 12 Oktober 1982</p>
+                    <ul>
+                        <li>Guru</li>
+                        <li>Staf</li>
+                    </ul>
                     <p>
                         <button type="button"
                             onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
@@ -162,9 +356,9 @@
                     <p>3</p>
                     <p>Astina123</p>
                     <p>Made Astina</p>
-                    <p>Laki-laki</p>
-                    <p>Guru</p>
-                    <p>Klungkung, 23 Mei 1981</p>
+                    <ul>
+                        <li>Guru</li>
+                    </ul>
                     <p>
                         <button type="button"
                             onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
@@ -178,9 +372,9 @@
                     <p>4</p>
                     <p>Irmayanti123</p>
                     <p>Putu Irmayanti</p>
-                    <p>Perempuan</p>
-                    <p>Guru</p>
-                    <p>Singaraja, 15 Agustus 1987</p>
+                    <ul>
+                        <li>Guru</li>
+                    </ul>
                     <p>
                         <button type="button"
                             onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
@@ -194,9 +388,9 @@
                     <p>5</p>
                     <p>Murniasih123</p>
                     <p>Wayan Murniasih</p>
-                    <p>Perempuan</p>
-                    <p>Staf</p>
-                    <p>Singaraja, 13 Februari 1979</p>
+                    <ul>
+                        <li>Staf</li>
+                    </ul>
                     <p>
                         <button type="button"
                             onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('master-data-form').classList.add('show');">
@@ -213,15 +407,21 @@
                     <p></p>
                     <p></p>
                     <p></p>
-                    <p>
-                        <button type="button"><i class="fas fa-angle-left"></i></button>
-                        <button type="button" class="active">1</button>
-                        <button type="button">2</button>
-                        <button type="button">3</button>
-                        <button type="button">5</button>
-                        <button type="button">10</button>
-                        <button type="button"><i class="fas fa-angle-right"></i></button>
-                    </p>
+                    <nav>
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" rel="prev"><i class="fas fa-angle-left"></i></a>
+                            </li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">10</a></li>
+                            <li>
+                                <a href="#" rel="next"><i class="fas fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </li>
 
             </ul>
@@ -263,97 +463,203 @@
 
             <!-- User Form -->
             <form action="/addUser" method="#">
+
                 <ul>
+                    <!-- Nama Pengguna -->
                     <li>
                         <ul>
-                            <li><label for="nama_pengguna">Nama Pengguna <span>*</span></label></li>
+                            <li><label for="nama_pengguna">Nama Pengguna<span>*</span></label></li>
                             <li><input type="text" id="nama_pengguna" name="nama_pengguna"></li>
                         </ul>
                     </li>
+                    <!-- Nama Lengkap -->
                     <li>
                         <ul>
-                            <li><label for="nama_lengkap">Nama Lengkap <span>*</span></label></li>
+                            <li><label for="nama_lengkap">Nama Lengkap<span>*</span></label></li>
                             <li><input type="text" id="nama_lengkap" name="nama_lengkap"></li>
                         </ul>
                     </li>
                 </ul>
+
+                <ul>
+                    <!-- Kata Sandi -->
+                    <li>
+                        <ul>
+                            <li><label for="kata_sandi">Kata Sandi<span>*</span></label></li>
+                            <li><input type="text" id="kata_sandi" name="kata_sandi"></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Kepala Sekolah -->
                 <ul>
                     <li>
                         <ul>
-                            <li><label for="kata_sandi">Kata Sandi <span>*</span></label></li>
-                            <li><input type="text" id="kata_sandi" name="kata_sandi"></li>
+                            <li>
+                                <input type="checkbox" name="role_kepala_sekolah" id="kepalaSekolahCheckbox">
+                            </li>
+                            <li><label for="kepalaSekolahCheckbox">Kepala Sekolah</label></li>
                         </ul>
-
                     </li>
                     <li>
-                        <ul>
-                            <li><label for="jenis_kelamin">Jenis Kelamin <span>*</span></label></li>
+                        <ul id="roleKepalaSekolah" style="display: none;">
                             <li>
-                                <select id="jenis_kelamin" id="jenis_kelamin">
-                                    <option value="Laki-laki">Laki-laki</option>
-                                    <option value="Perempuan">Perempuan</option>
+                                <label for="keteranganKepalaSekolah">Keterangan:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="keterangan_kepala_sekolah" id="keteranganKepalaSekolah">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Guru -->
+                <ul>
+                    <li>
+                        <ul>
+                            <li><input type="checkbox" name="role_guru" id="guruCheckbox"></li>
+                            <li>
+                                <label for="guruCheckbox">Guru</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="roleGuru" style="display: none;">
+                            <li>
+                                <label for="keteranganGuru">Keterangan:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="keterangan_guru" id="keteranganGuru">
+                            </li>
+                            <li>
+                                <select name="id_mapel" id="mapelGUru">
+                                    <option value="1">Bahasa Indonesia</option>
+                                    <option value="2">Matematika</option>
                                 </select>
                             </li>
                         </ul>
                     </li>
                 </ul>
+
+                <!-- Wali Kelas -->
                 <ul>
                     <li>
                         <ul>
-                            <li><label for="tempat_lahir">Tempat Lahir <span>*</span></label></li>
-                            <li><input type="text" id="tempat_lahir" name="tempat_lahir"></li>
+                            <li><input type="checkbox" name="role_wali_kelas" id="waliKelasCheckbox"></li>
+                            <li><label for="waliKelasCheckbox">Wali Kelas</label></li>
                         </ul>
                     </li>
                     <li>
-                        <ul>
-                            <li><label for="tanggal_lahir">Tanggal Lahir <span>*</span></label></li>
-                            <li><input type="date" id="tanggal_lahir" name="tanggal_lahir"></li>
+                        <ul id="roleWaliKelas" style="display: none;">
+                            <li><label for="keteranganWaliKelas">Keterangan:</label></li>
+                            <li><input type="text" name="keterangan_wali_kelas" id="keteranganWaliKelas"></li>
+                            <li>
+                                <select name="id_kelas" id="mapelGUru">
+                                    <option value="1">7A</option>
+                                    <option value="2">7B</option>
+                                </select>
+                            </li>
                         </ul>
                     </li>
                 </ul>
+
+                <!-- Staf -->
                 <ul>
-                    <li>
-                        <ul>
-                            <li><label for="status">Status <span>*</span></label></li>
-                            <select id="status" name="status">
-                                <option value="#">Administrator</option>
-                                <option value="#">Kepala Sekolah</option>
-                                <option value="#">Guru</option>
-                                <option value="#">Staf</option>
-                            </select>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li><label for="keterangan">Keterangan <span>*</span></label></li>
-                            <li><input type="text" id="keterangan" name="keterangan"></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <ul>
-                            <li><label for="mata_pelajaran">Mata Pelajaran Yang Diampu <span>*</span></label></li>
-                            <select id="mata_pelajaran" name="mata_pelajaran">
-                                <option value="#">Bahasa Indonesia</option>
-                                <option value="#">Bahasa Inggris</option>
-                                <option value="#">Matematika</option>
-                                <option value="#">Pendidikan Kewarganegaraan</option>
-                            </select>
-                        </ul>
-                    </li>
                     <li>
                         <ul>
                             <li>
-                                <button type="button"
-                                    onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.classList.remove('show');">
-                                    <i class="fas fa-cancel"></i> Batal
-                                </button>
+                                <input type="checkbox" name="role_staff" id="staffCheckbox">
                             </li>
-                            <li><button type="submit" name="add_user">Simpan <i class="fas fa-check"></i></button></li>
+                            <li><label for="staffCheckbox">Staf</label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="roleStaff" style="display: none;">
+                            <li>
+                                <label for="keteranganStaff">Keterangan:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="keterangan_staff" id="keteranganStaff">
+                            </li>
                         </ul>
                     </li>
                 </ul>
+
+                <!-- Administrator - Humas -->
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="role_admin_humas" id="adminHumasCheckbox">
+                            </li>
+                            <li><label for="adminHumasCheckbox">Administrator Humas</label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="roleAdminHumas" style="display: none;">
+                            <li>
+                                <label for="keteranganAdminHumas">Keterangan:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="keterangan_admin_humas" id="keteranganAdminHumas">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Administrator - Kesiswaan -->
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="role_admin_kesiswaan" id="adminKesiswaanCheckbox">
+                            </li>
+                            <li><label for="adminKesiswaanCheckbox">Administrator Kesiswaan</label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="roleAdminKesiswaan" style="display: none;">
+                            <li>
+                                <label for="keteranganAdminKesiswaan">Keterangan:</label>
+                            </li>
+                            <li>
+                                <input type="text" name="keterangan_admin_kesiswaan" id="keteranganAdminKesiswaan">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Administrator - Kurikulum -->
+                <ul>
+                    <li>
+                        <ul>
+                            <li><input type="checkbox" name="role_admin_kurikulum" id="adminKurikulumCheckbox"></li>
+                            <li><label for="adminKurikulumCheckbox">Administrator Kurikulum</label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="roleAdminKurikulum" style="display: none;">
+                            <li><label for="keteranganAdminKurikulum">Keterangan:</label></li>
+                            <li><input type="text" name="keterangan_admin_Kurikulum" id="keteranganAdminKurikulum"></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Submit Button -->
+                <ul>
+                    <li>
+                        <button type="button"
+                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
+                            <i class="fas fa-cancel"></i> Batal
+                        </button>
+                    </li>
+                    <li>
+                        <button type="submit" name="add_user" onclick="checkRoleSelected(event)">
+                            Simpan <i class="fas fa-check"></i>
+                        </button>
+                    </li>
+                </ul>
+
             </form>
 
         </div>
@@ -384,6 +690,131 @@
         </div>
 
     </div>
+
+    <!-- Bootstrap 5 Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Navigation Script -->
+    <script>
+        $(".side-menu li").on("click", ".list", function (e) {
+            if ($(this).parent().children("ul").length) {
+                e.preventDefault();
+                $(this).addClass("active");
+                $(this).parent().children("ul").slideDown();
+                setTimeout(function () {
+                    $.fn.matchHeight._update();
+                    $.fn.matchHeight._maintainScroll = true;
+                }, 1000);
+            }
+        });
+
+        $(".side-menu li").on("click", ".list.active", function (e) {
+            e.preventDefault();
+            $(this).removeClass("active");
+            $(this).parent().children("ul").slideUp();
+            setTimeout(function () {
+                $.fn.matchHeight._update();
+                $.fn.matchHeight._maintainScroll = true;
+            }, 1000);
+        });
+    </script>
+
+    <!-- Master Data User Form Script -->
+    <script>
+        let roleSelected = 0
+
+        const checkRoleSelected = (event) => {
+            if (roleSelected < 1) {
+                event.preventDefault()
+            }
+        }
+
+        $("#kepalaSekolahCheckbox").on("change", function () {
+            if (this.checked) {
+                $("#roleKepalaSekolah").css("display", "block");
+                $("#roleKepalaSekolah").attr("required", true);
+                roleSelected++
+            } else {
+                $("#roleKepalaSekolah").css("display", "none");
+                $("#roleKepalaSekolah").attr("required", false);
+                roleSelected--
+            }
+        })
+
+        $("#guruCheckbox").on("change", function () {
+            if (this.checked) {
+                $("#roleGuru").css("display", "block");
+                $("#keteranganGuru").attr("required", true);
+                roleSelected++
+            } else {
+                $("#roleGuru").css("display", "none");
+                $("#keteranganGuru").attr("required", false);
+                roleSelected--
+            }
+        })
+
+        $("#waliKelasCheckbox").on("change", function () {
+            if (this.checked) {
+                $("#roleWaliKelas").css("display", "block");
+                $("#keteranganWaliKelas").attr("required", true);
+                roleSelected++
+            } else {
+                $("#roleWaliKelas").css("display", "none");
+                $("#keteranganWaliKelas").attr("required", false);
+                roleSelected--
+            }
+        })
+
+        $("#staffCheckbox").on("change", function () {
+            if (this.checked) {
+                $("#roleStaff").css("display", "block");
+                $("#keteranganStaff").attr("required", true);
+                roleSelected++
+            } else {
+                $("#roleStaff").css("display", "none");
+                $("#keteranganStaff").attr("required", false);
+                roleSelected--
+            }
+        })
+
+        $("#adminHumasCheckbox").on("change", function () {
+            if (this.checked) {
+                $("#roleAdminHumas").css("display", "block");
+                $("#keteranganAdminHumas").attr("required", true);
+                roleSelected++
+            } else {
+                $("#roleAdminHumas").css("display", "none");
+                $("#keteranganAdminHumas").attr("required", false);
+                roleSelected--
+            }
+        })
+
+        $("#adminKesiswaanCheckbox").on("change", function () {
+            if (this.checked) {
+                $("#roleAdminKesiswaan").css("display", "block");
+                $("#keteranganAdminKesiswaan").attr("required", true);
+                roleSelected++
+            } else {
+                $("#roleAdminKesiswaan").css("display", "none");
+                $("#keteranganAdminKesiswaan").attr("required", false);
+                roleSelected--
+            }
+        })
+
+        $("#adminKurikulumCheckbox").on("change", function () {
+            if (this.checked) {
+                $("#roleAdminKurikulum").css("display", "block");
+                $("#keteranganAdminKurikulum").attr("required", true);
+                roleSelected++
+            } else {
+                $("#roleAdminKurikulum").css("display", "none");
+                $("#keteranganAdminKurikulum").attr("required", false);
+                roleSelected--
+            }
+        })
+    </script>
 
 </body>
 
