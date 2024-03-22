@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="Master Data Kelas - Sistem Manajemen SMP Negeri 1 Singaraja"
+    />
+    <meta
+      name="description"
+      content="Halaman Master Data Kelas Sistem Manajemen SMP Negeri 1 Singaraja"
+    />
+
+    <!-- Site's Open Graph Protocol -->
+    <meta
+      property="og:title"
+      content="Master Data Kelas - Sistem Manajemen SMP Negeri 1 Singaraja"
+    />
+    <meta
+      property="og:description"
+      content="Halaman Master Data Kelas Sistem Manajemen SMP Negeri 1 Singaraja"
+    />
+    <meta property="og:locale" content="id" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smpn1sgr.sch.id/" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/AryaDewata/sistem-manajemen-smp-negeri-1-singaraja/main/assets/images/logo-smp-negeri-1-singaraja.png"
+    />
+
+    <!-- Title -->
+    <title>
+      Absensi Guru & Staff - Sistem Manajemen | SMP Negeri 1 Singaraja
+    </title>
+
+    <!-- Site's Icon -->
+    <link
+      rel="icon"
+      href="assets/images/icons/16x16.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="assets/images/icons/24x24.ico"
+      type="image/x-icon"
+      sizes="24x24"
+    />
+    <link
+      rel="icon"
+      href="assets/images/icons/32x32.ico"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="assets/images/icons/64x64.ico"
+      type="image/x-icon"
+      sizes="64x64"
+    />
+    <link
+      rel="icon"
+      href="assets/images/icons/128x128.ico"
+      type="image/x-icon"
+      sizes="128x128"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Scrollbar Cascading Style Sheets -->
+    <link rel="stylesheet" href="css/scrollbar.css" />
+
+    <!-- Sidebar Cascading Style Sheets -->
+    <link rel="stylesheet" href="css/sidebar.css" />
+
+    <!-- Dashboard Cascading Style Sheets -->
+    <link rel="stylesheet" href="css/jadwal-pelajaran.css" />
+
+    <!-- Google Fonts Content Delivery Network -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Content Delivery Network -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- dotlootie svg animation -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <aside
+      class="side-menu offcanvas offcanvas-md offcanvas-start col-9 col-sm-6 col-md-4 col-lg-3"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasResponsive"
+      aria-labelledby="offcanvasResponsiveLabel"
+    >
+      <div class="nolistHighlight image-container">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <div class="image-logo">
+          <img src="sidebar/img/logo.png" />
+
+          <h5
+            style="
+              color: #010100;
+              font-weight: bold;
+              font-family: 'Poppins', sans-serif;
+              margin-top: 5px;
+            "
+          >
+            Sistem Manajemen <br />
+            SMP Negeri 1 Singaraja
+          </h5>
+        </div>
+      </div>
+      <nav class="left-nav hidden-sm overflow-y-auto">
+        <ul class="nolist">
+          <a href=""
+            ><li>
+              <div class="active-link list">
+                <iconify-icon
+                  icon="ic:round-home"
+                  width="24"
+                  height="24"
+                  class="icon"
+                ></iconify-icon
+                ><span>Dasbor</span>
+              </div>
+            </li></a
+          >
+          <li>
+            <div class="list collapse">
+              <span>Sistem Akademik</span>
+              <iconify-icon
+                icon="iconamoon:arrow-down-2"
+                width="24"
+                height="24"
+                class="arrow-down icon"
+              ></iconify-icon>
+            </div>
+            <ul class="nolist">
+              <!--  tambah style="display: block" buat display list -->
+              <a href="#a"
+                ><li>
+                  <div class="not-active-link">
+                    <iconify-icon
+                      icon="ph:calendar-check-bold"
+                      width="24"
+                      height="24"
+                      class="icon"
+                    ></iconify-icon
+                    ><span>Perencanaan</span>
+                  </div>
+                </li></a
+              >
+              <a href="#b"
+                ><li>
+                  <div class="not-active-link">
+                    <iconify-icon
+                      icon="carbon:chart-evaluation"
+                      width="24"
+                      height="24"
+                      class="icon"
+                    ></iconify-icon
+                    ><span>Penilaian</span>
+                  </div>
+                </li></a
+              >
+              <a href="#c"
+                ><li>
+                  <div class="not-active-link">
+                    <iconify-icon
+                      icon="solar:book-linear"
+                      width="24"
+                      height="24"
+                      class="icon"
+                    ></iconify-icon
+                    ><span> Buku Siswa</span>
+                  </div>
+                </li></a
+              >
+            </ul>
+          </li>
+          <li>
+            <div class="list collapse">
+              <span>Absensi</span>
+              <iconify-icon
+                icon="iconamoon:arrow-down-2"
+                width="24"
+                height="24"
+                class="arrow-down icon"
+              ></iconify-icon>
+            </div>
+            <ul class="nolist">
+              <a href=""
+                ><li>
+                  <div class="not-active-link">
+                    <iconify-icon
+                      icon="mdi:selfie-outline"
+                      width="24"
+                      height="24"
+                      class="icon"
+                    ></iconify-icon
+                    ><span>Absensi Diri</span>
+                  </div>
+                </li></a
+              >
+              <a href=""
+                ><li>
+                  <div class="not-active-link">
+                    <iconify-icon
+                      icon="streamline:class-lesson"
+                      width="24"
+                      height="24"
+                      class="icon"
+                    ></iconify-icon
+                    ><span>Penilaian</span>
+                  </div>
+                </li></a
+              >
+              <a href=""
+                ><li>
+                  <div class="not-active-link">
+                    <iconify-icon
+                      icon="solar:book-linear"
+                      width="24"
+                      height="24"
+                      class="icon"
+                    ></iconify-icon
+                    ><span> Buku Siswa</span>
+                  </div>
+                </li></a
+              >
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="switch-user-btn mt-auto">
+        <button
+          type="button"
+          onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');"
+        >
+          Tukar Akses
+        </button>
+      </div>
+      <div class="logout-btn">
+        <button type="button"><i class=""></i>Keluar</button>
+      </div>
+    </aside>
+
+    <!-- navigation script -->
+    <script>
+      $(".side-menu li").on("click", ".list", function (e) {
+        if ($(this).parent().children("ul").length) {
+          e.preventDefault();
+          $(this).addClass("active");
+          $(this).parent().children("ul").slideDown();
+          setTimeout(function () {
+            $.fn.matchHeight._update();
+            $.fn.matchHeight._maintainScroll = true;
+          }, 1000);
+        }
+      });
+
+      $(".side-menu li").on("click", ".list.active", function (e) {
+        e.preventDefault();
+        $(this).removeClass("active");
+        $(this).parent().children("ul").slideUp();
+        setTimeout(function () {
+          $.fn.matchHeight._update();
+          $.fn.matchHeight._maintainScroll = true;
+        }, 1000);
+      });
+
+      $("");
+    </script>
+    <!-- End of Navigation -->
+
+    <!-- Main -->
+    <main>
+      <!-- Header Section -->
+      <section id="header">
+        <!-- Breadcrumbs -->
+        <div id="breadcrumbs">
+          <p>
+            Sistem Manajemen SMP Negeri 1 Singaraja / Absensi / Absensi Guru &
+            Staff
+          </p>
+          <a href=""><h2><< Kembali</h2></a>
+        </div>
+
+        <!-- Header Menus -->
+        <ul>
+          <li>
+            <!-- Hamburger Menu -->
+            <button
+              class="btn btn-primary hamburger-menu"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasResponsive"
+              aria-controls="offcanvasResponsive"
+            >
+              <iconify-icon
+                icon="icon-park:hamburger-button"
+                width="24"
+                height="24"
+              ></iconify-icon>
+            </button>
+          </li>
+          <!-- Switch User Access Button -->
+
+          <!-- User Profile -->
+          <li>
+            <div id="profile">
+              <div>
+                <p>Adela Parkson</p>
+                <p>Administrator</p>
+              </div>
+              <i class="fas fa-user-circle"></i>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <article>
+        <div class="row mt-2 p-2 rounded-3 bg-white h-100 p-3">
+          <div class="col-md-5col-lg-4 mb-3">
+            <p>Jadwal Pelajaran Kelas 7A</p>
+            <button
+              type="button"
+              onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('tambah-jadwal').classList.add('show');"
+            >
+              <i class="fas fa-plus"></i> Tambah Jadwal
+            </button>
+          </div>
+          <ul>
+            <li>
+              <p>Hari</p>
+              <p>Mapel</p>
+              <p>Guru</p>
+              <p>Waktu Mulai</p>
+              <p>Waktu Selesai</p>
+              <p></p>
+              <p></p>
+            </li>
+            <li>
+              <p>Senin</p>
+              <p>Bahasa Indonesia</p>
+              <p>Lorem Ipsum Dolor</p>
+              <p>00:00:00</p>
+              <p>00:00:00</p>
+              <p>
+                <button
+                  type="button"
+                  onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('#').classList.add('show');"
+                >
+                  <i class="fas fa-edit"></i> Edit
+                </button>
+              </p>
+              <p>
+                <button
+                  type="button"
+                  onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('#').classList.add('show');"
+                >
+                  <i class="fas fa-trash"></i> Hapus
+                </button>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- Application List -->
+    </main>
+
+    <!-- Popup Box -->
+    <div id="popup">
+      <!-- User Access -->
+      <div id="user-access-id">
+        <!-- Switch Access Form -->
+        <form action="/switchAccess" method="#">
+          <label for="user_access_id">Pilih akses masuk anda:</label>
+          <select name="user_access_id" id="user_access_id">
+            <option value="#">Administrator</option>
+            <option value="#">Wali Kelas</option>
+            <option value="#">Guru</option>
+            <option value="#">Staf</option>
+          </select>
+          <ul class="mb-0">
+            <li>
+              <button
+                type="button"
+                onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
+              >
+                <i class="fas fa-cancel"></i> Batal
+              </button>
+            </li>
+            <li>
+              <button type="submit" name="switch_access">
+                Pilih <i class="fas fa-check"></i>
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div id="user-access-id">
+        <!-- Switch Access Form -->
+        <form action="/switchAccess" method="#">
+          <label for="user_access_id">Pilih akses masuk anda:</label>
+          <select name="user_access_id" id="user_access_id">
+            <option value="#">Administrator</option>
+            <option value="#">Wali Kelas</option>
+            <option value="#">Guru</option>
+            <option value="#">Staf</option>
+          </select>
+          <ul class="mb-0">
+            <li>
+              <button
+                type="button"
+                onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
+              >
+                <i class="fas fa-cancel"></i> Batal
+              </button>
+            </li>
+            <li>
+              <button type="submit" name="switch_access">
+                Pilih <i class="fas fa-check"></i>
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div id="tambah-jadwal">
+        <form action="">
+          <p class="mb-0">Tambah Jadwal</p>
+          <p
+            class="mb-0"
+            onclick="this.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
+          >
+            <iconify-icon
+              icon="iconamoon:close-thin"
+              width="36"
+              height="36"
+              style="color: #a3aed0"
+            ></iconify-icon>
+          </p>
+          <ul class="p-0 m-0">
+            <li>
+                <label for="" class="form-label">Hari</label>
+                <select class="form-select" name="">
+                    <option selected disabled>Pilih Hari</option>
+                    <option value="">Senin</option>
+                    <option value="">Selasa</option>
+                    <option value="">Rabu</option>
+                  </select>
+            </li>
+            <li>
+                <label for="" class="form-label">Mata Pelajaran</label>
+                <select class="form-select" name="">
+                    <option selected disabled>Pilih Mata Pelajaran</option>
+                    <option value="">Matematika</option>
+                    <option value="">Bahasa Indonesia</option>
+                    <option value="">Bahasa Bali</option>
+                  </select>
+            </li>
+            <li>
+                <label for="" class="form-label">Guru</label>
+                <select class="form-select" name="">
+                <option selected disabled>Pilih Guru</option>
+                  </select>
+            </li>
+            <li>
+                <label for="" class="form-label">Waktu Mulai</label>
+                <input type="text" name="" id="" class="form-control">
+            </li>
+            <li>
+                <label for="" class="form-label">Waktu Selesai</label>
+                <input type="text" name="" id="" class="form-control">
+            </li>
+            <li>
+                <button type="submit">Simpan</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
