@@ -364,15 +364,17 @@
         <div id="absensi">
           <form action="">
           <div class="map-preview">
-            <img src="img/map-preview.png" alt="" width="100%">
+            <img src="assets/images/izin.png" alt="" width="100%">
           </div>
           <div class="row text-center">
               <p class="mb-2 text-success fw-bold fs-5">Lokasi Anda berada dalam Radius</p>
-              <ul class="d-flex m-0 gap-2 justify-content-center flex-wrap">
+              <ul class="d-flex m-0 gap-2 justify-content-between flex-wrap">
                <li>
               <button type="button" onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">Kembali</button>
                </li>
                <li>
+              <button type="button" onclick=""><iconify-icon icon="tabler:refresh" width="24" height="24" style="height: 17px;"></iconify-icon>Segarkan</button>
+
               <button type="submwit" onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden';
                this.parentNode.parentNode.classList.remove('show');
                document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('absensi-success').classList.add('show');

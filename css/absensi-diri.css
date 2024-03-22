@@ -342,6 +342,7 @@
 * > body > #popup {
   position: fixed;
   z-index: 9999;
+  padding: 20px;
   width: 100%;
   height: 100%;
   visibility: hidden;
@@ -350,7 +351,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 0;
   flex-wrap: nowrap;
   background-color: rgba(0, 0, 0, 0.33);
@@ -384,6 +385,7 @@
   }
 }
 * > body > #popup > div.show {
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
