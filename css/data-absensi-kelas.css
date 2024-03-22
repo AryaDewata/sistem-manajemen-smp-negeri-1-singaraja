@@ -137,7 +137,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 49.5%;
+  width: 49.3%;
 }
 @media (max-width: 768px) {
   * > body article > #subject-schedule > div {
@@ -241,6 +241,9 @@
   border-radius: 5px;
   font-weight: bold;
 }
+* > body article > #subject-schedule > div:nth-child(2) > button:hover {
+  opacity: 0.8;
+}
 * > body article > #subject-schedule > div:nth-child(2) > ul {
   width: 100%;
   list-style: none;
@@ -303,25 +306,42 @@
   text-align: center;
   letter-spacing: 0.5px;
 }
-* > body article #history {
+* > body article > #subject-schedule > div:nth-child(2) > ul > li > p > button:hover {
+  opacity: 0.8;
+}
+* > body article > #history {
   background: white;
 }
-* > body article #history > div > p {
+* > body article > #history > #schedule-initiation {
+  background: white;
+}
+* > body article > #history > #schedule-initiation > div > button:hover {
+  opacity: 0.8;
+}
+* > body article > #history > #schedule-initiation > div > button:first-child {
+  background: #4318ff;
+  color: white;
+}
+* > body article > #history > #schedule-initiation > div > button:last-child {
+  background: #d04848;
+  color: white;
+}
+* > body article > #history > div > p {
   font-weight: bold;
   font-size: x-large;
   color: #2b3674;
 }
-* > body article #history > div > ul {
+* > body article > #history > div > ul {
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-* > body article #history > div > ul > li {
+* > body article > #history > div > ul > li {
   display: flex;
   padding: 10px !important;
 }
-* > body article #history > div > ul > li > p {
+* > body article > #history > div > ul > li > p {
   width: 25%;
   text-align: center;
   display: flex;
@@ -329,24 +349,24 @@
   align-items: center;
   margin: 0;
 }
-* > body article #history > div > ul > li ~ li {
+* > body article > #history > div > ul > li ~ li {
   padding: 5px 0;
 }
-* > body article #history > div > ul > li ~ li > p {
+* > body article > #history > div > ul > li ~ li > p {
   color: #2b3674;
   font-weight: bold;
   margin-bottom: 0;
 }
-* > body article #history > div > ul > li ~ li:nth-child(odd) {
+* > body article > #history > div > ul > li ~ li:nth-child(odd) {
   background: rgba(163, 174, 208, 0.2784313725);
 }
-* > body article #history > div > ul > li ~ li:nth-child(even) {
+* > body article > #history > div > ul > li ~ li:nth-child(even) {
   background: #f4f7fe;
 }
-* > body article #history > div > ul > li ~ li:nth-child(odd) {
+* > body article > #history > div > ul > li ~ li:nth-child(odd) {
   background: none;
 }
-* > body article #history > div > ul > li ~ li > p > button {
+* > body article > #history > div > ul > li ~ li > p > button {
   background: #4318ff;
   padding: 8px 16px;
   margin: 0;
@@ -356,16 +376,16 @@
   border-radius: 28px;
 }
 @media (max-width: 1024px) {
-  * > body article #history > div > ul {
+  * > body article > #history > div > ul {
     gap: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
   }
-  * > body article #history > div > ul > li {
+  * > body article > #history > div > ul > li {
     display: none;
   }
-  * > body article #history > div > ul li ~ li {
+  * > body article > #history > div > ul li ~ li {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -373,44 +393,44 @@
     width: 48%;
     border: 1px solid rgba(163, 174, 208, 0.2784313725);
   }
-  * > body article #history > div > ul li ~ li > p {
+  * > body article > #history > div > ul li ~ li > p {
     width: 100%;
     justify-content: space-between;
   }
-  * > body article #history > div > ul li ~ li > p::before {
+  * > body article > #history > div > ul li ~ li > p::before {
     color: #a3aed0;
   }
-  * > body article #history > div > ul li ~ li > p:nth-child(1)::before {
+  * > body article > #history > div > ul li ~ li > p:nth-child(1)::before {
     content: "Kelas";
   }
-  * > body article #history > div > ul li ~ li > p:nth-child(2)::before {
+  * > body article > #history > div > ul li ~ li > p:nth-child(2)::before {
     content: "Mapel";
   }
-  * > body article #history > div > ul li ~ li > p:nth-child(3)::before {
+  * > body article > #history > div > ul li ~ li > p:nth-child(3)::before {
     content: "Guru";
   }
-  * > body article #history > div > ul li ~ li > p:nth-child(4)::before {
+  * > body article > #history > div > ul li ~ li > p:nth-child(4)::before {
     content: "Tanggal";
   }
-  * > body article #history > div > ul li ~ li > p:nth-child(5)::before {
+  * > body article > #history > div > ul li ~ li > p:nth-child(5)::before {
     content: "Waktu";
   }
-  * > body article #history > div > ul li ~ li > p:nth-child(6)::before {
+  * > body article > #history > div > ul li ~ li > p:nth-child(6)::before {
     content: "Status Guru";
   }
-  * > body article #history > div > ul li ~ li > p:nth-child(7)::before {
+  * > body article > #history > div > ul li ~ li > p:nth-child(7)::before {
     content: "Pengabsen";
   }
-  * > body article #history > div > ul li ~ li > p > button {
+  * > body article > #history > div > ul li ~ li > p > button {
     margin-bottom: 0;
   }
 }
 @media (max-width: 1024px) and (max-width: 540px) {
-  * > body article #history > div > ul li ~ li {
+  * > body article > #history > div > ul li ~ li {
     width: 100%;
   }
 }
-* > body article #history > div > button {
+* > body article > #history > div > button {
   background: #4318ff;
   padding: 8px 16px;
   margin: 0;

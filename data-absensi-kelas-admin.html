@@ -64,126 +64,75 @@
 <body>
 
     <!-- Navigation -->
-    <aside class="side-menu offcanvas offcanvas-md offcanvas-start col-9 col-sm-6 col-md-4 col-lg-3" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel" >
-      <div class="nolistHighlight image-container">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          <div class="image-logo">
-            <img src="sidebar/img/logo.png"/>
+        <aside class="side-menu offcanvas offcanvas-md offcanvas-start col-9 col-sm-6 col-md-4 col-lg-3" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel" >
+            <div class="nolistHighlight image-container">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="image-logo">
+                  <img src="sidebar/img/logo.png"/>
 
-            <h5 style="color: #010100; font-weight: bold; font-family:'Poppins', sans-serif; margin-top: 5px;">Sistem Manajemen <br>
-              SMP Negeri 1 Singaraja</h5>
-          </div>
-      </div>
-      <nav class="left-nav hidden-sm overflow-y-auto">
-          <ul class="nolist">
-              <a href=""><li>
-                  <div class="active-link list"><iconify-icon icon="ic:round-home" width="24" height="24" class="icon"></iconify-icon><span>Dasbor</span></div>
-                </li></a>
-                <li>
-                  <div class="list collapse"><span>Sistem Akademik</span> <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24" class="arrow-down icon"></iconify-icon></div>
-                  <ul class="nolist">
-                    <a href="#a"><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="ph:calendar-check-bold" width="24" height="24" class="icon"></iconify-icon><span>Perencanaan</span>
-                      </div>
-                    </li></a>
-                    <a href="#b"><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="carbon:chart-evaluation" width="24" height="24" class="icon"></iconify-icon><span>Penilaian</span>
-                      </div>
-                    </li></a>
-                    <a href="#c"><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="solar:book-linear" width="24" height="24" class="icon"></iconify-icon><span> Buku Siswa</span>
-                      </div>
-                    </li></a>
-                  </ul>
-                </li>
-                <li>
-                  <div class="list collapse"><span>Absensi</span> <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24" class="arrow-down icon"></iconify-icon></div>
-                  <ul class="nolist">
+                  <h5 style="color: #010100; font-weight: bold; font-family:'Poppins', sans-serif; margin-top: 5px;">Sistem Manajemen <br>
+                    SMP Negeri 1 Singaraja</h5>
+                </div>
+            </div>
+            <nav class="left-nav hidden-sm overflow-y-auto">
+                <ul class="nolist">
                     <a href=""><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="gg:chart" width="24" height="24"></iconify-icon><span>Statistik</span>
-                      </div>
-                    </li></a>
-                    <a href=""><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="mdi:selfie-outline" width="24" height="24"></iconify-icon><span>Guru & Staff</span>
-                      </div>
-                    </li></a>
-                    <a href=""><li>
-                      <div class="not-active-link">
-                        
-                        <iconify-icon icon="streamline:class-lesson" width="24" height="24" class="icon"></iconify-icon><span>Kelas</span>
-                      </div>
-                    </li></a>
-                  </ul>
-                </li>
-                <li>
-                  <div class="list collapse"><span>Master Data</span> <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24" class="arrow-down icon"></iconify-icon></div>
-                  <ul class="nolist">
-                    <a href=""><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="mdi:user-outline" width="24" height="24"></iconify-icon><span>User</span>
-                      </div>
-                    </li></a>
-                    <a href=""><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="streamline:class-lesson" width="24" height="24"></iconify-icon><span>Kelas</span>
-                      </div>
-                    </li></a>
-                    <a href=""><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="iconoir:book-solid" width="24" height="24"></iconify-icon><span>Pelajaran</span>
-                      </div>
-                    </li></a>
-                    <a href=""><li>
-                      <div class="not-active-link">
-                        <iconify-icon icon="ph:student" width="24" height="24"></iconify-icon><span>Siswa</span>
-                      </div>
-                    </li></a>
-                  </li>
-                  </ul>
-              </li>
-          </ul>
-      </nav>
-      <div class="switch-user-btn mt-auto">
-        <button type="button"
-            onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">Tukar
-            Akses</button>
-      </div>
-      <div class="logout-btn">
-          <button type="button"><i class=""></i>Keluar</button>
-      </div>
-   </aside>
+                        <div class="active-link list"><iconify-icon icon="ic:round-home" width="24" height="24" class="icon"></iconify-icon><span>Dasbor</span></div>
+                      </li></a>
+                      <li>
+                        <div class="list collapse"><span>Sistem Akademik</span> <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24" class="arrow-down icon"></iconify-icon></div>
+                        <ul class="nolist"><!--  tambah style="display: block" buat display list -->
+                          <a href="#a"><li>
+                            <div class="not-active-link">
+                              <iconify-icon icon="ph:calendar-check-bold" width="24" height="24" class="icon"></iconify-icon><span>Perencanaan</span>
+                            </div>
+                          </li></a>
+                          <a href="#b"><li>
+                            <div class="active-link">
+                              <iconify-icon icon="carbon:chart-evaluation" width="24" height="24" class="icon"></iconify-icon><span>Penilaian</span>
+                            </div>
+                          </li></a>
+                          <a href="#c"><li>
+                            <div class="active-link">
+                              <iconify-icon icon="solar:book-linear" width="24" height="24" class="icon"></iconify-icon><span> Buku Siswa</span>
+                            </div>
+                          </li></a>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="list collapse"><span>Absensi</span> <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24" class="arrow-down icon"></iconify-icon></div>
+                        <ul class="nolist">
+                          <a href=""><li>
+                            <div class="not-active-link">
+                              <iconify-icon icon="mdi:selfie-outline" width="24" height="24" class="icon"></iconify-icon><span>Statistik</span>
+                            </div>
+                          </li></a>
+                          <a href=""><li>
+                            <div class="not-active-link">
+                              <iconify-icon icon="streamline:class-lesson" width="24" height="24" class="icon"></iconify-icon><span> Absensi Siswa</span>
+                            </div>
+                          </li></a>
+                          <a href=""><li>
+                            <div class="not-active-link">
+                              <iconify-icon icon="wpf:check-book" width="24" height="24"  class="icon"></iconify-icon><span> Pengajuan Izin</span>
+                            </div>
+                          </li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="switch-user-btn mt-auto">
+              <button type="button"
+                  onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('user-access-id').classList.add('show');">Tukar
+                  Akses</button>
+            </div>
+            <div class="logout-btn">
+                <button type="button"><i class=""></i>Keluar</button>
+            </div>
+         </aside>
 
             <!-- navigation script -->
-            <script>
-                $('.side-menu li').on('click', '.list', function(e){  
-        if ($(this).parent().children('ul').length){
-            e.preventDefault();
-            $(this).addClass('active');
-            $(this).parent().children('ul').slideDown();
-            setTimeout(function(){ 
-              $.fn.matchHeight._update();
-              $.fn.matchHeight._maintainScroll = true;
-            }, 1000);
-        }		  	  
-      });
-    
-      $('.side-menu li').on('click', '.list.active', function(e){
-        e.preventDefault();
-        $(this).removeClass('active');
-        $(this).parent().children('ul').slideUp();  
-        setTimeout(function(){ 
-          $.fn.matchHeight._update();
-          $.fn.matchHeight._maintainScroll = true;
-        }, 1000);
-      });
-    
-      $('')
-</script>
+
 <!-- End of Navigation -->
 
     <!-- Main -->
@@ -219,7 +168,7 @@
             </ul>
 
         </section>
-        <article>
+        <article> 
         <div class="row" id="subject-schedule">
             <div class=" p-sm-2 py-3 rounded-3 pt-5 pb-4 px-4">
               <p>Daftar Materi</p>
@@ -244,7 +193,7 @@
                 </li>
               </ul>
           </div>
-          <div class="p-sm-2 py-3 rounded-3 py-5 px-3 ms-1">
+          <div class="p-sm-2 py-3 rounded-3 py-5 px-3">
               <p>Jadwal Pelajaran</p>
               <button type="button">Ekspor</button>
               <ul class="p-0">
@@ -260,6 +209,21 @@
         </div>
         </div>
         <div class="row rounded-3 h-100 p-3" id="history" >
+          <div class="row" id="schedule-initiation">
+            <p>Inisiasi Jadwal</p>
+            <div class="col-auto">
+              <label for="from-date" class="form-label">Dari:</label>
+              <input type="date" name="from-date" id="from-date" class="form-control me-2 mb-2">  
+            </div>
+              <div class="col-auto">
+                <label for="to-date" class="form-label">Sampai:</label>
+                <input type="date" name="to-date" id="to-date" class="form-control me-2 mb-2">      
+              </div>
+              <div class="col-auto mt-auto">
+                <button type="button" class="me-2 mb-2 btn">Inisiasi Jadwal</button>
+                <button type="button" class="me-2 mb-2 btn">Hapus Inisiasi Jadwal</button>
+              </div>
+            </div>
             <div class="col-12 px-2 mt-2">
                     <p>Riwayat Absensi</p>
                     <div class="col-sm-5">
