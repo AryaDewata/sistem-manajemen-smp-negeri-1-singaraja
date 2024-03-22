@@ -557,6 +557,7 @@
   content: "Status";
 }
 * > body > #popup > div#absensi-kelas {
+  margin: auto;
   position: relative;
   width: 100%;
   color: #a3aed0;
