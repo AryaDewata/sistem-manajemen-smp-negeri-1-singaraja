@@ -156,6 +156,7 @@
   * > body article > div ul li ~ li > p {
     display: flex;
     width: 100%;
+    text-align: end;
     justify-content: space-between;
   }
   * > body article > div ul li ~ li > p:nth-child(1)::before {
@@ -282,13 +283,15 @@
 * > body > #popup {
   position: fixed;
   z-index: 9999;
+  overflow-y: auto;
   width: 100%;
   height: 100%;
+  padding: 20px;
   visibility: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 0;
   flex-wrap: nowrap;
   background-color: rgba(0, 0, 0, 0.33);
@@ -328,6 +331,7 @@
   align-items: center;
   gap: 12px;
   flex-wrap: nowrap;
+  margin: auto;
   animation: fade-in 150ms;
 }
 @keyframes fade-in {
@@ -394,26 +398,26 @@
 * > body > #popup > div button:hover {
   opacity: 90%;
 }
-* > body > #popup > div#detail-hadir {
+* > body > #popup > div#approve-izin, * > body > #popup > div#approved-izin {
   position: relative;
   width: 100%;
   color: #a3aed0;
 }
-* > body > #popup > div#detail-hadir > p:nth-child(1) {
+* > body > #popup > div#approve-izin > p:nth-child(1), * > body > #popup > div#approved-izin > p:nth-child(1) {
   font-size: x-large;
   color: #2b3674;
   font-weight: bold;
 }
-* > body > #popup > div#detail-hadir > p:nth-child(2) {
+* > body > #popup > div#approve-izin > p:nth-child(2), * > body > #popup > div#approved-izin > p:nth-child(2) {
   position: absolute;
   right: 5px;
   cursor: pointer;
 }
-* > body > #popup > div#detail-hadir ul {
+* > body > #popup > div#approve-izin > ul, * > body > #popup > div#approved-izin > ul {
   width: 100%;
   display: flex;
 }
-* > body > #popup > div#detail-hadir ul li p {
+* > body > #popup > div#approve-izin > ul > li > p, * > body > #popup > div#approved-izin > ul > li > p {
   margin-bottom: 2px;
   text-align: right;
   display: flex;
@@ -421,66 +425,41 @@
   color: #2b3674;
   font-weight: 700;
 }
-* > body > #popup > div#detail-hadir ul li p::before {
+* > body > #popup > div#approve-izin > ul > li > p::before, * > body > #popup > div#approved-izin > ul > li > p::before {
   color: #a3aed0;
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(1)::before {
+* > body > #popup > div#approve-izin > ul > li > p:nth-child(2)::before, * > body > #popup > div#approved-izin > ul > li > p:nth-child(2)::before {
   content: "Nama";
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(2)::before {
+* > body > #popup > div#approve-izin > ul > li > p:nth-child(3)::before, * > body > #popup > div#approved-izin > ul > li > p:nth-child(3)::before {
   content: "Tanggal";
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(3)::before {
+* > body > #popup > div#approve-izin > ul > li > p:nth-child(4)::before, * > body > #popup > div#approved-izin > ul > li > p:nth-child(4)::before {
   content: "Waktu";
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(4)::before {
+* > body > #popup > div#approve-izin > ul > li > p:nth-child(5)::before, * > body > #popup > div#approved-izin > ul > li > p:nth-child(5)::before {
   content: "Keterangan";
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(5)::before {
+* > body > #popup > div#approve-izin > ul > li > p:nth-child(6)::before, * > body > #popup > div#approved-izin > ul > li > p:nth-child(6)::before {
   content: "Status";
 }
-* > body > #popup > div#detail-izin {
-  position: relative;
+* > body > #popup > div#approve-izin > ul > li > textarea, * > body > #popup > div#approved-izin > ul > li > textarea {
+  resize: vertical;
+  min-height: 50px;
   width: 100%;
-  color: #a3aed0;
+  padding: 5px;
+  border-radius: 5px;
 }
-* > body > #popup > div#detail-izin > p:nth-child(1) {
-  font-size: x-large;
-  color: #2b3674;
-  font-weight: bold;
-}
-* > body > #popup > div#detail-izin > p:nth-child(2) {
-  position: absolute;
-  right: 5px;
-  cursor: pointer;
-}
-* > body > #popup > div#detail-izin > ul {
-  width: 100%;
-  display: flex;
-}
-* > body > #popup > div#detail-izin > ul > li > p {
-  margin-bottom: 2px;
-  text-align: right;
+* > body > #popup > div#approve-izin > ul > li > form, * > body > #popup > div#approved-izin > ul > li > form {
   display: flex;
   justify-content: space-between;
-  color: #2b3674;
-  font-weight: 700;
 }
-* > body > #popup > div#detail-izin > ul > li > p::before {
-  color: #a3aed0;
+* > body > #popup > div#approve-izin > ul > li > form > button, * > body > #popup > div#approved-izin > ul > li > form > button {
+  margin: 0;
+  font-weight: bold;
 }
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(2)::before {
-  content: "Nama";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(3)::before {
-  content: "Tanggal";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(4)::before {
-  content: "Waktu";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(5)::before {
-  content: "Keterangan";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(6)::before {
-  content: "Status";
+* > body > #popup > div#approve-izin > ul > li > form > button:nth-child(1), * > body > #popup > div#approved-izin > ul > li > form > button:nth-child(1) {
+  border: #4318ff solid 2px;
+  background: none;
+  color: #4318ff;
 }/*# sourceMappingURL=data-absensi-guru-staff.css.map */
