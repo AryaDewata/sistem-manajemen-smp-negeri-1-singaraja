@@ -281,11 +281,24 @@
     color: #a3aed0;
     text-align: left;
   }
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3),
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) {
+    flex-wrap: wrap;
+  }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3)::before,
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3)::before {
+    width: 50%;
     content: "Guru Pengajar";
     color: #a3aed0;
     text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3) > li,
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) > li {
+    width: 100%;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3) > li:nth-child(1),
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) > li:nth-child(1) {
+    width: 50%;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(4)::before,
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(4)::before {
@@ -358,19 +371,19 @@
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(2),
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(2) {
-  width: 32.5%;
+  width: 12.5%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(3),
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(3) {
-  width: 10%;
+  width: 37.5%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(4),
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(4) {
-  width: 20%;
+  width: 15%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(5),
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(5) {
-  width: 7.5%;
+  width: 5%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(6),
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(6) {
@@ -385,19 +398,19 @@
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(2)::before,
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(2)::before {
-    content: "Nama Siswa";
+    content: "NIS";
     color: #a3aed0;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(3)::before,
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(3)::before {
-    content: "Jenis Kelamin";
+    content: "Nama Siswa";
     color: #a3aed0;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(4)::before,
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(4)::before {
-    content: "TTL";
+    content: "Jenis Kelamin";
     color: #a3aed0;
     text-align: left;
   }
@@ -619,13 +632,22 @@
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4),
   * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) {
-    list-style: none;
+    flex-wrap: wrap;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4)::before,
   * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4)::before {
+    width: 50%;
     content: "Status";
     color: #a3aed0;
     text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(4) > li,
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) > li {
+    width: 100%;
+  }
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(4) > li:nth-child(1),
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) > li:nth-child(1) {
+    width: 50%;
   }
 }
 * > #popup {

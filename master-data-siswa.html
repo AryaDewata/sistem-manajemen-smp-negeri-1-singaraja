@@ -191,6 +191,15 @@
                             </a>
                         </li>
                         <li>
+                            <a href="master-data-ruangan.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="material-symbols:meeting-room-outline" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Ruangan</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
                             <a href="master-data-kelas.html">
                                 <div class="not-active-link">
                                     <iconify-icon icon="wpf:check-book" width="24" height="24"
@@ -286,8 +295,17 @@
                 <li>
                     <h2>Daftar Siswa</h2>
                     <form action="/searchStudents" method="#">
-                        <label for="nama">Nama Siswa:</label>
+                        <label for="nama">Nama:</label>
                         <input type="text" id="nama" name="nama">
+                        <label for="kelas">Kelas:</label>
+                        <select name="kelas" id="kelas">
+                            <option value="#">Semua Kelas</option>
+                            <option value="#">7A</option>
+                            <option value="#">7B</option>
+                            <option value="#">7C</option>
+                            <option value="#">7D</option>
+                            <option value="#">7E</option>
+                        </select>
                         <button type="submit" name="search_students">
                             Temukan Siswa <i class="fas fa-search"></i>
                         </button>
@@ -312,18 +330,18 @@
 
                 <li>
                     <p>No</p>
+                    <p>NIS</p>
                     <p>Nama Siswa</p>
                     <p>Jenis Kelamin</p>
-                    <p>Tempat, Tanggal Lahir</p>
                     <p>Kelas</p>
                     <p>Aksi</p>
                 </li>
 
                 <li>
                     <p>1</p>
+                    <p>123456789</p>
                     <p>Nyoman Suwinten</p>
                     <p>Laki-laki</p>
-                    <p>Singaraja, 7 Oktober 2003</p>
                     <p>7A</p>
                     <p>
                         <button type="button"
@@ -336,9 +354,9 @@
 
                 <li>
                     <p>2</p>
+                    <p>321456987</p>
                     <p>Kadek Indriani</p>
                     <p>Perempuan</p>
-                    <p>Denpasar, 19 Januari 2004</p>
                     <p>7B</p>
                     <p>
                         <button type="button"
@@ -351,9 +369,9 @@
 
                 <li>
                     <p>3</p>
+                    <p>123654789</p>
                     <p>Made Astina</p>
                     <p>Laki-laki</p>
-                    <p>Singaraja, 10 Desember 2004</p>
                     <p>7C</p>
                     <p>
                         <button type="button"
@@ -366,9 +384,9 @@
 
                 <li>
                     <p>4</p>
+                    <p>213564879</p>
                     <p>Putu Irmayanti</p>
                     <p>Perempuan</p>
-                    <p>Singaraja, 22 Mei 2004</p>
                     <p>7D</p>
                     <p>
                         <button type="button"
@@ -381,9 +399,9 @@
 
                 <li>
                     <p>5</p>
+                    <p>423576089</p>
                     <p>Wayan Murniasih</p>
                     <p>Perempuan</p>
-                    <p>Singaraja, 9 Agustus 2003</p>
                     <p>7E</p>
                     <p>
                         <button type="button"
@@ -458,7 +476,13 @@
             <!-- User Form -->
             <form action="/addStudent" method="#">
 
-                <!-- Nama SIswa -->
+                <!-- Nomor Induk Siswa -->
+                <ul>
+                    <li><label for="nis_siswa">Nomor Induk Siswa<span>*</span></label></li>
+                    <li><input type="number" id="nis_siswa" name="nis_siswa"></li>
+                </ul>
+
+                <!-- Nama Siswa -->
                 <ul>
                     <li><label for="nama_siswa">Nama Siswa<span>*</span></label></li>
                     <li><input type="text" id="nama_siswa" name="nama_siswa"></li>
@@ -473,18 +497,6 @@
                             <option value="#">Perempuan</option>
                         </select>
                     </li>
-                </ul>
-
-                <!-- Tempat Lahir -->
-                <ul>
-                    <li><label for="tempat_lahir">Tempat Lahir<span>*</span></label></li>
-                    <li><input type="text" id="tempat_lahir" name="tempat_lahir"></li>
-                </ul>
-
-                <!-- Tanggal Lahir -->
-                <ul>
-                    <li><label for="tanggal_lahir">Tanggal Lahir<span>*</span></label></li>
-                    <li><input type="date" id="tanggal_lahir" name="tanggal_lahir"></li>
                 </ul>
 
                 <!-- Kelas -->
@@ -524,6 +536,15 @@
 
             <!-- Export Data Form -->
             <form action="/exportData" method="#">
+                <label for="kelas">Pilih Kelas:</label>
+                <select name="kelas" id="kelas">
+                    <option value="#">Semua Kelas</option>
+                    <option value="#">7A</option>
+                    <option value="#">7B</option>
+                    <option value="#">7C</option>
+                    <option value="#">7D</option>
+                    <option value="#">7E</option>
+                </select>
                 <label for="file_format">Pilih format dokumen:</label>
                 <select name="file_format" id="file_format">
                     <option value="#">PDF</option>

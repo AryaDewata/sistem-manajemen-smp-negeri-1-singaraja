@@ -191,6 +191,15 @@
                             </a>
                         </li>
                         <li>
+                            <a href="master-data-ruangan.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="material-symbols:meeting-room-outline" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Ruangan</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
                             <a href="master-data-kelas.html">
                                 <div class="active-link">
                                     <iconify-icon icon="wpf:check-book" width="24" height="24"
@@ -454,23 +463,19 @@
 
                 <!-- Nama Kelas -->
                 <ul>
-                    <li><label for="nama_kelas">Kelas<span>*</span></label></li>
+                    <li><label for="nama_kelas">Nama Kelas<span>*</span></label></li>
                     <li><input type="text" id="nama_kelas" name="nama_kelas"></li>
                 </ul>
 
                 <!-- Nama Ruangan -->
                 <ul>
                     <li><label for="ruang_kelas">Nama Ruangan<span>*</span></label></li>
-                    <li><input type="text" id="ruang_kelas" name="ruang_kelas"></li>
-                </ul>
-
-                <!-- Wali Kelas -->
-                <ul>
-                    <li><label for="wali_kelas">Wali Kelas<span>*</span></label></li>
                     <li>
-                        <select name="wali_kelas" id="wali_kelas">
-                            <option value="1">Wali 1</option>
-                            <option value="2">Wali 2</option>
+                        <select id="ruang_kelas" name="ruang_kelas">
+                            <option value="#">Ruang A</option>
+                            <option value="#">Ruang B</option>
+                            <option value="#">Ruang C</option>
+                            <option value="#">Ruang D</option>
                         </select>
                     </li>
                 </ul>
