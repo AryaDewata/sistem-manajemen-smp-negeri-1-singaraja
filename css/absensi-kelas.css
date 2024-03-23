@@ -128,55 +128,55 @@
     font-size: 42px;
   }
 }
-* > body article > div:nth-child(1) > div:nth-child(1) > div > .img {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .img {
   width: 100px;
   height: 100px;
   text-align: center;
 }
-* > body article > div:nth-child(1) > div:nth-child(1) > div > .name p:nth-child(1) {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .name p:nth-child(1) {
   font-weight: 700;
   font-size: x-large;
   color: #2b3674;
 }
-* > body article > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p {
   margin: 0;
 }
-* > body article > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p:nth-child(1) {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p:nth-child(1) {
   font-size: large;
   font-weight: bold;
   color: #2b3674;
 }
-* > body article > div:nth-child(1) > div:nth-child(2) > div > ul > li > p {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > ul > li > p {
   color: #2b3674;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
   text-align: end;
 }
-* > body article > div:nth-child(1) > div:nth-child(2) > div > ul > li > p::before {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > ul > li > p::before {
   text-align: start;
   color: #a3aed0;
 }
-* > body article > div:nth-child(1) > div:nth-child(2) > div > ul > li > p:nth-child(1)::before {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > ul > li > p:nth-child(1)::before {
   content: "Kelas";
 }
-* > body article > div:nth-child(1) > div:nth-child(2) > div > ul > li > p:nth-child(2)::before {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > ul > li > p:nth-child(2)::before {
   content: "Keterangan";
 }
-* > body article > div:nth-child(1) > div:nth-child(2) > div > ul > li > p:nth-child(3)::before {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > ul > li > p:nth-child(3)::before {
   content: "Waktu Mulai";
 }
-* > body article > div:nth-child(1) > div:nth-child(2) > div > ul > li > p:nth-child(4)::before {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > ul > li > p:nth-child(4)::before {
   content: "Waktu Selesai";
 }
-* > body article > div:nth-child(1) > div:nth-child(2) > div > p:nth-child(1) {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > p:nth-child(1) {
   text-align: center;
   font-family: "DM Sans", sans-serif;
   color: #2b3674;
   font-size: xx-large;
   font-weight: bolder;
 }
-* > body article > div:nth-child(1) > div:nth-child(2) > div > button {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > button {
   margin-top: auto;
   background: #4318ff;
   color: white;
@@ -185,17 +185,17 @@
   padding: 10px;
   border-radius: 10px;
 }
-* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > p {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > p {
   font-size: large;
   font-weight: bold;
   color: #2b3674;
 }
-* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > ul {
   display: flex;
   padding: 0;
   justify-content: flex-end;
 }
-* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li {
   color: #a3aed0;
   text-align: center;
   display: flex;
@@ -204,28 +204,28 @@
   align-items: center;
   width: 100%;
 }
-* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li > p {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li > p {
   display: flex;
 }
-* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li > p ~ p {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li > p ~ p {
   font-weight: bold;
   color: #2b3674;
 }
-* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li:nth-child(1) {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li:nth-child(1) {
   align-items: flex-start;
 }
-* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li:nth-child(1) > p {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li:nth-child(1) > p {
   color: #a3aed0;
 }
-* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li:nth-child(2) > p {
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li:nth-child(2) > p {
   justify-content: center;
 }
-* > body article > div:nth-child(2) div > p {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > p {
   font-weight: bold;
   font-size: x-large;
   color: #2b3674;
 }
-* > body article > div:nth-child(2) div > ul {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -235,7 +235,7 @@
   gap: 0;
   flex-wrap: nowrap;
 }
-* > body article > div:nth-child(2) div > ul > li {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li {
   padding: 15px;
   width: 100%;
   display: flex;
@@ -245,36 +245,36 @@
   gap: 30px;
   flex-wrap: nowrap;
 }
-* > body article > div:nth-child(2) div > ul > li > p {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li > p {
   margin: 0;
 }
-* > body article > div:nth-child(2) div > ul > li > div {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li > div {
   height: auto;
   display: flex;
   justify-content: space-between;
   width: 35%;
 }
-* > body article > div:nth-child(2) div > ul > li > div > p {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li > div > p {
   width: 100%;
   text-align: center;
   font-size: unset;
   margin: 0;
 }
-* > body article > div:nth-child(2) div > ul > li:nth-child(1) > div > p {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li:nth-child(1) > div > p {
   color: #a3aed0;
 }
-* > body article > div:nth-child(2) div > ul > li ~ li {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li {
   margin-bottom: 20px;
   color: #2b3674;
   font-weight: bold;
   box-shadow: 0px 0px 6px 4px rgba(112, 144, 176, 0.0823529412);
 }
-* > body article > div:nth-child(2) div > ul > li ~ li p > span {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li p > span {
   display: flex;
   align-items: center;
   gap: 3px;
 }
-* > body article > div:nth-child(2) div > ul > li button {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li button {
   cursor: pointer;
   padding: 8px 16px;
   margin: 0;
@@ -287,39 +287,39 @@
   text-align: center;
   letter-spacing: 0.5px;
 }
-* > body article > div:nth-child(2) div > ul > li button:disabled {
+* > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li button:disabled {
   background-color: #a3aed0;
   cursor: not-allowed;
 }
 @media (max-width: 1140px) {
-  * > body article > div:nth-child(2) div > ul {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: normal;
   }
-  * > body article > div:nth-child(2) div > ul > li {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li {
     flex-direction: column;
     align-items: start;
     display: none;
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li {
     gap: 5px;
     width: 49.5%;
     display: flex;
   }
 }
 @media (max-width: 1140px) and (max-width: 540px) {
-  * > body article > div:nth-child(2) div > ul > li ~ li {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li {
     width: 100%;
   }
 }
 @media (max-width: 1140px) {
-  * > body article > div:nth-child(2) div > ul > li ~ li > div {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li > div {
     flex-direction: column;
     width: 100%;
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li > div > p {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li > div > p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -327,25 +327,259 @@
     gap: 0;
     flex-wrap: nowrap;
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(1)::before {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(1)::before {
     content: "Kelas";
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(2)::before {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(2)::before {
     content: "Waktu Mulai";
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(3)::before {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(3)::before {
     content: "Waktu Selesai";
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li > div > p::before {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li > div > p::before {
     color: #a3aed0;
     font-weight: normal;
     text-align: left;
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li > p {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li ~ li > p {
     font-size: x-small;
     text-align: left;
   }
-  * > body article > div:nth-child(2) div > ul > li p {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li p {
+    text-align: end;
+    width: 100%;
+  }
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .img {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .name p:nth-child(1) {
+  font-weight: 700;
+  font-size: x-large;
+  color: #2b3674;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p {
+  margin: 0;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p:nth-child(1) {
+  font-size: large;
+  font-weight: bold;
+  color: #2b3674;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > p {
+  border-bottom: 1px solid rgba(163, 174, 208, 0.2784313725);
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul {
+  display: flex;
+  flex-direction: column;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+@media (max-width: 540px) {
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li {
+    display: none;
+    flex-direction: column;
+  }
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li > p {
+  font-weight: 700;
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  text-align: end;
+  margin: 0;
+}
+@media (max-width: 540px) {
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li > p {
+    display: none;
+  }
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li:nth-child(even) {
+  background: rgba(163, 174, 208, 0.2784313725);
+}
+@media (max-width: 540px) {
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li {
+    display: flex;
+    box-shadow: 0px 0px 6px 4px rgba(112, 144, 176, 0.0823529412);
+    padding: 10px;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li:nth-child(even) {
+    background: none;
+  }
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li > p {
+  color: #2b3674;
+}
+@media (max-width: 540px) {
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li > p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li > p::before {
+    text-align: start;
+    color: #a3aed0;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li > p:nth-child(1)::before {
+    content: "Mapel";
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li > p:nth-child(2)::before {
+    content: "Waktu Mulai";
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li > p:nth-child(3)::before {
+    content: "Waktu Selesai";
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li > p:nth-child(4)::before {
+    content: "Link Materi";
+  }
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > p:nth-child(1) {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  color: #2b3674;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > button {
+  margin-top: auto;
+  background: #4318ff;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > p {
+  font-weight: bold;
+  font-size: x-large;
+  color: #2b3674;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li > p {
+  margin: 0;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li > div {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li > div > p {
+  width: 100%;
+  text-align: center;
+  font-size: unset;
+  margin: 0;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li:nth-child(1) > div > p {
+  color: #a3aed0;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li {
+  margin-bottom: 20px;
+  color: #2b3674;
+  font-weight: bold;
+  box-shadow: 0px 0px 6px 4px rgba(112, 144, 176, 0.0823529412);
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li p > span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li button {
+  cursor: pointer;
+  padding: 8px 16px;
+  margin: 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #4318ff;
+  color: white;
+  font-family: "Poppins";
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li button:disabled {
+  background-color: #a3aed0;
+  cursor: not-allowed;
+}
+@media (max-width: 1140px) {
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li {
+    flex-direction: column;
+    align-items: start;
+    display: none;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li {
+    gap: 5px;
+    width: 49.5%;
+    display: flex;
+  }
+}
+@media (max-width: 1140px) and (max-width: 540px) {
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li {
+    width: 100%;
+  }
+}
+@media (max-width: 1140px) {
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div {
+    flex-direction: column;
+    width: 100%;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(1)::before {
+    content: "Kelas";
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(2)::before {
+    content: "Waktu Mulai";
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(3)::before {
+    content: "Waktu Selesai";
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p::before {
+    color: #a3aed0;
+    font-weight: normal;
+    text-align: left;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > p {
+    font-size: x-small;
+    text-align: left;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li p {
     text-align: end;
     width: 100%;
   }
