@@ -486,7 +486,7 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  width: 35%;
+  width: 50%;
 }
 * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li > div > p {
   width: 100%;
@@ -562,12 +562,15 @@
     flex-wrap: nowrap;
   }
   * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(1)::before {
-    content: "Kelas";
+    content: "Mapel";
   }
   * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(2)::before {
-    content: "Waktu Mulai";
+    content: "Guru";
   }
   * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(3)::before {
+    content: "Waktu Mulai";
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p:nth-child(4)::before {
     content: "Waktu Selesai";
   }
   * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li ~ li > div > p::before {
