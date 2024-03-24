@@ -471,6 +471,79 @@
     content: none;
   }
 }
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p,
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul {
+  width: 20%;
+}
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(1) {
+  width: 5%;
+  text-align: center;
+}
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(2) {
+  width: 6%;
+}
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(3) {
+  width: 15%;
+}
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(4) {
+  width: 35%;
+}
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(5), * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(6),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(5),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(6) {
+  width: 7%;
+  text-align: center;
+}
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(7),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(7) {
+  width: 25%;
+}
+@media (max-width: 1140px) {
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(1)::before {
+    content: "No";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(2)::before {
+    content: "Hari";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(3)::before {
+    content: "Mata Pelajaran";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(4)::before {
+    content: "Pengajar";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(5)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(5)::before {
+    content: "Waktu Mulai";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(6)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(6)::before {
+    content: "Waktu Selesai";
+    color: #a3aed0;
+    text-align: left;
+  }
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(7)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(7)::before {
+    content: none;
+  }
+}
 * > body > main > article > ul:nth-child(2) > li {
   padding: 14px 0;
   display: flex;
