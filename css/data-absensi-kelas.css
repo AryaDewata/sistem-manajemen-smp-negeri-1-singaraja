@@ -463,6 +463,11 @@
   display: flex;
   justify-content: space-between;
 }
+* > body > main > article > div:nth-child(2) > div > div > div#pagination p {
+  font-size: unset;
+  color: #a3aed0;
+  font-weight: unset;
+}
 * > body > main > article > #history > div > div#pagination > nav > ul > li > a {
   cursor: pointer;
   padding: 2px 12px;
