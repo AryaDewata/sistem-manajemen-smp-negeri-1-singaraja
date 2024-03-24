@@ -342,7 +342,7 @@
           <div class="col-md-6">
             <form action="">
               <div class="col-auto">
-          <p> Tambah Inisiasi Jadwal</p>
+                <p>Tambah Inisiasi Jadwal</p>
 
                 <label for="from-date" class="form-label">Dari:</label>
                 <input
@@ -362,16 +362,14 @@
                 />
               </div>
               <div class="col-auto mt-auto">
-                <button type="button" class="me-2 mb-2 btn">
-                  Tambah
-                </button>
+                <button type="button" class="me-2 mb-2 btn">Tambah</button>
               </div>
             </form>
           </div>
           <div class="col-md-6">
             <form action="">
               <div class="col-auto">
-          <p>Hapus Inisiasi Jadwal</p>
+                <p>Hapus Inisiasi Jadwal</p>
 
                 <label for="from-date" class="form-label">Dari:</label>
                 <input
@@ -391,15 +389,13 @@
                 />
               </div>
               <div class="col-auto mt-auto">
-                <button type="button" class="me-2 mb-2 btn">
-                  Hapus
-                </button>
+                <button type="button" class="me-2 mb-2 btn">Hapus</button>
               </div>
             </form>
           </div>
         </div>
         <div class="row" id="subject-schedule">
-          <div class="p-2  rounded-3 pt-3 pb-3 px-4">
+          <div class="p-2 rounded-3 pt-3 pb-3 px-4">
             <p>Daftar Materi</p>
             <ul class="p-0">
               <li>
@@ -422,9 +418,9 @@
               </li>
             </ul>
           </div>
-          <div class="p-2  rounded-3 pt-3 px-3">
+          <div class="p-2 rounded-3 pt-3 px-3">
             <p>Jadwal Pelajaran</p>
-            <button type="button">Ekspor</button>
+            <button type="button">Ekspor Data</button>
             <ul class="p-0">
               <li>
                 <p>7A</p>
@@ -451,7 +447,9 @@
         </div>
         <div class="row rounded-3 h-100 p-3" id="history">
           <div class="col-12 px-2 mt-2">
-            <p>Riwayat Absensi</p>
+            <p>Riwayat Absensi 
+            <button type="button">Ekspor Data</button>
+            </p>
             <div class="col-sm-5">
               <label for="" class="form-label">Kelas</label>
               <select name="" id="" class="form-select">
@@ -512,30 +510,46 @@
                 </p>
                 <p><button type="button">Lihat Detail</button></p>
               </li>
-              <li id="pagination">
-                <p>Menampilkan 1-5/20 data</p>
-                <nav>
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" rel="prev"
-                        ><i class="fas fa-angle-left"></i
-                      ></a>
-                    </li>
-                    <li><a href="#" class="active">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">10</a></li>
-                    <li>
-                      <a href="#" rel="next"
-                        ><i class="fas fa-angle-right"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </nav>
+              <li>
+                <p>7A</p>
+                <p>Bahasa Indonesia</p>
+                <p>Lorem Ipsum Dolor Sit</p>
+                <p>29 Januari 2024</p>
+                <p>00:00:00</p>
+                <p>Hadir</p>
+                <p>Guru</p>
+                <p class="text-danger">
+                  <iconify-icon
+                    icon="mingcute:warning-line"
+                    width="15"
+                    height="15"
+                    style="color: #dc3545"
+                  ></iconify-icon
+                  >Belum Absensi
+                </p>
+                <p><button type="button">Lihat Detail</button></p>
               </li>
             </ul>
-            <button type="button">Ekspor</button>
+            <div id="pagination">
+              <p>Menampilkan 1-5/20 data</p>
+              <nav>
+                <ul class="pagination">
+                  <li>
+                    <a href="#" rel="prev"><i class="fas fa-angle-left"></i></a>
+                  </li>
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">10</a></li>
+                  <li>
+                    <a href="#" rel="next"
+                      ><i class="fas fa-angle-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </article>

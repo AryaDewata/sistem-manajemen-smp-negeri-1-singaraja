@@ -281,10 +281,7 @@
   gap: 5px;
   flex-wrap: wrap;
 }
-@media (max-width: 1140px) {
-  * > body article > #subject-schedule > div:nth-child(2) > ul > li {
-  }
-}
+
 * > body article > #subject-schedule > div:nth-child(2) > ul > li > p {
   text-align: center;
   font-size: large;
@@ -339,6 +336,19 @@
   font-weight: bold;
   font-size: x-large;
   color: #2b3674;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+* > body article > #history > div > p > button {
+  background: #4318ff;
+  padding: 8px 16px;
+  margin: 0;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 * > body article > #history > div > ul {
   padding: 0;
@@ -449,11 +459,11 @@
   margin-bottom: 10px;
   border-radius: 5px;
 }
-* > body > main > article > #history > div > ul > li#pagination {
+* > body > main > article > #history > div > div#pagination {
+  display: flex;
   justify-content: space-between;
-  padding-left: 2%;
 }
-* > body > main > article > #history > div > ul > li#pagination > nav > ul > li > a {
+* > body > main > article > #history > div > div#pagination > nav > ul > li > a {
   cursor: pointer;
   padding: 2px 12px;
   margin: 0 4px;
@@ -462,14 +472,14 @@
   color: white;
   text-decoration: none;
 }
-* > body > main > article > #history > div > ul > li#pagination > nav > ul > li > a:hover {
+* > body > main > article > #history > div > div#pagination > nav > ul > li > a:hover {
   opacity: 80%;
 }
-* > body > main > article > #history > div > ul > li#pagination > nav > ul > li > a:not(.active) {
+* > body > main > article > #history > div > div#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
   color: #a3aed0;
 }
-* > body > main > article > #history > div > ul > li#pagination > nav > ul > li > a:not(.active):hover {
+* > body > main > article > #history > div > div#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
 }
 @media (max-width: 1140px) {
@@ -486,21 +496,25 @@
   * > body > main > article > #history > div > ul > li:nth-child(1):not(:has(embed)) {
     display: none;
   }
-  * > body > main > article > #history > div > ul > li:last-child {
+  * > body > main > article > #history > div > div#pagination {
     flex-direction: column-reverse;
     justify-content: center;
     box-shadow: none;
     border: none;
   }
-  * > body > main > article > #history > div > ul > li:last-child > nav > ul > li{
+  * > body > main > article > #history > div > div#pagination > nav > ul > li{
     border: none;
   }
-  * > body > main > article > #history > div > ul > li:last-child >  p {
+  * > body > main > article > #history > div > div#pagination >  p {
     justify-content: center;
   }
-  * > body > main > article > #history > div > ul > li#pagination > p::before {
+  * > body > main > article > #history > div > div#pagination > p::before {
     content: "" !important;
-
+  }
+  @media (max-width:768px) {
+    * > body > main > article > #history > div > div#pagination{
+      align-items: center;
+    }
   }
 }
 * > body > #popup {
