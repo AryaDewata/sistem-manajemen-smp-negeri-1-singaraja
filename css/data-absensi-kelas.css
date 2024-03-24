@@ -129,10 +129,11 @@
   }
 }
 * > body article > #subject-schedule {
-  margin-bottom: 10px;
   justify-content: space-between;
 }
 * > body article > #subject-schedule > div {
+  margin-bottom: 10px;
+
   background: white;
   display: flex;
   flex-direction: column;
@@ -175,7 +176,7 @@
 * > body article > #subject-schedule > div:nth-child(1) > ul > li ~ li:nth-child(odd) {
   background: rgba(163, 174, 208, 0.2784313725);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
   * > body article > #subject-schedule > div:nth-child(1) > ul {
     gap: 10px;
   }
@@ -250,17 +251,17 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   gap: 5px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
   * > body article > #subject-schedule > div:nth-child(2) > ul {
     flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
-  * > body article > #subject-schedule > div:nth-child(2) > ul {
-    flex-wrap: nowrap;
+  * > body article > #subject-schedule > div:nth-child(2) > ul > li {
+    width: 49.8%;
   }
 }
 @media (max-width: 425px) {
@@ -277,12 +278,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  flex-wrap: nowrap;
+  gap: 5px;
+  flex-wrap: wrap;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
   * > body article > #subject-schedule > div:nth-child(2) > ul > li {
-    width: 100%;
   }
 }
 * > body article > #subject-schedule > div:nth-child(2) > ul > li > p {
@@ -312,19 +312,28 @@
 * > body article > #history {
   background: white;
 }
-* > body article > #history > #schedule-initiation {
+* > body article > #schedule-initiation {
   background: white;
+  margin-bottom: 10px;
+
 }
-* > body article > #history > #schedule-initiation > div > button:hover {
-  opacity: 0.8;
+* > body article > #schedule-initiation > div form > div > p {
+  font-weight: bold;
+  font-size: x-large;
+  color: #2b3674;
 }
-* > body article > #history > #schedule-initiation > div > button:first-child {
+
+* > body article > #schedule-initiation > div > form > div > button {
   background: #4318ff;
   color: white;
 }
-* > body article > #history > #schedule-initiation > div > button:last-child {
+* > body article > #schedule-initiation > div:last-child > form > div > button {
   background: #d04848;
   color: white;
+}
+
+* > body article > #schedule-initiation > div > form > div > button:hover {
+  opacity: 0.8;
 }
 * > body article > #history > div > p {
   font-weight: bold;
@@ -375,7 +384,7 @@
   margin: 10px 0;
   border-radius: 28px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
   * > body article > #history > div > ul {
     gap: 10px;
     flex-direction: row;
@@ -394,6 +403,7 @@
     border: 1px solid rgba(163, 174, 208, 0.2784313725);
   }
   * > body article > #history > div > ul li ~ li > p {
+    text-align: end;
     width: 100%;
     justify-content: space-between;
   }
@@ -425,7 +435,7 @@
     margin-bottom: 0;
   }
 }
-@media (max-width: 1024px) and (max-width: 540px) {
+@media (max-width: 1140px) and (max-width: 540px) {
   * > body article > #history > div > ul li ~ li {
     width: 100%;
   }
@@ -438,6 +448,60 @@
   border: none;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+* > body > main > article > #history > div > ul > li#pagination {
+  justify-content: space-between;
+  padding-left: 2%;
+}
+* > body > main > article > #history > div > ul > li#pagination > nav > ul > li > a {
+  cursor: pointer;
+  padding: 2px 12px;
+  margin: 0 4px;
+  border-radius: 84px;
+  background-color: #4318ff;
+  color: white;
+  text-decoration: none;
+}
+* > body > main > article > #history > div > ul > li#pagination > nav > ul > li > a:hover {
+  opacity: 80%;
+}
+* > body > main > article > #history > div > ul > li#pagination > nav > ul > li > a:not(.active) {
+  background-color: transparent;
+  color: #a3aed0;
+}
+* > body > main > article > #history > div > ul > li#pagination > nav > ul > li > a:not(.active):hover {
+  background-color: rgba(163, 174, 208, 0.2784313725);
+}
+@media (max-width: 1140px) {
+  * > body > main > article > #history > div > ul > li {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    background-color: white !important;
+  }
+  * > body > main > article > #history > div > ul > li:nth-child(1):not(:has(embed)) {
+    display: none;
+  }
+  * > body > main > article > #history > div > ul > li:last-child {
+    flex-direction: column-reverse;
+    justify-content: center;
+    box-shadow: none;
+    border: none;
+  }
+  * > body > main > article > #history > div > ul > li:last-child > nav > ul > li{
+    border: none;
+  }
+  * > body > main > article > #history > div > ul > li:last-child >  p {
+    justify-content: center;
+  }
+  * > body > main > article > #history > div > ul > li#pagination > p::before {
+    content: "" !important;
+
+  }
 }
 * > body > #popup {
   position: fixed;
