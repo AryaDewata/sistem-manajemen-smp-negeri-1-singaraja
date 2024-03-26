@@ -11,7 +11,7 @@
   align-items: stretch;
   gap: 0;
   flex-wrap: nowrap;
-  color: #a3aed0;
+  color: black;
   font-size: 12.75px;
   font-family: "Poppins";
 }
@@ -40,7 +40,7 @@
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
   background-color: white;
-  color: #a3aed0;
+  color: black;
   font-family: "Poppins";
 }
 * > body input:disabled,
@@ -84,6 +84,7 @@
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
+  color: #a3aed0;
 }
 @media (max-width: 1140px) {
   * > body > main > #header {
@@ -260,31 +261,31 @@
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(1)::before {
     content: "No";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(2)::before {
     content: "Nama Siswa";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(3)::before {
     content: "Jenis Kelamin";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(4)::before {
     content: "Kelas";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(5)::before {
     content: "Waktu";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(6)::before {
     content: "Perubahan Poin";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2)#riwayat-perubahan-poin > li > p:nth-child(7)::before {
     content: "Catatan";
-    color: #a3aed0;
+    color: black;
   }
 }
 * > body > main > article > ul:nth-child(2) > li {
@@ -338,7 +339,7 @@
 }
 * > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
-  color: #a3aed0;
+  color: black;
 }
 * > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
@@ -425,23 +426,23 @@
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(1)::before {
     content: "No";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before {
     content: "Nama Siswa";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before {
     content: "Jenis Kelamin";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4)::before {
     content: "Kelas";
-    color: #a3aed0;
+    color: black;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(5)::before {
     content: "Jumlah Poin";
-    color: #a3aed0;
+    color: black;
   }
 }
 * > body > #popup {
@@ -466,7 +467,7 @@
   display: none;
   border-radius: 8px;
   background-color: white;
-  color: #a3aed0;
+  color: black;
   text-align: center;
 }
 @media (max-width: 1140px) {

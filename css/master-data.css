@@ -11,7 +11,7 @@
   align-items: stretch;
   gap: 0;
   flex-wrap: nowrap;
-  color: #a3aed0;
+  color: black;
   font-size: 12.75px;
   font-family: "Poppins";
 }
@@ -43,7 +43,7 @@
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
   background-color: white;
-  color: #a3aed0;
+  color: black;
   font-family: "Poppins";
 }
 * > body input:disabled,
@@ -87,6 +87,7 @@
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
+  color: #a3aed0;
 }
 @media (max-width: 1140px) {
   * > body > main > #header {
@@ -273,13 +274,13 @@
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(1)::before,
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(1)::before {
     content: "No";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(2)::before,
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(2)::before {
     content: "Mata Pelajaran";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3),
@@ -290,7 +291,7 @@
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3)::before {
     width: 50%;
     content: "Guru Pengajar";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3) > li,
@@ -335,25 +336,25 @@
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(1)::before,
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(1)::before {
     content: "No";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(2)::before,
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(2)::before {
     content: "Nama Kelas";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(3)::before,
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(3)::before {
     content: "Ruangan";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(4)::before,
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(4)::before {
     content: "Wali Kelas";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(5)::before,
@@ -394,31 +395,31 @@
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(1)::before,
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(1)::before {
     content: "No";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(2)::before,
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(2)::before {
     content: "NIS";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(3)::before,
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(3)::before {
     content: "Nama Siswa";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(4)::before,
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(4)::before {
     content: "Jenis Kelamin";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(5)::before,
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(5)::before {
     content: "Kelas";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(6)::before,
@@ -451,19 +452,19 @@
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(1)::before,
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(1)::before {
     content: "No";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(2)::before,
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(2)::before {
     content: "Nama Ruangan";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(3)::before,
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(3)::before {
     content: "Deskripsi";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(4)::before,
@@ -506,37 +507,37 @@
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(1)::before,
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(1)::before {
     content: "No";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(2)::before,
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(2)::before {
     content: "Hari";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(3)::before,
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(3)::before {
     content: "Mata Pelajaran";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(4)::before,
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(4)::before {
     content: "Pengajar";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(5)::before,
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(5)::before {
     content: "Waktu Mulai";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(6)::before,
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(6)::before {
     content: "Waktu Selesai";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(7)::before,
@@ -585,7 +586,7 @@
 }
 * > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
-  color: #a3aed0;
+  color: black;
 }
 * > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
@@ -689,19 +690,19 @@
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(1)::before,
   * > body > main > article > ul:nth-child(2) > li > ul:nth-child(1)::before {
     content: "No";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before,
   * > body > main > article > ul:nth-child(2) > li > ul:nth-child(2)::before {
     content: "Nama Pengguna";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before,
   * > body > main > article > ul:nth-child(2) > li > ul:nth-child(3)::before {
     content: "Nama Lengkap";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4),
@@ -712,7 +713,7 @@
   * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4)::before {
     width: 50%;
     content: "Status";
-    color: #a3aed0;
+    color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4) > li,
@@ -748,7 +749,7 @@
   display: none;
   border-radius: 8px;
   background-color: white;
-  color: #a3aed0;
+  color: black;
   text-align: center;
 }
 @media (max-width: 768px) {

@@ -11,7 +11,7 @@
   align-items: stretch;
   gap: 0;
   flex-wrap: nowrap;
-  color: #a3aed0;
+  color: black;
   font-size: 12.75px;
   font-family: "Poppins";
 }
@@ -41,7 +41,7 @@
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
   background-color: white;
-  color: #a3aed0;
+  color: black;
   font-family: "Poppins";
 }
 * > body input:disabled,
@@ -85,6 +85,7 @@
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
+  color: #a3aed0;
 }
 @media (max-width: 1140px) {
   * > body > main > #header {
@@ -220,7 +221,7 @@
   display: none;
   border-radius: 8px;
   background-color: white;
-  color: #a3aed0;
+  color: black;
   text-align: center;
 }
 @media (max-width: 1140px) {
