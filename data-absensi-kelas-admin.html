@@ -302,7 +302,7 @@
           <p>
             Sistem Manajemen SMP Negeri 1 Singaraja / Absensi / Absensi Siswa
           </p>
-          <h2>Absensi Siswa</h2>
+          <h1>Absensi Siswa</h1>
         </div>
 
         <!-- Header Menus -->
@@ -338,62 +338,6 @@
         </ul>
       </section>
       <article>
-        <div class="row rounded-3 p-3" id="schedule-initiation">
-          <div class="col-md-6">
-            <form action="">
-              <div class="col-auto">
-                <p>Tambah Inisiasi Jadwal</p>
-
-                <label for="from-date" class="form-label">Dari:</label>
-                <input
-                  type="date"
-                  name="from-date"
-                  id="from-date"
-                  class="form-control me-2 mb-2"
-                />
-              </div>
-              <div class="col-auto">
-                <label for="to-date" class="form-label">Sampai:</label>
-                <input
-                  type="date"
-                  name="to-date"
-                  id="to-date"
-                  class="form-control me-2 mb-2"
-                />
-              </div>
-              <div class="col-auto mt-auto">
-                <button type="button" class="me-2 mb-2 btn">Tambah</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-6">
-            <form action="">
-              <div class="col-auto">
-                <p>Hapus Inisiasi Jadwal</p>
-
-                <label for="from-date" class="form-label">Dari:</label>
-                <input
-                  type="date"
-                  name="from-date"
-                  id="from-date"
-                  class="form-control me-2 mb-2"
-                />
-              </div>
-              <div class="col-auto">
-                <label for="to-date" class="form-label">Sampai:</label>
-                <input
-                  type="date"
-                  name="to-date"
-                  id="to-date"
-                  class="form-control me-2 mb-2"
-                />
-              </div>
-              <div class="col-auto mt-auto">
-                <button type="button" class="me-2 mb-2 btn">Hapus</button>
-              </div>
-            </form>
-          </div>
-        </div>
         <div class="row" id="subject-schedule">
           <div class="p-2 rounded-3 pt-3 pb-3 px-4">
             <p>Daftar Materi</p>
@@ -420,7 +364,7 @@
           </div>
           <div class="p-2 rounded-3 pt-3 px-3">
             <p>Jadwal Pelajaran</p>
-            <button type="button">Ekspor Data</button>
+            <button type="button" onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('class-export-form').classList.add('show');">Ekspor Data</button>
             <ul class="p-0">
               <li>
                 <p>7A</p>
@@ -446,9 +390,18 @@
           </div>
         </div>
         <div class="row rounded-3 h-100 p-3" id="history">
-          <div class="col-12 px-2 mt-2">
-            <p>Riwayat Absensi 
-            <button type="button">Ekspor Data</button>
+          <div class="col-12 px-2">
+            <p>
+              Riwayat Absensi
+              <span>
+                <a href=""><button id="schedule-initiation-btn">Inisiasi Jadwal <i class="fa-solid fa-square-plus" style="color: #4318ff;"></i></button></a>
+                <button type="button" onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('delete-history').classList.add('show');" id="delete-history-btn">
+                  Hapus Riwayat <i class="fa-solid fa-trash"></i>
+                </button>
+                <button type="button" onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('history-export-form').classList.add('show');" id="export-history-btn">
+                  Rekap Absensi <i class="fa-solid fa-file-export"></i>
+                </button>
+              </span>
             </p>
             <div class="col-sm-5">
               <label for="" class="form-label">Kelas</label>
@@ -459,6 +412,9 @@
               </select>
               <label for="" class="form-label mt-2">Tanggal</label>
               <input type="date" name="" id="" class="form-control mb-3" />
+              <button type="submit">
+                Cari Kelas <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
             <ul>
               <li>
@@ -531,7 +487,12 @@
               </li>
             </ul>
             <div id="pagination">
-              <p>Menampilkan 1-5/20 data</p>
+              <p>Menampilkan 1-5/20 data
+                <form action="">
+                <select name="" id=""></select>
+
+                </form>
+              </p>
               <nav>
                 <ul class="pagination">
                   <li>
@@ -558,44 +519,56 @@
 
     <!-- Popup Box -->
     <div id="popup">
-      <!-- Forgot Password -->
-      <div id="forgot-password">
-        <i class="fas fa-exclamation-circle"></i>
-        <p>
-          Silakan hubungi pihak operator untuk mendapatkan kata sandi baru anda!
-        </p>
-        <button
-          type="button"
-          onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');"
-        >
-          <i class="fas fa-cancel"></i> Tutup
-        </button>
-      </div>
+      <div id="class-export-form">
 
-      <!-- Login Failed -->
-      <div id="login-failed">
-        <i class="fas fa-exclamation-circle"></i>
-        <p>Nama pengguna atau kata sandi yang anda masukkan tidak sesuai!</p>
-        <button
-          type="button"
-          onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');"
-        >
-          <i class="fas fa-cancel"></i> Tutup
-        </button>
-      </div>
+        <!-- Export Data Form -->
+        <form action="/exportData" method="#">
+            <label for="kelas_siswa">Pilih kelas:</label>
+            <select name="kelas_siswa" id="kelas_siswa">
+                <option value="#">Semua Kelas</option>
+                <option value="#">7A</option>
+                <option value="#">7B</option>
+                <option value="#">7C</option>
+                <option value="#">8A</option>
+                <option value="#">8B</option>
+                <option value="#">8C</option>
+                <option value="#">9A</option>
+                <option value="#">9B</option>
+                <option value="#">9C</option>
+            </select>
+            <label for="file_format">Pilih format dokumen:</label>
+            <select name="file_format" id="file_format">
+                <option value="#">PDF</option>
+                <option value="#">XLSX</option>
+            </select>
+            <ul>
+                <li>
+                    <button type="button"
+                        onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
+                        <i class="fas fa-cancel"></i> Batal
+                    </button>
+                </li>
+                <li>
+                    <button type="submit" name="export_data">Ekspor Data <i class="fas fa-file-export"></i></button>
+                </li>
+            </ul>
+        </form>
 
-      <!-- User Access -->
-      <div id="user-access-id">
-        <!-- Switch Access Form -->
-        <form action="/switchAccess" method="#">
-          <label for="user_access_id">Pilih akses masuk anda:</label>
-          <select name="user_access_id" id="user_access_id">
-            <option value="#">Administrator</option>
-            <option value="#">Wali Kelas</option>
-            <option value="#">Guru</option>
-            <option value="#">Staf</option>
+    </div>
+
+      <div id="history-export-form">
+        <!-- Export Data Form -->
+        <form action="/exportData" method="#">
+          <label for="kelas_siswa">Pilih Bulan/Tahun:</label>
+          <select name="kelas_siswa" id="kelas_siswa">
+            <option value="#" disabled selected>Bulan/Tahun</option>
           </select>
-          <ul class="mb-0">
+          <label for="file_format">Pilih format dokumen:</label>
+          <select name="file_format" id="file_format">
+            <option value="#">PDF</option>
+            <option value="#">XLSX</option>
+          </select>
+          <ul>
             <li>
               <button
                 type="button"
@@ -605,187 +578,39 @@
               </button>
             </li>
             <li>
-              <button type="submit" name="switch_access">
-                Pilih <i class="fas fa-check"></i>
+              <button type="submit" name="export_data">
+                Ekspor Data <i class="fas fa-file-export"></i>
               </button>
             </li>
           </ul>
         </form>
       </div>
-      <div id="absensi">
-        <form action="">
-          <div class="map-preview">
-            <img src="img/map-preview.png" alt="" width="100%" />
-          </div>
-          <div class="row text-center">
-            <p class="mb-2 text-success fw-bold fs-5">
-              Lokasi Anda berada dalam Radius
-            </p>
-            <ul class="d-flex m-0 gap-2 justify-content-center flex-wrap">
-              <li>
-                <button
-                  type="button"
-                  onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
-                >
-                  Kembali
-                </button>
-              </li>
-              <li>
-                <button
-                  type="submwit"
-                  onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden';
-               this.parentNode.parentNode.classList.remove('show');
-               document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('absensi-success').classList.add('show');
-               "
-                >
-                  Lanjutkan
-                </button>
-              </li>
-            </ul>
-          </div>
-        </form>
-      </div>
-      <div id="absensi-success">
-        <iconify-icon
-          icon="ph:check-circle"
-          width="150"
-          height="150"
-          style="color: #4318ff"
-        ></iconify-icon>
-        <p class="m-0">Absensi Berhasil Dilakukan!</p>
-        <button
-          type="button"
-          onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
-        >
-          Tutup
-        </button>
-      </div>
-      <div id="detail-hadir" class="p-3">
-        <p class="mb-0">Detail Absen</p>
-        <p
-          class="mb-0"
-          onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
-        >
-          <iconify-icon
-            icon="iconamoon:close-thin"
-            width="36"
-            height="36"
-            style="color: #a3aed0"
-          ></iconify-icon>
-        </p>
-        <ul class="p-0 m-0 row">
-          <li>
-            <p>Jony</p>
-            <p>29 Januari 2021</p>
-            <p>18:40:09</p>
-            <p>Hadir</p>
-            <p>
-              <span
-                ><iconify-icon
-                  icon="icon-park-solid:check-one"
-                  width="13"
-                  height="13"
-                  style="color: #05cd99"
-                ></iconify-icon>
-                Disetujui</span
-              >
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div id="detail-izin" class="p-3">
-        <p class="mb-0">Detail Absen</p>
-        <p
-          class="mb-0"
-          onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
-        >
-          <iconify-icon
-            icon="iconamoon:close-thin"
-            width="36"
-            height="36"
-            style="color: #a3aed0"
-          ></iconify-icon>
-        </p>
-        <ul class="p-0 m-0 row">
-          <li>
-            <img src="img/izin.png" alt="" width="100%" class="mb-2" />
-            <p>Jony</p>
-            <p>29 Januari 2021</p>
-            <p>18:40:09</p>
-            <p>Hadir</p>
-            <p>
-              <span
-                ><iconify-icon
-                  icon="icon-park-solid:check-one"
-                  width="13"
-                  height="13"
-                  style="color: #05cd99"
-                ></iconify-icon>
-                Disetujui</span
-              >
-            </p>
-            <p></p>
-          </li>
-        </ul>
-      </div>
-      <div id="absensi-kelas" class="show">
-        <form action="">
-          <p class="mb-0">Absensi Kelas</p>
-          <p
-            class="mb-0"
-            onclick="this.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
-          >
-            <iconify-icon
-              icon="iconamoon:close-thin"
-              width="36"
-              height="36"
-              style="color: #a3aed0"
-            ></iconify-icon>
-          </p>
-          <ul class="p-0 m-0 row">
+      <div id="delete-history">
+        <!-- delete history -->
+        <form action="/deleteData" method="#">
+          <label for="kelas_siswa">Pilih Bulan/Tahun:</label>
+          <select name="kelas_siswa" id="kelas_siswa">
+            <option value="#" disabled selected>Bulan/Tahun</option>
+          </select>
+          <ul>
             <li>
-              <p>Apakah anda hadir di kelas?</p>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
-                  required
-                  onclick="document.getElementById('link').disabled = true; document.getElementById('link').required = false; document.getElementById('link').value = ''; "
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Hadir
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault2"
-                  required
-                  onclick="document.getElementById('link').disabled = false; document.getElementById('link').required = true"
-                />
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Tidak Hadir
-                </label>
-              </div>
-              <input
-                class="form-control"
-                type="text"
-                placeholder="Link"
-                aria-label="default input"
-                name="link"
-                id="link"
-                disabled
-              />
-              <button type="submit" class="rounded">Buka Absensi</button>
+              <button
+                type="button"
+                onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
+              >
+                <i class="fas fa-cancel"></i> Batal
+              </button>
+            </li>
+            <li>
+              <button type="submit" name="export_data" >
+                Hapus Riwayat <i class="fa-solid fa-trash"></i>
+              </button>
             </li>
           </ul>
         </form>
       </div>
     </div>
+    
     <!-- bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

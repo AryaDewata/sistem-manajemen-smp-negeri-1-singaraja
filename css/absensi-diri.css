@@ -6,6 +6,21 @@
   box-sizing: border-box;
   list-style: none;
 }
+* h1,
+* h2 {
+  color: #2b3674;
+  font-weight: bold;
+}
+* select {
+  padding: 12px;
+  min-width: 248px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid rgba(163, 174, 208, 0.2784313725);
+  color: #a3aed0;
+  font-size: 14.75px;
+  font-family: "Poppins";
+}
 * > body {
   overflow: hidden;
   display: flex;
@@ -45,9 +60,8 @@
     row-gap: 18px;
   }
 }
-* > body > main > #header > #breadcrumbs > h2 {
-  color: #2b3674;
-  font-weight: bold;
+* > body > main > #header > #breadcrumbs > p {
+  color: #a3aed0;
 }
 * > body > main > #header > ul {
   display: flex;
@@ -200,38 +214,31 @@
   display: flex;
   gap: 3px;
 }
+* > body article > div:nth-child(2) div {
+  align-items: end;
+}
 * > body article > div:nth-child(2) div > label {
   padding: 0 !important;
   margin: 0 !important;
 }
 * > body article > div:nth-child(2) div > input {
   border: none;
-  color: #a3aed0;
+  color: #2b3674;
   border-bottom: 1px solid gray;
   border-radius: 0px;
+  margin: 0 !important;
 }
 * > body article > div:nth-child(2) div:nth-child(3) {
   padding: 0 !important;
   margin: 0px 10px;
 }
 * > body article > div:nth-child(2) div:nth-child(3) > button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  margin-top: auto;
-  background: #f4f7fe;
-  color: #2b3674;
-  font-weight: bolder;
+  margin-top: auto !important;
+  background-color: #4318ff;
+  color: white;
   border: none;
-  height: 57.8px;
-  width: 57.8px;
   padding: 10px;
-  border-radius: 10px;
-  transition: 0.2s;
-}
-* > body article > div:nth-child(2) div:nth-child(3) > button:hover {
-  background: rgba(163, 174, 208, 0.2784313725);
+  border-radius: 5px;
 }
 * > body article > div:nth-child(2) div > p {
   font-weight: bold;
@@ -249,6 +256,7 @@
   flex-wrap: nowrap;
 }
 * > body article > div:nth-child(2) div > ul li {
+  text-align: center;
   padding: 15px;
   width: 100%;
   display: flex;
@@ -270,6 +278,8 @@
 }
 * > body article > div:nth-child(2) div > ul li ~ li p > span {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 3px;
 }
@@ -339,16 +349,18 @@
     width: 100%;
   }
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination {
+* > body article > div:nth-child(2) div div#pagination {
+  padding-left: 2%;
   display: flex;
   justify-content: space-between;
+  align-items: end;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination p {
+* > body article > div:nth-child(2) div div#pagination > p {
   font-size: unset;
-  color: #a3aed0;
   font-weight: unset;
+  color: #a3aed0;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li > a {
+* > body article > div:nth-child(2) div div#pagination > nav > ul > li > a {
   cursor: pointer;
   padding: 2px 12px;
   margin: 0 4px;
@@ -357,49 +369,49 @@
   color: white;
   text-decoration: none;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li > a:hover {
+* > body article > div:nth-child(2) div div#pagination > nav > ul > li > a:hover {
   opacity: 80%;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li > a:not(.active) {
+* > body article > div:nth-child(2) div div#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
   color: #a3aed0;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li > a:not(.active):hover {
+* > body article > div:nth-child(2) div div#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
 }
 @media (max-width: 1140px) {
-  * > body > main > article > div:nth-child(2) > div > div > ul > li {
+  * > body article > div:nth-child(2) div div#pagination {
     padding: 14px;
+    margin: 0 auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 0;
     flex-wrap: nowrap;
+    box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
     background-color: white !important;
   }
-  * > body > main > article > div:nth-child(2) > div > div > ul > li:nth-child(1):not(:has(embed)) {
+  * > body article > div:nth-child(2) div div#pagination > nav > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  * > body article > div:nth-child(2) div div#pagination:nth-child(1):not(:has(embed)) {
     display: none;
   }
-  * > body > main > article > div:nth-child(2) > div > div > div#pagination {
+  * > body article > div:nth-child(2) div div#pagination:last-child {
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 14px;
     box-shadow: none;
-    border: none;
+    background-color: transparent !important;
   }
-  * > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li{
-    border: none;
-  }
-  * > body > main > article > div:nth-child(2) > div > div > div#pagination >  p {
-    justify-content: center;
-  }
-  * > body > main > article > div:nth-child(2) > div > div > div#pagination > p::before {
+  * > body article > div:nth-child(2) div div#pagination:last-child > p::before {
     content: "" !important;
   }
-  @media (max-width:768px) {
-    * > body > main > article > div:nth-child(2) > div > div > div#pagination{
-      align-items: center;
-    }
+  * > body article > div:nth-child(2) div div#pagination:last-child > p:not(:nth-child(1)) {
+    display: none;
   }
 }
 * > body > #popup {

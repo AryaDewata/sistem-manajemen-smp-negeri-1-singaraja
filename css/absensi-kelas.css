@@ -6,6 +6,21 @@
   box-sizing: border-box;
   list-style: none;
 }
+* h1,
+* h2 {
+  color: #2b3674;
+  font-weight: bold;
+}
+* select {
+  padding: 12px;
+  min-width: 248px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid rgba(163, 174, 208, 0.2784313725);
+  color: #a3aed0;
+  font-size: 14.75px;
+  font-family: "Poppins";
+}
 * > body {
   overflow: hidden;
   display: flex;
@@ -260,6 +275,11 @@
   font-size: unset;
   margin: 0;
 }
+@media (max-width: 1140px) {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li > div > p {
+    text-align: end;
+  }
+}
 * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li:nth-child(1) > div > p {
   color: #a3aed0;
 }
@@ -348,6 +368,66 @@
   * > body article#absensi-kelas-guru > div:nth-child(2) div > ul > li p {
     text-align: end;
     width: 100%;
+  }
+}
+* > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination {
+  padding-left: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+* > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination > nav > ul > li > a {
+  cursor: pointer;
+  padding: 2px 12px;
+  margin: 0 4px;
+  border-radius: 84px;
+  background-color: #4318ff;
+  color: white;
+  text-decoration: none;
+}
+* > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination > nav > ul > li > a:hover {
+  opacity: 80%;
+}
+* > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination > nav > ul > li > a:not(.active) {
+  background-color: transparent;
+  color: #a3aed0;
+}
+* > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination > nav > ul > li > a:not(.active):hover {
+  background-color: rgba(163, 174, 208, 0.2784313725);
+}
+@media (max-width: 1140px) {
+  * > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination {
+    padding: 14px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
+    background-color: white !important;
+  }
+  * > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination > nav > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  * > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination:nth-child(1):not(:has(embed)) {
+    display: none;
+  }
+  * > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination:last-child {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 14px;
+    box-shadow: none;
+    background-color: transparent !important;
+  }
+  * > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination:last-child > p::before {
+    content: "" !important;
+  }
+  * > body article#absensi-kelas-guru > div:nth-child(2) div div#pagination:last-child > p:not(:nth-child(1)) {
+    display: none;
   }
 }
 * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .img {
@@ -480,19 +560,25 @@
   flex-wrap: nowrap;
 }
 * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li > p {
+  text-align: end;
   margin: 0;
 }
 * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li > div {
   height: auto;
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
 }
 * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li > div > p {
   width: 100%;
   text-align: center;
   font-size: unset;
   margin: 0;
+}
+@media (max-width: 1140px) {
+  * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li > div > p {
+    text-align: end;
+  }
 }
 * > body article#absensi-kelas-wali > div:nth-child(2) div > ul > li:nth-child(1) > div > p {
   color: #a3aed0;
@@ -587,16 +673,18 @@
     width: 100%;
   }
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination {
+* > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination {
+  padding-left: 2%;
   display: flex;
   justify-content: space-between;
+  align-items: end;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination p {
+* > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination > p {
   font-size: unset;
-  color: #a3aed0;
   font-weight: unset;
+  color: #a3aed0;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li > a {
+* > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination > nav > ul > li > a {
   cursor: pointer;
   padding: 2px 12px;
   margin: 0 4px;
@@ -605,49 +693,49 @@
   color: white;
   text-decoration: none;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li > a:hover {
+* > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination > nav > ul > li > a:hover {
   opacity: 80%;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li > a:not(.active) {
+* > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
   color: #a3aed0;
 }
-* > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li > a:not(.active):hover {
+* > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
 }
 @media (max-width: 1140px) {
-  * > body > main > article > div:nth-child(2) > div > div > ul > li {
+  * > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination {
     padding: 14px;
+    margin: 0 auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 0;
     flex-wrap: nowrap;
+    box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
     background-color: white !important;
   }
-  * > body > main > article > div:nth-child(2) > div > div > ul > li:nth-child(1):not(:has(embed)) {
+  * > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination > nav > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination:nth-child(1):not(:has(embed)) {
     display: none;
   }
-  * > body > main > article > div:nth-child(2) > div > div > div#pagination {
+  * > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination:last-child {
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 14px;
     box-shadow: none;
-    border: none;
+    background-color: transparent !important;
   }
-  * > body > main > article > div:nth-child(2) > div > div > div#pagination > nav > ul > li{
-    border: none;
-  }
-  * > body > main > article > div:nth-child(2) > div > div > div#pagination >  p {
-    justify-content: center;
-  }
-  * > body > main > article > div:nth-child(2) > div > div > div#pagination > p::before {
+  * > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination:last-child > p::before {
     content: "" !important;
   }
-  @media (max-width:768px) {
-    * > body > main > article > div:nth-child(2) > div > div > div#pagination{
-      align-items: center;
-    }
+  * > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination:last-child > p:not(:nth-child(1)) {
+    display: none;
   }
 }
 * > body > #popup {

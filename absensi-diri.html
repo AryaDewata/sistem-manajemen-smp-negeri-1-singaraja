@@ -330,7 +330,8 @@
           <p>
             Sistem Manajemen SMP Negeri 1 Singaraja / Absensi / Absensi Diri
           </p>
-          <h2>Absensi Diri</h2>
+          <!-- ganti h1 -->
+          <h1>Absensi Diri</h1>   
         </div>
 
         <!-- Header Menus -->
@@ -461,7 +462,7 @@
         <div class="row">
           <div class="col py-4">
             <div class="rounded bg-white h-100 p-4">
-              <p>Riwayat Absensi</p>
+              <h2>Riwayat Absensi</h2>
               <div class="row">
                 <div class="col-auto">
                   <label for="from-date" class="form-label">Dari:</label>
@@ -482,13 +483,9 @@
                   />
                 </div>
                 <div class="col-auto">
-                  <button>
-                    <iconify-icon
-                      icon="ion:filter"
-                      width="24"
-                      height="24"
-                      style="color: #4318ff"
-                    ></iconify-icon>
+                  <!-- ubah style filter -->
+                  <button type="submit">
+                    Filter <i class="fa-solid fa-filter"></i>
                   </button>
                 </div>
               </div>
@@ -567,7 +564,12 @@
                 </li>
               </ul>
               <div id="pagination">
-                <p>Menampilkan 1-5/20 data</p>
+                <p>Menampilkan 1-5/20 data
+                  <form action="">
+                    <select name="" id=""></select>
+    
+                    </form>
+                </p>
                 <nav>
                   <ul class="pagination">
                     <li>
