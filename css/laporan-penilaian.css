@@ -336,6 +336,10 @@
 * > body > main > article > ul:nth-child(2) > li#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
 }
+* > body > main > article > ul:nth-child(2) > li#pagination > nav > ul {
+  justify-content: center;
+  flex-wrap: wrap;
+}
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) > li {
     padding: 14px;
@@ -355,11 +359,15 @@
   * > body > main > article > ul:nth-child(2) > li:last-child {
     flex-direction: column-reverse;
     justify-content: flex-end;
+    gap: 14px;
     box-shadow: none;
     background-color: transparent !important;
   }
   * > body > main > article > ul:nth-child(2) > li:last-child > p::before {
     content: "" !important;
+  }
+  * > body > main > article > ul:nth-child(2) > li:last-child > p:not(:nth-child(1)) {
+    display: none;
   }
 }
 @media (max-width: 580px) {

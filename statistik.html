@@ -7,12 +7,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Statistik Kehadiran - Sistem Manajemen SMP Negeri 1 Singaraja">
-    <meta name="description" content="Halaman Statistik Kehadiran Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta name="title" content="Statistik Absensi - Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta name="description" content="Halaman Statistik Absensi Sistem Manajemen SMP Negeri 1 Singaraja">
 
     <!-- Site's Open Graph Protocol -->
-    <meta property="og:title" content="Statistik Kehadiran - Sistem Manajemen SMP Negeri 1 Singaraja">
-    <meta property="og:description" content="Halaman Statistik Kehadiran Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta property="og:title" content="Statistik Absensi - Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta property="og:description" content="Halaman Statistik Absensi Sistem Manajemen SMP Negeri 1 Singaraja">
     <meta property="og:locale" content="id">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://smpn1sgr.sch.id/">
@@ -20,7 +20,7 @@
         content="https://raw.githubusercontent.com/AryaDewata/sistem-manajemen-smp-negeri-1-singaraja/main/assets/images/logo-smp-negeri-1-singaraja.png">
 
     <!-- Title -->
-    <title>Statistik Kehadiran - Sistem Manajemen | SMP Negeri 1 Singaraja</title>
+    <title>Statistik Absensi - Sistem Manajemen | SMP Negeri 1 Singaraja</title>
 
     <!-- Site's Icon -->
     <link rel="icon" href="assets/images/icons/16x16.ico" type="image/x-icon" sizes="16x16">
@@ -303,17 +303,17 @@
 
         </article>
 
-        <!-- Buku Pedoman Siswa -->
+        <!-- Article -->
         <article>
 
-            <!-- Title -->
+            <!-- Header -->
             <ul>
                 <li>
                     <h2>Statistik Kehadiran Beberapa Hari Terakhir</h2>
                 </li>
             </ul>
 
-            <!-- Embedded File -->
+            <!-- Content -->
             <ul>
                 <li>
                     <div id="column_chart_1" style="width: 100%; height: max-content;"></div>
@@ -322,36 +322,17 @@
 
         </article>
 
-        <!-- Buku Pedoman Siswa -->
+        <!-- Article -->
         <article>
 
-            <!-- Title -->
-            <ul>
-                <li>
-                    <h2>Statistik Kehadiran Beberapa Minggu Terakhir</h2>
-                </li>
-            </ul>
-
-            <!-- Embedded File -->
-            <ul>
-                <li>
-                    <div id="column_chart" style="width: 100%; height: max-content;"></div>
-                </li>
-            </ul>
-
-        </article>
-
-        <!-- Buku Pedoman Siswa -->
-        <article>
-
-            <!-- Title -->
+            <!-- Header -->
             <ul>
                 <li>
                     <h2>Statistik Kehadiran Beberapa Bulan Terakhir</h2>
                 </li>
             </ul>
 
-            <!-- Embedded File -->
+            <!-- Content -->
             <ul>
                 <li>
                     <div id="curve_chart" style="width: 100%; height: max-content;"></div>
@@ -385,110 +366,6 @@
                         </button>
                     </li>
                     <li><button type="submit" name="switch_access">Pilih <i class="fas fa-check"></i></button></li>
-                </ul>
-            </form>
-
-        </div>
-
-        <!-- Document Upload Form -->
-        <div id="document-upload-form">
-
-            <!-- Document Upload Form -->
-            <form action="/upload" method="#">
-                <h2>Unggah Dokumen</h2>
-                <label for="document">Pilih dokumen:</label>
-                <input type="file" id="document" name="document" accept="application/pdf">
-                <ul>
-                    <li>
-                        <button type="button"
-                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
-                            <i class="fas fa-cancel"></i> Batal
-                        </button>
-                    </li>
-                    <li><button type="submit" name="upload_document">Unggah Dokumen <i
-                                class="fas fa-file-export"></i></button></li>
-                </ul>
-            </form>
-
-        </div>
-
-        <!-- Export Data Form -->
-        <div id="data-export-form">
-
-            <!-- Export Data Form -->
-            <form action="/export" method="#">
-                <h2>Ekspor Data</h2>
-                <label for="kelas_siswa">Pilih Kelas:</label>
-                <select name="kelas_siswa" id="kelas_siswa">
-                    <option value="#">Semua Kelas</option>
-                    <option value="#">7A</option>
-                    <option value="#">7B</option>
-                    <option value="#">7C</option>
-                    <option value="#">8A</option>
-                    <option value="#">8B</option>
-                    <option value="#">8C</option>
-                    <option value="#">9A</option>
-                    <option value="#">9B</option>
-                    <option value="#">9C</option>
-                </select>
-                <label for="file_format">Pilih Format:</label>
-                <select name="file_format" id="file_format">
-                    <option value="#">PDF</option>
-                    <option value="#">XLSX</option>
-                </select>
-                <ul>
-                    <li>
-                        <button type="button"
-                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
-                            <i class="fas fa-cancel"></i> Batal
-                        </button>
-                    </li>
-                    <li><button type="submit" name="export-data">Ekspor Data <i class="fas fa-file-export"></i></button>
-                    </li>
-                </ul>
-            </form>
-
-        </div>
-
-        <!-- Student Point Form -->
-        <div id="student-point-form">
-
-            <!-- Student Point Form -->
-            <form action="/changePoint" method="#">
-                <h2>Ubah Poin Siswa</h2>
-                <ul>
-                    <li><label for="nama_siswa">Nama <span>*</span></label></li>
-                    <li><input type="text" id="nama_siswa" name="nama_siswa" value="Amir Syarif" disabled></li>
-                </ul>
-                <ul>
-                    <li><label for="jenis_kelamin_siswa">Jenis Kelamin <span>*</span></label></li>
-                    <li><input type="text" id="jenis_kelamin_siswa" name="jenis_kelamin_siswa" value="Laki-laki"
-                            disabled></li>
-                </ul>
-                <ul>
-                    <li><label for="kelas_siswa">Kelas <span>*</span></label></li>
-                    <li><input type="text" id="kelas_siswa" name="kelas_siswa" value="7A" disabled></li>
-                </ul>
-                <ul>
-                    <li><label for="poin_sebelumnya">Poin Sebelumnya <span>*</span></label></li>
-                    <li><input type="number" id="poin_sebelumnya" name="poin_sebelumnya" value="93" disabled></li>
-                </ul>
-                <ul>
-                    <li><label for="perubahan_poin">Perubahan Poin <span>*</span></label></li>
-                    <li><input type="number" id="perubahan_poin" name="perubahan_poin"></li>
-                </ul>
-                <ul>
-                    <li><label for="catatan_perubahan">Catatan<span>*</span></label></li>
-                    <li><input type="text" id="catatan_perubahan" name="catatan_perubahan"></li>
-                </ul>
-                <ul>
-                    <li>
-                        <button type="button"
-                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
-                            <i class="fas fa-cancel"></i> Batal
-                        </button>
-                    </li>
-                    <li><button type="submit" name="change-point">Simpan <i class="fas fa-check"></i></button></li>
                 </ul>
             </form>
 
@@ -576,28 +453,6 @@
             var chart2 = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
             chart2.draw(data2, options2);
-
-            var data3 = google.visualization.arrayToDataTable([
-                ['Tanggal', 'Hadir', 'Tidak Hadir', 'Tanpa Keterangan'],
-                ['17-24', 10, 24, 20],
-                ['25-1', 16, 22, 23],
-                ['2-9', 28, 19, 29],
-                ['10-17', 28, 19, 29],
-                ['18-25', 28, 19, 29],
-                ['26-2', 28, 19, 29],
-                ['3-10', 28, 19, 29],
-            ]);
-
-            var options3 = {
-                legend: { position: "top" },
-                bar: { groupWidth: '75%' },
-                colors: ["#4318ff", "#FF9900", "#a3aed0"],
-                isStacked: true,
-                chartArea: { 'width': '100%', 'height': '80%' },
-            };
-
-            var chart3 = new google.visualization.ColumnChart(document.getElementById('column_chart'));
-            chart3.draw(data3, options3);
 
             var data4 = google.visualization.arrayToDataTable([
                 ['Hari', 'Hadir', 'Tidak Hadir', 'Tanpa Keterangan'],

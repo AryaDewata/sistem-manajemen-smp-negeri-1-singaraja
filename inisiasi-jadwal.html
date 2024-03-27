@@ -7,12 +7,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Buku Siswa - Sistem Manajemen SMP Negeri 1 Singaraja">
-    <meta name="description" content="Halaman Buku Siswa Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta name="title" content="Inisiasi Jadwal - Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta name="description" content="Halaman Inisiasi Jadwal Sistem Manajemen SMP Negeri 1 Singaraja">
 
     <!-- Site's Open Graph Protocol -->
-    <meta property="og:title" content="Buku Siswa - Sistem Manajemen SMP Negeri 1 Singaraja">
-    <meta property="og:description" content="Halaman Buku Siswa Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta property="og:title" content="Inisiasi Jadwal - Sistem Manajemen SMP Negeri 1 Singaraja">
+    <meta property="og:description" content="Halaman Inisiasi Jadwal Sistem Manajemen SMP Negeri 1 Singaraja">
     <meta property="og:locale" content="id">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://smpn1sgr.sch.id/">
@@ -20,7 +20,7 @@
         content="https://raw.githubusercontent.com/AryaDewata/sistem-manajemen-smp-negeri-1-singaraja/main/assets/images/logo-smp-negeri-1-singaraja.png">
 
     <!-- Title -->
-    <title>Buku Siswa - Sistem Manajemen | SMP Negeri 1 Singaraja</title>
+    <title>Inisiasi Jadwal - Sistem Manajemen | SMP Negeri 1 Singaraja</title>
 
     <!-- Site's Icon -->
     <link rel="icon" href="assets/images/icons/16x16.ico" type="image/x-icon" sizes="16x16">
@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="css/scrollbar.css">
 
     <!-- Main Cascading Style Sheets -->
-    <link rel="stylesheet" href="css/buku-siswa.css">
+    <link rel="stylesheet" href="css/master-data.css">
 
     <!-- Sidebar Cascading Style Sheets -->
     <link rel="stylesheet" href="css/sidebar.css">
@@ -94,13 +94,13 @@
 
                 <li>
 
-                    <div class="list collapse active">
+                    <div class="list collapse">
                         <span>Sistem Akademik</span>
                         <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"
                             class="arrow-down icon"></iconify-icon>
                     </div>
 
-                    <ul class="nolist" style="display: block;">
+                    <ul class="nolist">
                         <li>
                             <a href="laporan-perencanaan.html">
                                 <div class="not-active-link">
@@ -121,7 +121,7 @@
                         </li>
                         <li>
                             <a href="buku-siswa.html">
-                                <div class="active-link">
+                                <div class="not-active-link">
                                     <iconify-icon icon="solar:book-linear" width="24" height="24"
                                         class="icon"></iconify-icon>
                                     <span>Buku Siswa</span>
@@ -144,9 +144,18 @@
                         <li>
                             <a href="#">
                                 <div class="not-active-link">
+                                    <iconify-icon icon="carbon:diagram" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Statistik</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="not-active-link">
                                     <iconify-icon icon="mdi:selfie-outline" width="24" height="24"
                                         class="icon"></iconify-icon>
-                                    <span>Absensi Diri</span>
+                                    <span>Guru & Staf</span>
                                 </div>
                             </a>
                         </li>
@@ -155,16 +164,64 @@
                                 <div class="not-active-link">
                                     <iconify-icon icon="streamline:class-lesson" width="24" height="24"
                                         class="icon"></iconify-icon>
-                                    <span>Penilaian</span>
+                                    <span>Kelas</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+
+                    <div class="list collapse">
+                        <span>Master Data</span>
+                        <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"
+                            class="arrow-down icon"></iconify-icon>
+                    </div>
+
+                    <ul class="nolist">
+                        <li>
+                            <a href="master-data-pengguna.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="streamline:class-lesson" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Pengguna</span>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="master-data-ruangan.html">
                                 <div class="not-active-link">
-                                    <iconify-icon icon="solar:book-linear" width="24" height="24"
+                                    <iconify-icon icon="material-symbols:meeting-room-outline" width="24" height="24"
                                         class="icon"></iconify-icon>
-                                    <span>Buku Siswa</span>
+                                    <span>Ruangan</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-kelas.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="wpf:check-book" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Kelas</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-pelajaran.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="material-symbols:play-lesson-outline" width="24" height="24"
+                                        class="icon"></iconify-icon>
+                                    <span>Mata Pelajaran</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="master-data-siswa.html">
+                                <div class="not-active-link">
+                                    <iconify-icon icon="ph:student" width="24" height="24" class="icon"></iconify-icon>
+                                    <span>Siswa</span>
                                 </div>
                             </a>
                         </li>
@@ -198,9 +255,8 @@
 
             <!-- Breadcrumbs -->
             <div id="breadcrumbs">
-                <p>Sistem Manajemen SMP Negeri 1 Singaraja / Sistem Akademik / Buku Siswa / Riwayat Perubahan Poin Siswa
-                </p>
-                <h1>Buku Siswa</h1>
+                <p>Sistem Manajemen SMP Negeri 1 Singaraja / Absensi / Kelas / Inisiasi Jadwal</p>
+                <h1>Inisiasi Jadwal</h1>
             </div>
 
             <!-- Header Menus -->
@@ -229,97 +285,110 @@
 
         </section>
 
-        <button type="button" onclick="document.location = 'buku-siswa.html'">
-            <i class=" fas fa-arrow-left"></i> Kembali
-        </button>
-
         <!-- Article -->
         <article>
 
             <!-- Header -->
             <ul>
 
-                <!-- Title -->
+                <!-- Search Form -->
                 <li>
-                    <h2>Riwayat Perubahan Poin Siswa</h2>
+                    <h2>Inisiasi Jadwal</h2>
+                    <form action="/searchSchedule" method="#">
+                        <label for="kelas">Kelas:</label>
+                        <select name="kelas" id="kelas">
+                            <option value="#">Semua Kelas</option>
+                            <option value="#">7A</option>
+                            <option value="#">7B</option>
+                            <option value="#">7C</option>
+                            <option value="#">7D</option>
+                            <option value="#">7E</option>
+                        </select>
+                        <label for="tanggal">Tanggal:</label>
+                        <input type="date" name="tanggal" id="tanggal">
+                        <button type="submit" name="search_schedule">
+                            Temukan Jadwal <i class="fas fa-search"></i>
+                        </button>
+                    </form>
                 </li>
 
-                <!-- Data Export Button -->
                 <li>
                     <button type="button"
-                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('data-export-form').classList.add('show');">
-                        Ekspor Data <i class="fas fa-file-export"></i>
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('inisiasi-jadwal-form').classList.add('show');">
+                        Inisiasi Jadwal <i class="fas fa-calendar"></i>
+                    </button>
+                    <button type="button"
+                        onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('hapus-jadwal-form').classList.add('show');"
+                        class="bg-danger">
+                        Hapus Jadwal <i class="fas fa-trash"></i>
                     </button>
                 </li>
 
             </ul>
 
             <!-- Contents -->
-            <ul id="riwayat-perubahan-poin">
+            <ul id="master-data-inisiasi-jadwal">
 
                 <li>
                     <p>No</p>
-                    <p>Nama Siswa</p>
-                    <p>Jenis Kelamin</p>
                     <p>Kelas</p>
+                    <p>Mata Pelajaran</p>
+                    <p>Pengajar</p>
+                    <p>Tanggal</p>
                     <p>Waktu</p>
-                    <p>Perubahan Poin</p>
-                    <p>Catatan</p>
                 </li>
 
                 <li>
                     <p>1</p>
+                    <p>7A</p>
+                    <p>Bahasa Indonesia</p>
                     <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>12 November 2024 12:39</p>
-                    <p>90 -> 88</p>
-                    <p>Bolos Sekolah</p>
+                    <p>2024-03-25</p>
+                    <p>07:00</p>
                 </li>
 
                 <li>
                     <p>2</p>
+                    <p>7A</p>
+                    <p>Bahasa Indonesia</p>
                     <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>8 November 2024 08:41</p>
-                    <p>91 -> 90</p>
-                    <p>Telat</p>
+                    <p>2024-03-25</p>
+                    <p>07:00</p>
                 </li>
 
                 <li>
                     <p>3</p>
+                    <p>7A</p>
+                    <p>Bahasa Indonesia</p>
                     <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>21 Oktober 2024 13:08</p>
-                    <p>88 -> 91</p>
-                    <p>Memenangkan perlombaan</p>
-                </li>
+                    <p>2024-03-25</p>
+                    <p>07:00</p>
 
                 <li>
                     <p>4</p>
+                    <p>7A</p>
+                    <p>Bahasa Indonesia</p>
                     <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>18 Oktober 2024 07:34</p>
-                    <p>89 -> 88</p>
-                    <p>Telat</p>
+                    <p>2024-03-25</p>
+                    <p>07:00</p>
                 </li>
 
                 <li>
                     <p>5</p>
+                    <p>7A</p>
+                    <p>Bahasa Indonesia</p>
                     <p>Nyoman Suwinten</p>
-                    <p>Laki-laki</p>
-                    <p>7B</p>
-                    <p>17 Oktober 2024 08:13</p>
-                    <p>90 -> 89</p>
-                    <p>Telat</p>
+                    <p>2024-03-25</p>
+                    <p>07:00</p>
                 </li>
 
                 <!-- Contents Pagination -->
                 <li id="pagination">
-                    <p>Menampilkan 1-5/20 data</p>
+                    <p>Menampilkan 1-5/20 Data</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
                     <p></p>
                     <p></p>
                     <p></p>
@@ -350,7 +419,7 @@
     <!-- Popup Box -->
     <div id="popup">
 
-        <!-- User Access -->
+        <!-- User Access ID Form -->
         <div id="user-access-id-form">
 
             <!-- Switch Access Form -->
@@ -375,11 +444,77 @@
 
         </div>
 
+        <!-- Inisiasi Jadwal Form -->
+        <div id="inisiasi-jadwal-form">
+
+            <!-- Inisiasi Jadwal Form -->
+            <form action="/inisiasiJadwal" method="#">
+                <label for="from">Dari:</label>
+                <input type="date" name="from" id="from">
+                <label for="to">Sampai:</label>
+                <input type="date" name="to" id="to">
+                <ul>
+                    <li>
+                        <button type="button"
+                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">
+                            <i class="fas fa-cancel"></i> Batal
+                        </button>
+                    </li>
+                    <li>
+                        <button type="submit" name="inisiasi_jadwal">
+                            Inisiasikan Jadwal <i class="fas fa-check"></i>
+                        </button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
+        <!-- Hapus Jadwal Form -->
+        <div id="hapus-jadwal-form">
+
+            <!-- Hapus Jadwal Form -->
+            <form action="/hapusJadwal" method="#">
+                <label for="from">Dari:</label>
+                <input type="date" name="from" id="from">
+                <label for="to">Sampai:</label>
+                <input type="date" name="to" id="to">
+                <ul>
+                    <li>
+                        <button type="button"
+                            onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
+                            class="border-danger">
+                            <i class="fas fa-cancel"></i> Batal
+                        </button>
+                    </li>
+                    <li>
+                        <button type="submit" name="hapus_jadwal" class="bg-danger">
+                            Hapus Jadwal <i class="fas fa-check"></i>
+                        </button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
         <!-- Data Export Form -->
         <div id="data-export-form">
 
-            <!-- Data Export Form -->
+            <!-- Export Data Form -->
             <form action="/exportData" method="#">
+                <label for="kelas">Kelas:</label>
+                <select name="kelas" id="kelas">
+                    <option value="#">Semua Kelas</option>
+                    <option value="#">7A</option>
+                    <option value="#">7B</option>
+                    <option value="#">7C</option>
+                    <option value="#">7D</option>
+                    <option value="#">7E</option>
+                </select>
+                <label for="from">Dari:</label>
+                <input type="date" name="from" id="from">
+                <label for="to">Sampai:</label>
+                <input type="date" name="to" id="to">
                 <label for="file_format">Pilih format dokumen:</label>
                 <select name="file_format" id="file_format">
                     <option value="#">PDF</option>
