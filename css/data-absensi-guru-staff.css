@@ -10,6 +10,7 @@
 * h2 {
   color: #2b3674;
   font-weight: bold;
+  margin: 0;
 }
 * select {
   padding: 12px;
@@ -34,6 +35,9 @@
   font-family: "Poppins";
 }
 * > body > main {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
   padding: 28px;
   width: 100%;
   height: 100vh;
@@ -143,6 +147,11 @@
     font-size: 42px;
   }
 }
+* > body article > div {
+  border-radius: 20px;
+  background: white;
+  padding: 24px;
+}
 * > body article > div > ul {
   list-style: none;
   padding: 0;
@@ -236,18 +245,44 @@
   text-align: center;
   letter-spacing: 0.5px;
 }
+* > body article > div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+* > body article > div div button {
+  font-size: medium;
+  padding: 8px 16px;
+  margin: 0 !important;
+  color: white;
+  border: none;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+* > body article > div div #delete-history-btn {
+  background: #d04848;
+}
+* > body article > div div #export-history-btn {
+  background: #4318ff;
+}
 * > body article > div > div.search-section {
   display: flex;
+  justify-content: start;
   gap: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 * > body article > div > div.search-section > button {
-  margin: auto 0 0 0;
+  margin: auto 0 0 0 !important;
   border-radius: 8px;
   background: #4318ff;
   border: none;
   padding: 8px 16px;
   color: white;
+}
+* > body article > div > div.search-section > div {
+  display: inline-block;
 }
 * > body article > div > div.search-section > div textarea {
   max-height: 100px;
@@ -443,12 +478,14 @@
   font-family: "Poppins";
 }
 * > body > #popup > div > form ul {
+  padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: stretch;
   gap: 8px;
   flex-wrap: nowrap;
+  flex-wrap: wrap;
   list-style: none;
 }
 * > body > #popup > div > form ul button[type=button] {
@@ -476,6 +513,9 @@
 }
 * > body > #popup > div button:hover {
   opacity: 90%;
+}
+* > body > #popup > div#delete-history ul li button[type=submit] {
+  background-color: #d04848 !important;
 }
 * > body > #popup > div#approve-izin, * > body > #popup > div#approved-izin {
   position: relative;

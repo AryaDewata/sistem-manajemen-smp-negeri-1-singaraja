@@ -195,7 +195,20 @@
 
         </section>
         <article>
-        <div class="row mt-2 p-2 rounded-3 bg-white h-100 p-3">
+        <div class="row p-2 rounded-3 bg-white h-100 p-3">
+          <div>
+            <h2>
+              Daftar Absensi
+            </h2>
+            <div>
+              <button type="button" onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('delete-history').classList.add('show');" id="delete-history-btn">
+                Hapus Riwayat <i class="fa-solid fa-trash"></i>
+              </button>
+              <button type="button" onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('history-export-form').classList.add('show');" id="export-history-btn">
+                Rekap Absensi <i class="fa-solid fa-file-export"></i>
+              </button>  
+            </div>
+          </div>
           <div class="col search-section">
             <div>
               <label for="" class="form-label">Filter Tanggal</label>
@@ -328,6 +341,60 @@
             </form>
           </li>
           </ul>
+        </div>
+
+        <div id="history-export-form">
+          <!-- Export Data Form -->
+          <form action="/exportData" method="#">
+            <label for="kelas_siswa">Pilih Bulan/Tahun:</label>
+            <select name="kelas_siswa" id="kelas_siswa">
+              <option value="#" disabled selected>Bulan/Tahun</option>
+            </select>
+            <label for="file_format">Pilih format dokumen:</label>
+            <select name="file_format" id="file_format">
+              <option value="#">PDF</option>
+              <option value="#">XLSX</option>
+            </select>
+            <ul>
+              <li>
+                <button
+                  type="button"
+                  onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
+                >
+                  <i class="fas fa-cancel"></i> Batal
+                </button>
+              </li>
+              <li>
+                <button type="submit" name="export_data">
+                  Ekspor Data <i class="fas fa-file-export"></i>
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div id="delete-history">
+          <!-- delete history -->
+          <form action="/deleteData" method="#">
+            <label for="kelas_siswa">Pilih Bulan/Tahun:</label>
+            <select name="kelas_siswa" id="kelas_siswa">
+              <option value="#" disabled selected>Bulan/Tahun</option>
+            </select>
+            <ul>
+              <li>
+                <button
+                  type="button"
+                  onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"
+                >
+                  <i class="fas fa-cancel"></i> Batal
+                </button>
+              </li>
+              <li>
+                <button type="submit" name="export_data" >
+                  Hapus Riwayat <i class="fa-solid fa-trash"></i>
+                </button>
+              </li>
+            </ul>
+          </form>
         </div>
     </div>
     <!-- bootstrap script -->
