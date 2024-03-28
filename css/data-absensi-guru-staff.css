@@ -22,6 +22,17 @@
   font-size: 14.75px;
   font-family: "Poppins";
 }
+* > label {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+* > input[type=date] {
+  border: none;
+  color: #2b3674;
+  border-bottom: 1px solid gray;
+  border-radius: 0px;
+  margin: 0 !important;
+}
 * > body {
   overflow: hidden;
   display: flex;
