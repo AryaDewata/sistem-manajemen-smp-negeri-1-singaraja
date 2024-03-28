@@ -22,6 +22,7 @@
 }
 * > body h1 {
   color: #2b3674;
+  font-weight: bold;
 }
 @media (max-width: 1140px) {
   * > body h1 {
@@ -65,9 +66,6 @@
 }
 * > body button:hover {
   opacity: 80%;
-}
-* > body button:has(i.fa-cancel) {
-  background-color: #d04848;
 }
 * > body > main {
   padding: 28px;
@@ -253,13 +251,6 @@
 * > body > main > article > ul:nth-child(2) > li:nth-child(even):not(:first-child) {
   background-color: #f4f7fe;
 }
-* > body > main > article > ul:nth-child(2) > li:last-child > p {
-  width: 0% !important;
-}
-* > body > main > article > ul:nth-child(2) > li:last-child > p:first-of-type,
-* > body > main > article > ul:nth-child(2) > li:last-child p:last-of-type {
-  width: max-content !important;
-}
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) > li {
     width: 49%;
@@ -288,85 +279,6 @@
     width: 100%;
     border-radius: 8px;
   }
-}
-* > body > main > article > ul:nth-child(2) > li > p {
-  width: 16.6%;
-}
-* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:first-of-type {
-  background-color: #256fff;
-}
-@media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
-    flex-wrap: nowrap;
-  }
-}
-* > body > main > article > ul:nth-child(2) > li > p:nth-child(1), * > body > main > article > ul:nth-child(2) > li > p:nth-child(4), * > body > main > article > ul:nth-child(2) > li > p:nth-child(5) {
-  width: 5%;
-  text-align: center;
-}
-* > body > main > article > ul:nth-child(2) > li > p:nth-child(2) {
-  width: 43%;
-}
-* > body > main > article > ul:nth-child(2) > li > p:nth-child(3) {
-  width: 12%;
-}
-* > body > main > article > ul:nth-child(2) > li > p:last-child {
-  width: 30%;
-}
-@media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2) > li > p {
-    padding: 4px 0;
-    width: 100% !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 0;
-    flex-wrap: nowrap;
-    color: #2b3674;
-    font-weight: bold;
-    text-align: right;
-  }
-  * > body > main > article > ul:nth-child(2) > li > p:has(button) {
-    justify-content: flex-end;
-  }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(1)::before {
-    content: "No";
-    color: black;
-    text-align: left;
-  }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before {
-    content: "Nama Siswa";
-    color: black;
-    text-align: left;
-  }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before {
-    content: "Jenis Kelamin";
-    color: black;
-  }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(4)::before {
-    content: "Kelas";
-    color: black;
-  }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(5)::before {
-    content: "Jumlah Poin";
-    color: black;
-  }
-}
-* > body > main > article #pagination p:last-of-type button {
-  padding: 2px 12px;
-}
-* > body > main > article #pagination p:last-of-type button:not(.active) {
-  background-color: transparent;
-  color: black;
-}
-* > body > main > article #pagination p:last-of-type button:not(.active):hover {
-  background-color: rgba(163, 174, 208, 0.2784313725);
 }
 * > #popup {
   position: fixed;
