@@ -196,8 +196,8 @@
 
         </section>
         <article>
-        <div class="row mt-2 p-2 ">
-            <div class="col rounded-3 bg-white h-100 p-3">
+        <div class="">
+            <div class="col">
                 <p class="mb-1">Absensi Kelas 7A</p>
                 <p class="mb-1">Bahasa Indonesia 24 Januari 2024</p>
                 <ul class="p-0">
@@ -211,7 +211,7 @@
                       <p>1</p>
                       <p>Hitmannn</p>  
                       <p>Hadir</p>  
-                      <p><button type="button">Detail Siswa</button></p>     
+                      <p><button type="button" onclick="document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('biodata-siswa').classList.add('show');">Detail Siswa</button></p>     
                   </li>
                   <li>
                       <p>2</p>
@@ -231,27 +231,6 @@
 
     <!-- Popup Box -->
     <div id="popup">
-
-        <!-- Forgot Password -->
-        <!-- <div id="forgot-password">
-            <i class="fas fa-exclamation-circle"></i>
-            <p>Silakan hubungi pihak operator untuk mendapatkan kata sandi baru anda!</p>
-            <button type="button"
-                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">
-                <i class="fas fa-cancel"></i> Tutup
-            </button>
-        </div> -->
-
-        <!-- Login Failed -->
-        <!-- <div id="login-failed">
-            <i class="fas fa-exclamation-circle"></i>
-            <p>Nama pengguna atau kata sandi yang anda masukkan tidak sesuai!</p>
-            <button type="button"
-                onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.classList.remove('show');">
-                <i class="fas fa-cancel"></i> Tutup
-            </button>
-        </div>
- -->
         <!-- User Access -->
          <div id="user-access-id">
 
@@ -276,57 +255,36 @@
             </form>
 
         </div>
-        <div id="absensi">
-          <form action="">
-          <div class="map-preview">
-            <img src="img/map-preview.png" alt="" width="100%">
-          </div>
-          <div class="row text-center">
-              <p class="mb-2 text-success fw-bold fs-5">Lokasi Anda berada dalam Radius</p>
-              <ul class="d-flex m-0 gap-2 justify-content-center flex-wrap">
-               <li>
-              <button type="button" onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">Kembali</button>
-               </li>
-               <li>
-              <button type="submwit" onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.visibility = 'hidden';
-               this.parentNode.parentNode.classList.remove('show');
-               document.getElementById('popup').style.visibility = 'visible'; document.querySelectorAll('#popup div').forEach(e => e.classList.remove('show')); document.getElementById('absensi-success').classList.add('show');
-               ">Lanjutkan</button>
-               </li> 
-              </ul>
-          </div>
-          </form>
-        </div>
-        <div id="absensi-success">
-          <iconify-icon icon="ph:check-circle" width="150" height="150"  style="color: #4318FF"></iconify-icon>
-          <p class="m-0">Absensi Berhasil Dilakukan!</p>
-          <button type="button" onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');">Tutup</button>
-        </div>
-        <div id="detail-hadir" class="p-3">
-          <p class="mb-0">Detail Absen</p>
+        <div id="biodata-siswa" class="p-3">
+          <p class="mb-0">Biodata Siswa</p>
           <p class="mb-0" onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"><iconify-icon icon="iconamoon:close-thin" width="36" height="36"  style="color: #a3aed0"></iconify-icon></p>
           <ul class="p-0 m-0 row">
             <li>
             <p>Jony</p>
             <p>29 Januari 2021</p>
-            <p>18:40:09</p>
-            <p>Hadir</p>
-            <p><span><iconify-icon icon="icon-park-solid:check-one" width="13" height="13"  style="color: #05CD99"></iconify-icon>  Disetujui</span></p>
-          </li>
-          </ul>
-        </div>
-        <div id="detail-izin" class="p-3">
-          <p class="mb-0">Detail Absen</p>
-          <p class="mb-0" onclick="this.parentNode.parentNode.style.visibility = 'hidden'; this.parentNode.parentNode.classList.remove('show');"><iconify-icon icon="iconamoon:close-thin" width="36" height="36"  style="color: #a3aed0"></iconify-icon></p>
-          <ul class="p-0 m-0 row">
-            <li>
-            <img src="img/izin.png" alt="" width="100%" class="mb-2">
-            <p>Jony</p>
-            <p>29 Januari 2021</p>
-            <p>18:40:09</p>
-            <p>Hadir</p>
-            <p><span><iconify-icon icon="icon-park-solid:check-one" width="13" height="13"  style="color: #05CD99"></iconify-icon>  Disetujui</span></p>
-            <p></p>
+            <p>Laki-laki</p>
+            <p>7A</p>
+            <div>
+              <p>Riwayat Absensi Semester Ini </p>
+              <div>
+                <div>
+                  <p>100</p>
+                  <p>Hadir</p>
+                </div>
+                <div>
+                  <p>3</p>
+                  <p>Izin</p>
+                </div>
+                <div>
+                  <p>1</p>
+                  <p>Sakit</p>
+                </div>
+                <div>
+                  <p>2</p>
+                  <p>Alfa</p>
+                </div>
+              </div>
+            </div>
           </li>
           </ul>
         </div>

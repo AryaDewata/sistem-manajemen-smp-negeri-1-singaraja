@@ -10,7 +10,6 @@
 * h2 {
   color: #2b3674;
   font-weight: bold;
-  margin: 0;
 }
 * select {
   padding: 12px;
@@ -47,7 +46,7 @@
 }
 * > body > main {
   display: flex;
-  gap: 20px;
+  gap: 28px;
   flex-direction: column;
   padding: 28px;
   width: 100%;
@@ -75,9 +74,13 @@
     row-gap: 18px;
   }
 }
-* > body > main > #header > #breadcrumbs > h2 {
-  color: #2b3674;
-  font-weight: bold;
+* > body > main > #header > #breadcrumbs p {
+  margin: 0 !important;
+}
+@media (max-width: 1140px) {
+  * > body > main > #header > #breadcrumbs > h1 {
+    margin-top: 6px;
+  }
 }
 * > body > main > #header > ul {
   display: flex;
@@ -162,6 +165,9 @@
   border-radius: 20px;
   background: white;
   padding: 24px;
+}
+* > body article > div h2 {
+  font-size: 18px;
 }
 * > body article > div > ul {
   list-style: none;

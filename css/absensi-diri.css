@@ -34,6 +34,9 @@
   font-family: "Poppins";
 }
 * > body > main {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
   padding: 28px;
   width: 100%;
   height: 100vh;
@@ -61,7 +64,12 @@
   }
 }
 * > body > main > #header > #breadcrumbs > p {
-  color: #a3aed0;
+  margin: 0 !important;
+}
+@media (max-width: 1140px) {
+  * > body > main > #header > #breadcrumbs > h1 {
+    margin-top: 6px;
+  }
 }
 * > body > main > #header > ul {
   display: flex;
@@ -142,15 +150,67 @@
     font-size: 42px;
   }
 }
+* > body article {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+* > body article > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  row-gap: 20px;
+}
+* > body article > div:nth-child(1) > div {
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  * > body article > div:nth-child(1) > div {
+    padding-right: 20px;
+  }
+}
+* > body article > div:nth-child(1) > div:nth-child(1) > div {
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
 * > body article > div:nth-child(1) > div:nth-child(1) > div > .img {
   width: 100px;
   height: 100px;
   text-align: center;
+  overflow: hidden;
+  margin-top: 1.25rem;
+  background: black;
+  border-radius: 100%;
+}
+* > body article > div:nth-child(1) > div:nth-child(1) > div > .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* > body article > div:nth-child(1) > div:nth-child(1) > div > .name {
+  padding-top: 0.75rem;
+}
+* > body article > div:nth-child(1) > div:nth-child(1) > div > .name p {
+  margin: 0;
 }
 * > body article > div:nth-child(1) > div:nth-child(1) > div > .name p:nth-child(1) {
   font-weight: 700;
   font-size: x-large;
   color: #2b3674;
+}
+* > body article > div:nth-child(1) > div:nth-child(1) > div > .recap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 * > body article > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p {
   margin: 0;
@@ -159,6 +219,25 @@
   font-size: large;
   font-weight: bold;
   color: #2b3674;
+}
+* > body article > div:nth-child(1) > div:nth-child(2) {
+  padding-right: 10px;
+}
+@media (max-width: 578px) {
+  * > body article > div:nth-child(1) > div:nth-child(2) {
+    padding-right: 0px;
+  }
+}
+* > body article > div:nth-child(1) > div:nth-child(2) > div {
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
 }
 * > body article > div:nth-child(1) > div:nth-child(2) > div > p:nth-child(1) {
   font-family: "DM Sans", sans-serif;
@@ -174,6 +253,23 @@
   width: 100%;
   padding: 10px;
   border-radius: 10px;
+}
+* > body article > div:nth-child(1) > div:nth-child(3) {
+  padding-right: 0;
+  padding-left: 0px;
+}
+@media (min-width: 578px) {
+  * > body article > div:nth-child(1) > div:nth-child(3) {
+    padding-left: 10px;
+  }
+}
+* > body article > div:nth-child(1) > div:nth-child(3) .status-absensi {
+  padding: 20px;
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: white;
 }
 * > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > p {
   font-size: large;
@@ -214,25 +310,34 @@
   display: flex;
   gap: 3px;
 }
-* > body article > div:nth-child(2) div {
+* > body article > div:nth-child(2) {
+  display: unset;
+  border-radius: 20px;
+  background: white;
+  padding: 24px;
+}
+* > body article > div:nth-child(2) > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: end;
 }
-* > body article > div:nth-child(2) div > label {
+* > body article > div:nth-child(2) > div > div > div > label {
   padding: 0 !important;
   margin: 0 !important;
 }
-* > body article > div:nth-child(2) div > input {
+* > body article > div:nth-child(2) > div > div > div > input[type=date] {
   border: none;
   color: #2b3674;
   border-bottom: 1px solid gray;
   border-radius: 0px;
   margin: 0 !important;
 }
-* > body article > div:nth-child(2) div:nth-child(3) {
+* > body article > div:nth-child(2) > div > div > div:nth-child(3) {
   padding: 0 !important;
-  margin: 0px 10px;
+  margin: 0px;
 }
-* > body article > div:nth-child(2) div:nth-child(3) > button {
+* > body article > div:nth-child(2) > div > div > div:nth-child(3) > button {
   margin-top: auto !important;
   background-color: #4318ff;
   color: white;
@@ -240,12 +345,13 @@
   padding: 10px;
   border-radius: 5px;
 }
-* > body article > div:nth-child(2) div > p {
+* > body article > div:nth-child(2) > div > p {
   font-weight: bold;
   font-size: x-large;
   color: #2b3674;
 }
-* > body article > div:nth-child(2) div > ul {
+* > body article > div:nth-child(2) > div > ul {
+  margin-top: 20px;
   list-style: none;
   padding: 0;
   display: flex;
@@ -255,7 +361,7 @@
   gap: 0;
   flex-wrap: nowrap;
 }
-* > body article > div:nth-child(2) div > ul li {
+* > body article > div:nth-child(2) > div > ul li {
   text-align: center;
   padding: 15px;
   width: 100%;
@@ -266,24 +372,24 @@
   gap: 5px;
   flex-wrap: nowrap;
 }
-* > body article > div:nth-child(2) div > ul li p {
+* > body article > div:nth-child(2) > div > ul li p {
   margin: 0;
   width: 14%;
 }
-* > body article > div:nth-child(2) div > ul li ~ li {
+* > body article > div:nth-child(2) > div > ul li ~ li {
   margin-bottom: 20px;
   color: #2b3674;
   font-weight: bold;
   box-shadow: 0px 0px 6px 4px rgba(112, 144, 176, 0.0823529412);
 }
-* > body article > div:nth-child(2) div > ul li ~ li p > span {
+* > body article > div:nth-child(2) > div > ul li ~ li p > span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 3px;
 }
-* > body article > div:nth-child(2) div > ul li button {
+* > body article > div:nth-child(2) > div > ul li button {
   cursor: pointer;
   padding: 8px 16px;
   margin: 0;
@@ -297,28 +403,28 @@
   letter-spacing: 0.5px;
 }
 @media (max-width: 1140px) {
-  * > body article > div:nth-child(2) div > ul {
+  * > body article > div:nth-child(2) > div > ul {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
   }
-  * > body article > div:nth-child(2) div > ul > li {
+  * > body article > div:nth-child(2) > div > ul > li {
     flex-direction: column;
     align-items: start;
     display: none;
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li {
+  * > body article > div:nth-child(2) > div > ul > li ~ li {
     width: 49.5%;
     display: flex;
   }
 }
 @media (max-width: 1140px) and (max-width: 540px) {
-  * > body article > div:nth-child(2) div > ul > li ~ li {
+  * > body article > div:nth-child(2) > div > ul > li ~ li {
     width: 100%;
   }
 }
 @media (max-width: 1140px) {
-  * > body article > div:nth-child(2) div > ul > li ~ li p {
+  * > body article > div:nth-child(2) > div > ul > li ~ li p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -326,41 +432,41 @@
     gap: 0;
     flex-wrap: nowrap;
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li p:nth-child(1)::before {
+  * > body article > div:nth-child(2) > div > ul > li ~ li p:nth-child(1)::before {
     content: "Tanggal";
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li p:nth-child(2)::before {
+  * > body article > div:nth-child(2) > div > ul > li ~ li p:nth-child(2)::before {
     content: "Keterangan";
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li p:nth-child(3)::before {
+  * > body article > div:nth-child(2) > div > ul > li ~ li p:nth-child(3)::before {
     content: "Waktu";
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li p:nth-child(4)::before {
+  * > body article > div:nth-child(2) > div > ul > li ~ li p:nth-child(4)::before {
     content: "Keterangan";
     justify-content: end;
     margin-bottom: 5px;
   }
-  * > body article > div:nth-child(2) div > ul > li ~ li p::before {
+  * > body article > div:nth-child(2) > div > ul > li ~ li p::before {
     color: #a3aed0;
     font-weight: normal;
   }
-  * > body article > div:nth-child(2) div > ul > li p {
+  * > body article > div:nth-child(2) > div > ul > li p {
     text-align: end;
     width: 100%;
   }
 }
-* > body article > div:nth-child(2) div div#pagination {
+* > body article > div:nth-child(2) > div div#pagination {
   padding-left: 2%;
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
-* > body article > div:nth-child(2) div div#pagination > p {
+* > body article > div:nth-child(2) > div div#pagination > p {
   font-size: unset;
   font-weight: unset;
   color: #a3aed0;
 }
-* > body article > div:nth-child(2) div div#pagination > nav > ul > li > a {
+* > body article > div:nth-child(2) > div div#pagination > nav > ul > li > a {
   cursor: pointer;
   padding: 2px 12px;
   margin: 0 4px;
@@ -369,18 +475,18 @@
   color: white;
   text-decoration: none;
 }
-* > body article > div:nth-child(2) div div#pagination > nav > ul > li > a:hover {
+* > body article > div:nth-child(2) > div div#pagination > nav > ul > li > a:hover {
   opacity: 80%;
 }
-* > body article > div:nth-child(2) div div#pagination > nav > ul > li > a:not(.active) {
+* > body article > div:nth-child(2) > div div#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
   color: #a3aed0;
 }
-* > body article > div:nth-child(2) div div#pagination > nav > ul > li > a:not(.active):hover {
+* > body article > div:nth-child(2) > div div#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
 }
 @media (max-width: 1140px) {
-  * > body article > div:nth-child(2) div div#pagination {
+  * > body article > div:nth-child(2) > div div#pagination {
     padding: 14px;
     margin: 0 auto;
     text-align: center;
@@ -393,24 +499,24 @@
     box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
     background-color: white !important;
   }
-  * > body article > div:nth-child(2) div div#pagination > nav > ul {
+  * > body article > div:nth-child(2) > div div#pagination > nav > ul {
     flex-wrap: wrap;
     justify-content: center;
   }
-  * > body article > div:nth-child(2) div div#pagination:nth-child(1):not(:has(embed)) {
+  * > body article > div:nth-child(2) > div div#pagination:nth-child(1):not(:has(embed)) {
     display: none;
   }
-  * > body article > div:nth-child(2) div div#pagination:last-child {
+  * > body article > div:nth-child(2) > div div#pagination:last-child {
     flex-direction: column-reverse;
     justify-content: flex-end;
     gap: 14px;
     box-shadow: none;
     background-color: transparent !important;
   }
-  * > body article > div:nth-child(2) div div#pagination:last-child > p::before {
+  * > body article > div:nth-child(2) > div div#pagination:last-child > p::before {
     content: "" !important;
   }
-  * > body article > div:nth-child(2) div div#pagination:last-child > p:not(:nth-child(1)) {
+  * > body article > div:nth-child(2) > div div#pagination:last-child > p:not(:nth-child(1)) {
     display: none;
   }
 }

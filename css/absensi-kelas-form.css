@@ -128,23 +128,30 @@
     font-size: 42px;
   }
 }
-* > body article > div > form > div > p {
+* > body article#form-absensi > div {
+  border-radius: 20px;
+  background: white;
+  height: 100%;
+  padding: 20px;
+}
+* > body article#form-absensi > div > form > div > p {
   color: #2b3674;
   font-size: x-large;
   font-weight: bold;
+  margin: 0 !important;
 }
-* > body article > div > form > div > div {
+* > body article#form-absensi > div > form > div > div {
   display: flex;
 }
-* > body article > div > form > div > div:nth-child(4) {
+* > body article#form-absensi > div > form > div > div:has(button[type=submit]) {
   justify-content: end;
 }
 @media (max-width: 320px) {
-  * > body article > div > form > div > div {
+  * > body article#form-absensi > div > form > div > div {
     flex-direction: column;
   }
 }
-* > body article > div > form > div > div > button {
+* > body article#form-absensi > div > form > div > div > button {
   text-align: center;
   border: none;
   background: none;
@@ -154,96 +161,96 @@
   border-radius: 20px;
   margin: 5px;
 }
-* > body article > div > form > div > div > button:nth-child(1) {
+* > body article#form-absensi > div > form > div > div > button:nth-child(1) {
   color: white;
   background: #4318ff;
 }
-* > body article > div > form > div > div > button:nth-child(2) {
+* > body article#form-absensi > div > form > div > div > button:nth-child(2) {
   color: #4318ff;
 }
 @media (max-width: 540px) {
-  * > body article > div > form > div > div > button {
+  * > body article#form-absensi > div > form > div > div > button {
     width: 49%;
   }
 }
 @media (max-width: 540px) and (max-width: 320px) {
-  * > body article > div > form > div > div > button {
+  * > body article#form-absensi > div > form > div > div > button {
     width: 100%;
     margin: 5px 0;
   }
 }
-* > body article > div > form > div > ul {
+* > body article#form-absensi > div > form > div > ul {
   display: flex;
   width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 10px;
 }
-* > body article > div > form > div > ul > li {
+* > body article#form-absensi > div > form > div > ul > li {
   display: flex;
   width: 100%;
   justify-content: space-between;
   font-weight: bold;
   padding: 10px;
 }
-* > body article > div > form > div > ul > li p {
+* > body article#form-absensi > div > form > div > ul > li p {
   margin-bottom: 0;
 }
-* > body article > div > form > div > ul > li > div {
+* > body article#form-absensi > div > form > div > ul > li > div {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-* > body article > div > form > div > ul > li > div:nth-child(1) {
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(1) {
   justify-content: start;
   gap: 10px;
 }
-* > body article > div > form > div > ul > li > div:nth-child(1) > p:nth-child(1) {
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(1) > p:nth-child(1) {
   width: 10%;
   text-align: center;
 }
-* > body article > div > form > div > ul > li > div:nth-child(1) > p:nth-child(2) {
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(1) > p:nth-child(2) {
   width: 90%;
 }
-* > body article > div > form > div > ul > li > div:nth-child(2) > * {
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(2) > * {
   width: 20%;
   text-align: center;
 }
-* > body article > div > form > div > ul > li > div:nth-child(2) > * input[type=radio] {
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(2) > * input[type=radio] {
   width: 18px;
   height: 18px;
   border-color: #2b3674;
   border: 2px solid;
   margin-top: 1px;
 }
-* > body article > div > form > div > ul > li > div:nth-child(2) > * input[type=radio]:checked {
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(2) > * input[type=radio]:checked {
   background-color: #4318ff;
   border-color: #2b3674;
   box-shadow: none;
 }
-* > body article > div > form > div > ul > li ~ li {
+* > body article#form-absensi > div > form > div > ul > li ~ li {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   transition: box-shadow 0.2s;
 }
-* > body article > div > form > div > ul > li ~ li:hover {
+* > body article#form-absensi > div > form > div > ul > li ~ li:hover {
   z-index: 1;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.285);
 }
-* > body article > div > form > div > ul > li ~ li:nth-child(odd) {
+* > body article#form-absensi > div > form > div > ul > li ~ li:nth-child(even) {
   background: #f4f7fe;
 }
-* > body article > div > form > div > ul > li ~ li p {
+* > body article#form-absensi > div > form > div > ul > li ~ li p {
   color: #2b3674;
 }
 @media (max-width: 1140px) {
-  * > body article > div > form > div > ul {
+  * > body article#form-absensi > div > form > div > ul {
     flex-direction: row;
     justify-content: space-between;
   }
-  * > body article > div > form > div > ul > li {
+  * > body article#form-absensi > div > form > div > ul > li {
     display: none;
   }
-  * > body article > div > form > div > ul > li ~ li {
+  * > body article#form-absensi > div > form > div > ul > li ~ li {
     display: flex;
     flex-direction: column;
     width: 49.3%;
@@ -253,37 +260,37 @@
   }
 }
 @media (max-width: 1140px) and (max-width: 540px) {
-  * > body article > div > form > div > ul > li ~ li {
+  * > body article#form-absensi > div > form > div > ul > li ~ li {
     width: 100%;
   }
 }
 @media (max-width: 1140px) {
-  * > body article > div > form > div > ul > li ~ li:nth-child(odd) {
+  * > body article#form-absensi > div > form > div > ul > li ~ li:nth-child(even) {
     background: none;
   }
-  * > body article > div > form > div > ul > li ~ li > div:nth-child(1) > p {
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(1) > p {
     width: unset !important;
   }
-  * > body article > div > form > div > ul > li ~ li > div:nth-child(2) > div {
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: unset;
     gap: 5px;
   }
-  * > body article > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(1)::before {
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(1)::before {
     content: "Hadir";
   }
-  * > body article > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(2)::before {
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(2)::before {
     content: "Sakit";
   }
-  * > body article > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(3)::before {
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(3)::before {
     content: "Izin";
   }
-  * > body article > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(4)::before {
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(4)::before {
     content: "Alfa";
   }
-  * > body article > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(5)::before {
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(5)::before {
     content: "Dispen";
   }
 }
@@ -401,94 +408,4 @@
 }
 * > body > #popup > div button:hover {
   opacity: 90%;
-}
-* > body > #popup > div#detail-hadir {
-  position: relative;
-  width: 100%;
-  color: #a3aed0;
-}
-* > body > #popup > div#detail-hadir > p:nth-child(1) {
-  font-size: x-large;
-  color: #2b3674;
-  font-weight: bold;
-}
-* > body > #popup > div#detail-hadir > p:nth-child(2) {
-  position: absolute;
-  right: 5px;
-  cursor: pointer;
-}
-* > body > #popup > div#detail-hadir ul {
-  width: 100%;
-  display: flex;
-}
-* > body > #popup > div#detail-hadir ul li p {
-  margin-bottom: 2px;
-  text-align: right;
-  display: flex;
-  justify-content: space-between;
-  color: #2b3674;
-  font-weight: 700;
-}
-* > body > #popup > div#detail-hadir ul li p::before {
-  color: #a3aed0;
-}
-* > body > #popup > div#detail-hadir ul li p:nth-child(1)::before {
-  content: "Nama";
-}
-* > body > #popup > div#detail-hadir ul li p:nth-child(2)::before {
-  content: "Tanggal";
-}
-* > body > #popup > div#detail-hadir ul li p:nth-child(3)::before {
-  content: "Waktu";
-}
-* > body > #popup > div#detail-hadir ul li p:nth-child(4)::before {
-  content: "Keterangan";
-}
-* > body > #popup > div#detail-hadir ul li p:nth-child(5)::before {
-  content: "Status";
-}
-* > body > #popup > div#detail-izin {
-  position: relative;
-  width: 100%;
-  color: #a3aed0;
-}
-* > body > #popup > div#detail-izin > p:nth-child(1) {
-  font-size: x-large;
-  color: #2b3674;
-  font-weight: bold;
-}
-* > body > #popup > div#detail-izin > p:nth-child(2) {
-  position: absolute;
-  right: 5px;
-  cursor: pointer;
-}
-* > body > #popup > div#detail-izin > ul {
-  width: 100%;
-  display: flex;
-}
-* > body > #popup > div#detail-izin > ul > li > p {
-  margin-bottom: 2px;
-  text-align: right;
-  display: flex;
-  justify-content: space-between;
-  color: #2b3674;
-  font-weight: 700;
-}
-* > body > #popup > div#detail-izin > ul > li > p::before {
-  color: #a3aed0;
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(2)::before {
-  content: "Nama";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(3)::before {
-  content: "Tanggal";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(4)::before {
-  content: "Waktu";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(5)::before {
-  content: "Keterangan";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(6)::before {
-  content: "Status";
 }/*# sourceMappingURL=absensi-kelas-form.css.map */

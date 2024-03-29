@@ -34,6 +34,9 @@
   font-family: "Poppins";
 }
 * > body > main {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
   padding: 28px;
   width: 100%;
   height: 100vh;
@@ -60,9 +63,13 @@
     row-gap: 18px;
   }
 }
-* > body > main > #header > #breadcrumbs > h2 {
-  color: #2b3674;
-  font-weight: bold;
+* > body > main > #header > #breadcrumbs > p {
+  margin: 0 !important;
+}
+@media (max-width: 1140px) {
+  * > body > main > #header > #breadcrumbs > h1 {
+    margin-top: 6px;
+  }
 }
 * > body > main > #header > ul {
   display: flex;
@@ -143,15 +150,67 @@
     font-size: 42px;
   }
 }
+* > body article {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+* > body article#absensi-kelas-guru > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  row-gap: 20px;
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div {
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  * > body article#absensi-kelas-guru > div:nth-child(1) > div {
+    padding-right: 20px;
+  }
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div {
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
 * > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .img {
   width: 100px;
   height: 100px;
   text-align: center;
+  overflow: hidden;
+  margin-top: 1.25rem;
+  background: black;
+  border-radius: 100%;
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .name {
+  padding-top: 0.75rem;
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .name p {
+  margin: 0;
 }
 * > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .name p:nth-child(1) {
   font-weight: 700;
   font-size: x-large;
   color: #2b3674;
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .recap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 * > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p {
   margin: 0;
@@ -160,6 +219,28 @@
   font-size: large;
   font-weight: bold;
   color: #2b3674;
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) {
+  padding-right: 0px;
+}
+@media (min-width: 578px) {
+  * > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) {
+    padding-right: 10px;
+  }
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div {
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > ul {
+  width: 100%;
 }
 * > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(2) > div > ul > li > p {
   color: #2b3674;
@@ -200,7 +281,25 @@
   padding: 10px;
   border-radius: 10px;
 }
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) {
+  padding-right: 0;
+  padding-left: 0px;
+}
+@media (min-width: 578px) {
+  * > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) {
+    padding-left: 10px;
+  }
+}
+* > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi {
+  padding: 20px;
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: white;
+}
 * > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > p {
+  margin: 0 !important;
   font-size: large;
   font-weight: bold;
   color: #2b3674;
@@ -234,6 +333,11 @@
 }
 * > body article#absensi-kelas-guru > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li:nth-child(2) > p {
   justify-content: center;
+}
+* > body article#absensi-kelas-guru > div:nth-child(2) {
+  border-radius: 20px;
+  background: white;
+  padding: 24px;
 }
 * > body article#absensi-kelas-guru > div:nth-child(2) div > p {
   font-weight: bold;
@@ -430,15 +534,54 @@
     display: none;
   }
 }
+* > body article#absensi-kelas-wali > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div {
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .img {
   width: 100px;
   height: 100px;
   text-align: center;
+  overflow: hidden;
+  margin-top: 1.25rem;
+  background: black;
+  border-radius: 100%;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .name {
+  padding-top: 0.75rem;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .name p {
+  margin: 0;
 }
 * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .name p:nth-child(1) {
   font-weight: 700;
   font-size: x-large;
   color: #2b3674;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .recap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(1) > div > .recap > div > p {
   margin: 0;
@@ -447,6 +590,35 @@
   font-size: large;
   font-weight: bold;
   color: #2b3674;
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) {
+  padding-left: 0;
+}
+@media (min-width: 576px) {
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) {
+    padding-left: 20px;
+  }
+}
+@media (min-width: 768px) {
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) {
+    padding-left: 0px;
+  }
+}
+@media (min-width: 992px) {
+  * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) {
+    padding-left: 20px;
+  }
+}
+* > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  background: white;
+  width: 100%;
+  height: 100%;
 }
 * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > p {
   border-bottom: 1px solid rgba(163, 174, 208, 0.2784313725);
@@ -459,6 +631,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  border-radius: 8px;
 }
 @media (max-width: 540px) {
   * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li {
@@ -471,12 +644,13 @@
   display: flex;
   width: 25%;
   justify-content: center;
-  text-align: end;
+  text-align: center;
   margin: 0;
 }
 @media (max-width: 540px) {
   * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li > p {
     display: none;
+    text-align: end;
   }
 }
 * > body article#absensi-kelas-wali > div:nth-child(1) > div:nth-child(2) > div > ul > li ~ li:nth-child(even) {
@@ -533,6 +707,14 @@
   width: 100%;
   padding: 10px;
   border-radius: 10px;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) {
+  display: flex;
+}
+* > body article#absensi-kelas-wali > div:nth-child(2) div {
+  width: 100%;
+  background: white;
+  border-radius: 20px;
 }
 * > body article#absensi-kelas-wali > div:nth-child(2) div > p {
   font-weight: bold;
@@ -736,6 +918,172 @@
   }
   * > body article#absensi-kelas-wali > div:nth-child(2) div div#pagination:last-child > p:not(:nth-child(1)) {
     display: none;
+  }
+}
+* > body article#form-absensi > div {
+  border-radius: 20px;
+  background: white;
+  height: 100%;
+  padding: 20px;
+}
+* > body article#form-absensi > div > form > div > p {
+  color: #2b3674;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 0 !important;
+}
+* > body article#form-absensi > div > form > div > div {
+  display: flex;
+}
+* > body article#form-absensi > div > form > div > div:has(button[type=submit]) {
+  justify-content: end;
+}
+@media (max-width: 320px) {
+  * > body article#form-absensi > div > form > div > div {
+    flex-direction: column;
+  }
+}
+* > body article#form-absensi > div > form > div > div > button {
+  text-align: center;
+  border: none;
+  background: none;
+  padding: 8px 28px;
+  cursor: pointer;
+  border: 2px solid #4318ff;
+  border-radius: 20px;
+  margin: 5px;
+}
+* > body article#form-absensi > div > form > div > div > button:nth-child(1) {
+  color: white;
+  background: #4318ff;
+}
+* > body article#form-absensi > div > form > div > div > button:nth-child(2) {
+  color: #4318ff;
+}
+@media (max-width: 540px) {
+  * > body article#form-absensi > div > form > div > div > button {
+    width: 49%;
+  }
+}
+@media (max-width: 540px) and (max-width: 320px) {
+  * > body article#form-absensi > div > form > div > div > button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+* > body article#form-absensi > div > form > div > ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+* > body article#form-absensi > div > form > div > ul > li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 10px;
+}
+* > body article#form-absensi > div > form > div > ul > li p {
+  margin-bottom: 0;
+}
+* > body article#form-absensi > div > form > div > ul > li > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(1) {
+  justify-content: start;
+  gap: 10px;
+}
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(1) > p:nth-child(1) {
+  width: 10%;
+  text-align: center;
+}
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(1) > p:nth-child(2) {
+  width: 90%;
+}
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(2) > * {
+  width: 20%;
+  text-align: center;
+}
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(2) > * input[type=radio] {
+  width: 18px;
+  height: 18px;
+  border-color: #2b3674;
+  border: 2px solid;
+  margin-top: 1px;
+}
+* > body article#form-absensi > div > form > div > ul > li > div:nth-child(2) > * input[type=radio]:checked {
+  background-color: #4318ff;
+  border-color: #2b3674;
+  box-shadow: none;
+}
+* > body article#form-absensi > div > form > div > ul > li ~ li {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.2s;
+}
+* > body article#form-absensi > div > form > div > ul > li ~ li:hover {
+  z-index: 1;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.285);
+}
+* > body article#form-absensi > div > form > div > ul > li ~ li:nth-child(even) {
+  background: #f4f7fe;
+}
+* > body article#form-absensi > div > form > div > ul > li ~ li p {
+  color: #2b3674;
+}
+@media (max-width: 1140px) {
+  * > body article#form-absensi > div > form > div > ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  * > body article#form-absensi > div > form > div > ul > li {
+    display: none;
+  }
+  * > body article#form-absensi > div > form > div > ul > li ~ li {
+    display: flex;
+    flex-direction: column;
+    width: 49.3%;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 1140px) and (max-width: 540px) {
+  * > body article#form-absensi > div > form > div > ul > li ~ li {
+    width: 100%;
+  }
+}
+@media (max-width: 1140px) {
+  * > body article#form-absensi > div > form > div > ul > li ~ li:nth-child(even) {
+    background: none;
+  }
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(1) > p {
+    width: unset !important;
+  }
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: unset;
+    gap: 5px;
+  }
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(1)::before {
+    content: "Hadir";
+  }
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(2)::before {
+    content: "Sakit";
+  }
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(3)::before {
+    content: "Izin";
+  }
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(4)::before {
+    content: "Alfa";
+  }
+  * > body article#form-absensi > div > form > div > ul > li ~ li > div:nth-child(2) > div:nth-child(5)::before {
+    content: "Dispen";
   }
 }
 * > body > #popup {

@@ -19,6 +19,9 @@
   font-family: "Poppins";
 }
 * > body > main {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
   padding: 28px;
   width: 100%;
   height: 100vh;
@@ -127,6 +130,19 @@
   * > body > main > #header > ul > li:nth-child(2) > #profile > i {
     font-size: 42px;
   }
+}
+* > body article {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+* > body article > div > div {
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
 }
 * > body article > div > div > p {
   color: #2b3674;
@@ -384,26 +400,26 @@
 * > body > #popup > div button:hover {
   opacity: 90%;
 }
-* > body > #popup > div#detail-hadir {
+* > body > #popup > div#biodata-siswa {
   position: relative;
   width: 100%;
   color: #a3aed0;
 }
-* > body > #popup > div#detail-hadir > p:nth-child(1) {
+* > body > #popup > div#biodata-siswa > p:nth-child(1) {
   font-size: x-large;
   color: #2b3674;
   font-weight: bold;
 }
-* > body > #popup > div#detail-hadir > p:nth-child(2) {
+* > body > #popup > div#biodata-siswa > p:nth-child(2) {
   position: absolute;
   right: 5px;
   cursor: pointer;
 }
-* > body > #popup > div#detail-hadir ul {
+* > body > #popup > div#biodata-siswa ul {
   width: 100%;
   display: flex;
 }
-* > body > #popup > div#detail-hadir ul li p {
+* > body > #popup > div#biodata-siswa ul li > p {
   margin-bottom: 2px;
   text-align: right;
   display: flex;
@@ -411,66 +427,33 @@
   color: #2b3674;
   font-weight: 700;
 }
-* > body > #popup > div#detail-hadir ul li p::before {
+* > body > #popup > div#biodata-siswa ul li > p::before {
   color: #a3aed0;
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(1)::before {
+* > body > #popup > div#biodata-siswa ul li > p:nth-child(1)::before {
   content: "Nama";
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(2)::before {
-  content: "Tanggal";
+* > body > #popup > div#biodata-siswa ul li > p:nth-child(2)::before {
+  content: "TTL";
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(3)::before {
-  content: "Waktu";
+* > body > #popup > div#biodata-siswa ul li > p:nth-child(3)::before {
+  content: "Jenis Kelamin";
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(4)::before {
-  content: "Keterangan";
+* > body > #popup > div#biodata-siswa ul li > p:nth-child(4)::before {
+  content: "Kelas";
 }
-* > body > #popup > div#detail-hadir ul li p:nth-child(5)::before {
-  content: "Status";
-}
-* > body > #popup > div#detail-izin {
-  position: relative;
-  width: 100%;
-  color: #a3aed0;
-}
-* > body > #popup > div#detail-izin > p:nth-child(1) {
-  font-size: x-large;
+* > body > #popup > div#biodata-siswa ul li > div > p {
   color: #2b3674;
-  font-weight: bold;
+  font-weight: bolder;
 }
-* > body > #popup > div#detail-izin > p:nth-child(2) {
-  position: absolute;
-  right: 5px;
-  cursor: pointer;
-}
-* > body > #popup > div#detail-izin > ul {
-  width: 100%;
+* > body > #popup > div#biodata-siswa ul li > div > div {
   display: flex;
+  justify-content: space-around;
 }
-* > body > #popup > div#detail-izin > ul > li > p {
-  margin-bottom: 2px;
-  text-align: right;
-  display: flex;
-  justify-content: space-between;
+* > body > #popup > div#biodata-siswa ul li > div > div > div > p {
+  margin: 0;
+  font-weight: bolder;
+}
+* > body > #popup > div#biodata-siswa ul li > div > div > div > p:nth-child(1) {
   color: #2b3674;
-  font-weight: 700;
-}
-* > body > #popup > div#detail-izin > ul > li > p::before {
-  color: #a3aed0;
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(2)::before {
-  content: "Nama";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(3)::before {
-  content: "Tanggal";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(4)::before {
-  content: "Waktu";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(5)::before {
-  content: "Keterangan";
-}
-* > body > #popup > div#detail-izin > ul > li > p:nth-child(6)::before {
-  content: "Status";
 }/*# sourceMappingURL=detail-data-absensi-kelas.css.map */
