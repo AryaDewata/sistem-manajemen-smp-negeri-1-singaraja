@@ -216,7 +216,7 @@
   gap: 12px;
   flex-wrap: nowrap;
 }
-* > body > main > article > ul:nth-child(1) > li:first-of-type > form > input[type="date"],
+* > body > main > article > ul:nth-child(1) > li:first-of-type > form > input[type=date],
 * > body > main > article > ul:nth-child(1) > li:first-of-type > form > select {
   min-width: initial;
 }
@@ -266,350 +266,434 @@
   }
 }
 * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p,
-* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul {
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul,
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form {
   width: 25%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(1),
-* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(1) {
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(1) {
   width: 5%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(2),
-* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(2) {
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(2) {
   width: 30%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3),
-* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) {
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(3) {
   width: 40%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(4),
-* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(4) {
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(4) {
   width: 25%;
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(1)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(1)::before {
     content: "No";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(2)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(2)::before {
     content: "Mata Pelajaran";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3),
-  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) {
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3),
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(3) {
     flex-wrap: wrap;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(3)::before {
     width: 50%;
     content: "Guru Pengajar";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3) > li,
-  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) > li {
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) > li,
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(3) > li {
     width: 100%;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(3) > li:nth-child(1),
-  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) > li:nth-child(1) {
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(3) > li:nth-child(1),
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(3) > li:nth-child(1) {
     width: 50%;
   }
   * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > p:nth-child(4)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > ul:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-pelajaran > li > form:nth-child(4)::before {
     content: none;
   }
 }
 * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p,
-* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul {
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul,
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > form {
   width: 20%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(1),
-* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(1) {
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(1) {
   width: 5%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(2),
-* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(2) {
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(2) {
   width: 15%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(3),
-* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(3) {
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(3) {
   width: 20%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(4),
-* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(4) {
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(4) {
   width: 35%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(5),
-* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(5) {
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(5),
+* > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(5) {
   width: 25%;
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(1)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(1)::before {
     content: "No";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(2)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(2)::before {
     content: "Nama Kelas";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(3)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(3)::before {
     content: "Ruangan";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(4)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(4)::before {
     content: "Wali Kelas";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-kelas > li > p:nth-child(5)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(5)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > ul:nth-child(5)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-kelas > li > form:nth-child(5)::before {
     content: none;
   }
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p,
-* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul {
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul,
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > form {
   width: 16.67%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(1),
-* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(1) {
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(1) {
   width: 5%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(2),
-* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(2) {
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(2) {
   width: 12.5%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(3),
-* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(3) {
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(3) {
   width: 37.5%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(4),
-* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(4) {
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(4) {
   width: 15%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(5),
-* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(5) {
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(5),
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(5) {
   width: 5%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(6),
-* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(6) {
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(6),
+* > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(6) {
   width: 25%;
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(1)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(1)::before {
     content: "No";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(2)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(2)::before {
     content: "NIS";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(3)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(3)::before {
     content: "Nama Siswa";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(4)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(4)::before {
     content: "Jenis Kelamin";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(5)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(5)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(5)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(5)::before {
     content: "Kelas";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-siswa > li > p:nth-child(6)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(6)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > ul:nth-child(6)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-siswa > li > form:nth-child(6)::before {
     content: none;
   }
 }
 * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p,
-* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul {
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul,
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form {
   width: 25%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(1),
-* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(1) {
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form:nth-child(1) {
   width: 5%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(2),
-* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(2) {
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form:nth-child(2) {
   width: 25%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(3),
-* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(3) {
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form:nth-child(3) {
   width: 45%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(4),
-* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(4) {
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form:nth-child(4) {
   width: 25%;
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(1)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form:nth-child(1)::before {
     content: "No";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(2)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form:nth-child(2)::before {
     content: "Nama Ruangan";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(3)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form:nth-child(3)::before {
     content: "Deskripsi";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > p:nth-child(4)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > ul:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-ruangan > li > form:nth-child(4)::before {
     content: none;
   }
 }
 * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p,
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul {
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul,
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form {
   width: 20%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(1),
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(1) {
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(1) {
   width: 5%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(2),
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(2) {
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(2) {
   width: 6%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(3),
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(3) {
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(3) {
   width: 15%;
 }
 * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(4),
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(4) {
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(4) {
   width: 35%;
 }
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(5),
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(6),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(5), * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(6),
 * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(5),
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(6) {
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(6),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(5),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(6) {
   width: 7%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(7),
-* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(7) {
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(7),
+* > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(7) {
   width: 25%;
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(1)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(1)::before {
     content: "No";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(2)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(2)::before {
     content: "Hari";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(3)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(3)::before {
     content: "Mata Pelajaran";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(4)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(4)::before {
     content: "Pengajar";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(5)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(5)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(5)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(5)::before {
     content: "Waktu Mulai";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(6)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(6)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(6)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(6)::before {
     content: "Waktu Selesai";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > p:nth-child(7)::before,
-  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(7)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > ul:nth-child(7)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-jadwal-pelajaran > li > form:nth-child(7)::before {
     content: none;
   }
 }
-* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p {
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p,
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul,
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form {
   width: 11.11%;
 }
-* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(1),
-* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(2) {
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(1), * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(2),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(1),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(2) {
   width: 5%;
   text-align: center;
 }
-* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(3) {
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(3),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(3) {
   width: 25%;
 }
-* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(4) {
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(4),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(4) {
   width: 47%;
 }
-* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(5) {
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(5),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(5),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(5) {
   width: 10%;
 }
-* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(6) {
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(6),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(6),
+* > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(6) {
   width: 8%;
   text-align: center;
 }
 @media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(1)::before {
     content: "No";
     color: black;
     text-align: left;
   }
-  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(2)::before {
     content: "Kelas";
     color: black;
     text-align: left;
   }
-  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(3)::before {
     content: "Mata Pelajaran";
     color: black;
     text-align: left;
   }
-  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(4)::before {
     content: "Pengajar";
     color: black;
     text-align: left;
   }
-  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(5)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(5)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(5)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(5)::before {
     content: "Tanggal";
     color: black;
     text-align: left;
   }
-  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(6)::before {
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > p:nth-child(6)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > ul:nth-child(6)::before,
+  * > body > main > article > ul:nth-child(2)#master-data-inisiasi-jadwal > li > form:nth-child(6)::before {
     content: "Waktu";
     color: black;
     text-align: left;
@@ -701,33 +785,40 @@
   }
 }
 * > body > main > article > ul:nth-child(2) > li > p,
-* > body > main > article > ul:nth-child(2) > li > ul {
+* > body > main > article > ul:nth-child(2) > li > ul,
+* > body > main > article > ul:nth-child(2) > li > form {
   width: 20%;
   list-style-position: inside;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(1),
-* > body > main > article > ul:nth-child(2) > li > ul:nth-child(1) {
+* > body > main > article > ul:nth-child(2) > li > ul:nth-child(1),
+* > body > main > article > ul:nth-child(2) > li > form:nth-child(1) {
   width: 5%;
   text-align: center;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(2),
-* > body > main > article > ul:nth-child(2) > li > ul:nth-child(2) {
+* > body > main > article > ul:nth-child(2) > li > ul:nth-child(2),
+* > body > main > article > ul:nth-child(2) > li > form:nth-child(2) {
   width: 15%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(3),
-* > body > main > article > ul:nth-child(2) > li > ul:nth-child(3) {
+* > body > main > article > ul:nth-child(2) > li > ul:nth-child(3),
+* > body > main > article > ul:nth-child(2) > li > form:nth-child(3) {
   width: 35%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:nth-child(4),
-* > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) {
+* > body > main > article > ul:nth-child(2) > li > ul:nth-child(4),
+* > body > main > article > ul:nth-child(2) > li > form:nth-child(4) {
   width: 20%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:last-child,
-* > body > main > article > ul:nth-child(2) > li > ul:last-child {
+* > body > main > article > ul:nth-child(2) > li > ul:last-child,
+* > body > main > article > ul:nth-child(2) > li > form:last-child {
   width: 25%;
 }
 * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button),
-* > body > main > article > ul:nth-child(2) > li > ul:last-child:has(button) {
+* > body > main > article > ul:nth-child(2) > li > ul:last-child:has(button),
+* > body > main > article > ul:nth-child(2) > li > form:last-child:has(button) {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -736,23 +827,27 @@
   flex-wrap: nowrap;
 }
 * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:first-of-type,
-* > body > main > article > ul:nth-child(2) > li > ul:last-child:has(button) button:first-of-type {
+* > body > main > article > ul:nth-child(2) > li > ul:last-child:has(button) button:first-of-type,
+* > body > main > article > ul:nth-child(2) > li > form:last-child:has(button) button:first-of-type {
   background-color: #256fff;
 }
 * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:last-of-type,
-* > body > main > article > ul:nth-child(2) > li > ul:last-child:has(button) button:last-of-type {
+* > body > main > article > ul:nth-child(2) > li > ul:last-child:has(button) button:last-of-type,
+* > body > main > article > ul:nth-child(2) > li > form:last-child:has(button) button:last-of-type {
   background-color: #d04848;
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button),
-  * > body > main > article > ul:nth-child(2) > li > ul:last-child:has(button) {
+  * > body > main > article > ul:nth-child(2) > li > ul:last-child:has(button),
+  * > body > main > article > ul:nth-child(2) > li > form:last-child:has(button) {
     justify-content: space-between;
     gap: 0;
   }
 }
 @media (max-width: 1140px) {
   * > body > main > article > ul:nth-child(2) > li > p,
-  * > body > main > article > ul:nth-child(2) > li > ul {
+  * > body > main > article > ul:nth-child(2) > li > ul,
+  * > body > main > article > ul:nth-child(2) > li > form {
     padding: 4px 0;
     width: 100% !important;
     display: flex;
@@ -766,40 +861,47 @@
     text-align: right;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(1)::before,
-  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2) > li > form:nth-child(1)::before {
     content: "No";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before,
-  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2) > li > form:nth-child(2)::before {
     content: "Nama Pengguna";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before,
-  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2) > li > form:nth-child(3)::before {
     content: "Nama Lengkap";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4),
-  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) {
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4),
+  * > body > main > article > ul:nth-child(2) > li > form:nth-child(4) {
     flex-wrap: wrap;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4)::before,
-  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2) > li > form:nth-child(4)::before {
     width: 50%;
     content: "Status";
     color: black;
     text-align: left;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4) > li,
-  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) > li {
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) > li,
+  * > body > main > article > ul:nth-child(2) > li > form:nth-child(4) > li {
     width: 100%;
   }
   * > body > main > article > ul:nth-child(2) > li > p:nth-child(4) > li:nth-child(1),
-  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) > li:nth-child(1) {
+  * > body > main > article > ul:nth-child(2) > li > ul:nth-child(4) > li:nth-child(1),
+  * > body > main > article > ul:nth-child(2) > li > form:nth-child(4) > li:nth-child(1) {
     width: 50%;
   }
 }
@@ -900,11 +1002,11 @@
     justify-content: flex-start;
   }
 }
-* > #popup > div > form > ul ul:has(input[type="checkbox"]) {
+* > #popup > div > form > ul ul:has(input[type=checkbox]) {
   flex-direction: row;
   align-items: flex-end;
 }
-* > #popup > div > form > ul ul:has(input[type="checkbox"]) input {
+* > #popup > div > form > ul ul:has(input[type=checkbox]) input {
   min-width: initial;
 }
 * > #popup > div > form > ul ul > li:not(:nth-child(2)) input,
@@ -912,7 +1014,7 @@
   margin-top: 16px;
   width: 100%;
 }
-* > #popup > div > form > ul button[type="button"] {
+* > #popup > div > form > ul button[type=button] {
   box-shadow: inset 0 0 0 2px #4318ff;
   background-color: white;
   color: #4318ff;
