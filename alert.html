@@ -4,49 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- alert style -->
+    <link rel="stylesheet" href="css/alert.css" />
+
+    <!-- Sweet alert CSS -->
     <link rel="stylesheet" href="sweetalert2.min.css" />
   </head>
 
-  <style>
-    .alert-font {
-        font-family: 'Poppins', sans-serif;
-        font-weight: unset!important;
-    }
-    .alert-container {
-      backdrop-filter: blur(1px);
-    }
-    .alert-popup {
-      border-radius: 20px;
-    }
-    .alert-title {
-        font-weight: 100;
-    }
-  </style>
+  <!-- Sweet alert class Style -->
+
   <body>
+
+    <!-- Success Popup -->
     <button
-      onclick="success.fire({titleText: 'Absensi Sukses!', icon: 'success',
-      confirmButtonText: 'Tutup'})"
+      onclick="success.fire({  // Show Success Popup (Alert)
+      titleText: 'Absensi Sukses!', // Popup Title  
+      text: '', // Popup text	
+      icon: 'success',
+      confirmButtonText: 'Tutup' // Confirm button text
+      })"
     >
       Sukses
     </button>
+
+    <!-- Copy Success -->
     <button
-      onclick="copySuccess.fire({
+      onclick="copySuccess.fire({ // Show Copy Success Popup (Toast)
         icon: 'success',
-        title: 'Tautan Tersalin!',
+        title: 'Tautan Tersalin!', // Popup Title
       });"
     >
       Salin Tautan
     </button>
-    <button  onclick="failed.fire({titleText: 'Gagal Melakukan Absensi!', icon: 'error',
-    confirmButtonText: 'Tutup'})">Failed</button>
-    <button></button>
+
+    <!-- Failed Popup -->
+    <button
+      onclick="failed.fire({ // Show Failed Popup (Alert)
+        titleText: 'Gagal Melakukan Absensi!', // Popup Title  
+        text: 'Mohon untuk melakukan absensi ulang.', // Popup text	
+        icon: 'error',
+        confirmButtonText: 'Tutup' // Confirm button text
+        })"
+    >
+      Failed
+    </button>
+    <button
+      onclick="confirm.fire({
+        titleText: 'Yakin Akan Menonaktifkan User?',
+        text: 'User akan dinonaktifkan.'}).then((result) => {
+          if (result.isConfirmed) {
+            success.fire({
+              title: 'dinonaktifkan!',
+              text: 'User telah dinonaktifkan.',
+              icon: 'success',
+        });
+      };
+    });"
+    >
+      Nonaktifkan
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="sweetalert2.all.min.js"></script>
     <script>
       const copySuccess = Swal.mixin({
         customClass: {
-            container: 'alert-font',
+          container: "alert-font",
         },
         toast: true,
         position: "top-end",
@@ -64,7 +88,6 @@
         customClass: {
           container: "alert-container alert-font",
           popup: "alert-popup",
-          title: "alert-title"
         },
         confirmButtonColor: "#4318ff",
         iconColor: "#05CD99",
@@ -73,11 +96,23 @@
         customClass: {
           container: "alert-container alert-font",
           popup: "alert-popup",
-          title: "alert-title"
-
         },
         confirmButtonColor: "#4318ff",
         iconColor: "#dc3545",
+      });
+
+      const confirm = Swal.mixin({
+        customClass: {
+          container: "alert-container alert-font",
+          popup: "alert-popup",
+        },
+        icon: "warning",
+        showCancelButton: true,
+        // cancelButtonText: "Batal",
+        // confirmButtonText: "Nonaktifkan",
+        cancelButtonColor: "#dc3545",
+        confirmButtonColor: "#05CD99",
+        reverseButtons: true,
       });
     </script>
   </body>
