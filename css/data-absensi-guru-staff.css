@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -17,9 +16,16 @@
   outline: none;
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
-  color: #a3aed0;
+  color: black;
   font-size: 14.75px;
   font-family: "Poppins";
+}
+* button:hover {
+  opacity: 0.8;
+}
+* button:disabled {
+  background-color: #4e505d !important;
+  cursor: not-allowed !important;
 }
 * > label {
   padding: 0 !important;
@@ -40,7 +46,7 @@
   align-items: stretch;
   gap: 0;
   flex-wrap: nowrap;
-  color: #a3aed0;
+  color: black;
   font-size: 14px;
   font-family: "Poppins";
 }
@@ -213,7 +219,7 @@
     content: "Waktu";
   }
   * > body article > div > ul > li ~ li > p::before {
-    color: #a3aed0;
+    color: black;
   }
 }
 @media (max-width: 1140px) and (max-width: 540px) {
@@ -371,7 +377,7 @@
 }
 * > body article > div div#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
-  color: #a3aed0;
+  color: black;
 }
 * > body article > div div#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
@@ -436,7 +442,7 @@
   display: none;
   border-radius: 8px;
   background-color: white;
-  color: #a3aed0;
+  color: black;
   text-align: center;
   max-width: 33.3%;
 }
@@ -490,7 +496,7 @@
   outline: none;
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
-  color: #a3aed0;
+  color: black;
   font-size: 14.75px;
   font-family: "Poppins";
 }
@@ -537,7 +543,7 @@
 * > body > #popup > div#approve-izin, * > body > #popup > div#approved-izin {
   position: relative;
   width: 100%;
-  color: #a3aed0;
+  color: black;
 }
 * > body > #popup > div#approve-izin > p:nth-child(1), * > body > #popup > div#approved-izin > p:nth-child(1) {
   font-size: x-large;
@@ -562,7 +568,7 @@
   font-weight: 700;
 }
 * > body > #popup > div#approve-izin > ul > li > p::before, * > body > #popup > div#approved-izin > ul > li > p::before {
-  color: #a3aed0;
+  color: black;
 }
 * > body > #popup > div#approve-izin > ul > li > p:nth-child(2)::before, * > body > #popup > div#approved-izin > ul > li > p:nth-child(2)::before {
   content: "Nama";

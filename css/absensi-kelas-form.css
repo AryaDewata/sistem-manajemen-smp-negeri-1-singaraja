@@ -14,9 +14,16 @@
   align-items: stretch;
   gap: 0;
   flex-wrap: nowrap;
-  color: #a3aed0;
+  color: black;
   font-size: 14px;
   font-family: "Poppins";
+}
+* > body button:hover {
+  opacity: 0.8;
+}
+* > body button:disabled {
+  background-color: #4e505d !important;
+  cursor: not-allowed !important;
 }
 * > body > main {
   padding: 28px;
@@ -317,7 +324,7 @@
   display: none;
   border-radius: 8px;
   background-color: white;
-  color: #a3aed0;
+  color: black;
   text-align: center;
   max-width: 33.3%;
 }
@@ -370,7 +377,7 @@
   outline: none;
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
-  color: #a3aed0;
+  color: black;
   font-size: 14.75px;
   font-family: "Poppins";
 }

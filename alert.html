@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+  </head>
+
+  <style>
+    .alert-font {
+        font-family: 'Poppins', sans-serif;
+        font-weight: unset!important;
+    }
+    .alert-container {
+      backdrop-filter: blur(1px);
+    }
+    .alert-popup {
+      border-radius: 20px;
+    }
+    .alert-title {
+        font-weight: 100;
+    }
+  </style>
+  <body>
+    <button
+      onclick="success.fire({titleText: 'Absensi Sukses!', icon: 'success',
+      confirmButtonText: 'Tutup'})"
+    >
+      Sukses
+    </button>
+    <button
+      onclick="copySuccess.fire({
+        icon: 'success',
+        title: 'Tautan Tersalin!',
+      });"
+    >
+      Salin Tautan
+    </button>
+    <button  onclick="failed.fire({titleText: 'Gagal Melakukan Absensi!', icon: 'error',
+    confirmButtonText: 'Tutup'})">Failed</button>
+    <button></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script>
+      const copySuccess = Swal.mixin({
+        customClass: {
+            container: 'alert-font',
+        },
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 2250,
+        timerProgressBar: true,
+        iconColor: "#05CD99",
+
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        },
+      });
+      const success = Swal.mixin({
+        customClass: {
+          container: "alert-container alert-font",
+          popup: "alert-popup",
+          title: "alert-title"
+        },
+        confirmButtonColor: "#4318ff",
+        iconColor: "#05CD99",
+      });
+      const failed = Swal.mixin({
+        customClass: {
+          container: "alert-container alert-font",
+          popup: "alert-popup",
+          title: "alert-title"
+
+        },
+        confirmButtonColor: "#4318ff",
+        iconColor: "#dc3545",
+      });
+    </script>
+  </body>
+</html>

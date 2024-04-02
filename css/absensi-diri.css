@@ -17,9 +17,16 @@
   outline: none;
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
-  color: #a3aed0;
+  color: black;
   font-size: 14.75px;
   font-family: "Poppins";
+}
+* button:hover {
+  opacity: 0.8;
+}
+* button:disabled {
+  background-color: #4e505d !important;
+  cursor: not-allowed !important;
 }
 * > body {
   overflow: hidden;
@@ -29,7 +36,7 @@
   align-items: stretch;
   gap: 0;
   flex-wrap: nowrap;
-  color: #a3aed0;
+  color: black;
   font-size: 14px;
   font-family: "Poppins";
 }
@@ -303,7 +310,7 @@
   content: "Status";
 }
 * > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li > p::before {
-  color: #a3aed0;
+  color: black;
   font-weight: 600;
 }
 * > body article > div:nth-child(1) > div:nth-child(3) .status-absensi > ul > li > p > span {
@@ -447,7 +454,7 @@
     margin-bottom: 5px;
   }
   * > body article > div:nth-child(2) > div > ul > li ~ li p::before {
-    color: #a3aed0;
+    color: black;
     font-weight: normal;
   }
   * > body article > div:nth-child(2) > div > ul > li p {
@@ -464,7 +471,7 @@
 * > body article > div:nth-child(2) > div div#pagination > p {
   font-size: unset;
   font-weight: unset;
-  color: #a3aed0;
+  color: black;
 }
 * > body article > div:nth-child(2) > div div#pagination > nav > ul > li > a {
   cursor: pointer;
@@ -480,7 +487,7 @@
 }
 * > body article > div:nth-child(2) > div div#pagination > nav > ul > li > a:not(.active) {
   background-color: transparent;
-  color: #a3aed0;
+  color: black;
 }
 * > body article > div:nth-child(2) > div div#pagination > nav > ul > li > a:not(.active):hover {
   background-color: rgba(163, 174, 208, 0.2784313725);
@@ -546,7 +553,7 @@
   display: none;
   border-radius: 8px;
   background-color: white;
-  color: #a3aed0;
+  color: black;
   text-align: center;
   max-width: 33.3%;
 }
@@ -600,7 +607,7 @@
   outline: none;
   border-radius: 8px;
   border: 2px solid rgba(163, 174, 208, 0.2784313725);
-  color: #a3aed0;
+  color: black;
   font-size: 14.75px;
   font-family: "Poppins";
 }
@@ -642,7 +649,7 @@
 * > body > #popup > div#detail-hadir {
   position: relative;
   width: 100%;
-  color: #a3aed0;
+  color: black;
 }
 * > body > #popup > div#detail-hadir > p:nth-child(1) {
   font-size: x-large;
@@ -667,7 +674,7 @@
   font-weight: 700;
 }
 * > body > #popup > div#detail-hadir ul li p::before {
-  color: #a3aed0;
+  color: black;
 }
 * > body > #popup > div#detail-hadir ul li p:nth-child(1)::before {
   content: "Nama";
@@ -687,7 +694,7 @@
 * > body > #popup > div#detail-izin {
   position: relative;
   width: 100%;
-  color: #a3aed0;
+  color: black;
 }
 * > body > #popup > div#detail-izin > p:nth-child(1) {
   font-size: x-large;
@@ -712,7 +719,7 @@
   font-weight: 700;
 }
 * > body > #popup > div#detail-izin > ul > li > p::before {
-  color: #a3aed0;
+  color: black;
 }
 * > body > #popup > div#detail-izin > ul > li > p:nth-child(2)::before {
   content: "Nama";
