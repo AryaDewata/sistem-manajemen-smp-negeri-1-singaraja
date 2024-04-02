@@ -102,7 +102,6 @@
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  color: #a3aed0;
 }
 @media (max-width: 1140px) {
   * > body > main > #header {
@@ -155,7 +154,7 @@
   }
 }
 * > body > main > #header > ul > li > #profile {
-  padding: 8px 24px;
+  padding: 8px 10px 8px 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -174,7 +173,7 @@
   font-size: 12px;
 }
 * > body > main > #header > ul > li > #profile > i {
-  font-size: 34px;
+  font-size: 46px;
 }
 * > body > main > article {
   padding: 24px;
