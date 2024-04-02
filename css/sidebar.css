@@ -23,6 +23,7 @@
   }
   .offcanvas.offcanvas-start {
     transform: translateX(0);
+    width: 275px !important;
   }
   .offcanvas .btn-close {
     display: none;
@@ -88,7 +89,8 @@ aside .left-nav ul li .list a {
 aside .left-nav ul li .list a:active {
   color: #010100;
 }
-aside .left-nav ul li .list:hover, aside .left-nav ul li ul li:hover {
+aside .left-nav ul li .list:hover,
+aside .left-nav ul li ul li:hover {
   background: #fafafa;
 }
 aside .left-nav ul span {
@@ -103,7 +105,7 @@ aside .left-nav ul .active-link {
 aside .left-nav ul .active-link::after {
   content: "";
   position: absolute;
-  background-color: #4318FF;
+  background-color: #4318ff;
   right: -20px;
   top: 15%;
   border-radius: 10px;
@@ -111,7 +113,7 @@ aside .left-nav ul .active-link::after {
   height: 70%;
 }
 aside .left-nav ul .not-active-link .icon {
-  color: #A3AED0;
+  color: #a3aed0;
 }
 aside .left-nav ul .active-link .icon {
   color: #4318ff;
@@ -129,7 +131,7 @@ aside .left-nav ul .list.collapse.active .arrow-down {
   transform: rotateX(180deg);
 }
 aside .left-nav ul .not-active-link {
-  color: #A3AED0 !important;
+  color: #a3aed0 !important;
   font-weight: 500;
 }
 aside .left-nav ul li ul li {
