@@ -526,8 +526,8 @@
             p.textContent = e.dataset.ruangan;
             p.setAttribute("id", `text-${id}`);
             p.style.position = "absolute";
-            p.style.top = `${$(`#${id}`)[0].getBoundingClientRect().top - $("article")[0].getBoundingClientRect().top - 50}px`;
-            p.style.left = `${$(`#${id}`)[0].getBoundingClientRect().left - $("article")[0].getBoundingClientRect().left - 10}px`;
+            p.style.top = `${$(`#${id}`)[0].getBoundingClientRect().top - $("#denah")[0].getBoundingClientRect().top + 15}px`;
+            p.style.left = `${$(`#${id}`)[0].getBoundingClientRect().left - $("#denah")[0].getBoundingClientRect().left + 15}px`;
             p.style.zIndex = "99";
             p.style.width = "max-content";
             p.style.fontSize = "12px";
