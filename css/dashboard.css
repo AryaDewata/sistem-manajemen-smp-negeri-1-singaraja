@@ -161,6 +161,12 @@
   flex-wrap: wrap;
   row-gap: 18px;
 }
+* > body > main > article:has(#denah) {
+  padding: 24px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 17px 14px 40px 4px rgba(112, 144, 176, 0.0823529412);
+}
 * > body > main > article > a {
   padding: 64px 16px;
   width: 32%;
@@ -191,6 +197,14 @@
   * > body > main > article > a {
     width: 100%;
   }
+}
+* > body > main > article > #denah {
+  position: relative;
+  width: max-content;
+  overflow: scroll;
+}
+* > body > main > article > #denah > svg {
+  width: 1500px;
 }
 * > body > #popup {
   position: fixed;
