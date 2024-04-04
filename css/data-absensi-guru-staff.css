@@ -31,13 +31,6 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-* > input[type=date] {
-  border: none;
-  color: #2b3674;
-  border-bottom: 1px solid gray;
-  border-radius: 0px;
-  margin: 0 !important;
-}
 * > body {
   overflow: hidden;
   display: flex;
@@ -186,10 +179,57 @@
   flex-wrap: nowrap;
   flex-wrap: wrap;
 }
+* > body article > div > ul li {
+  padding: 15px;
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+* > body article > div > ul li:first-child {
+  font-weight: bold;
+  border-bottom: 1px solid rgba(163, 174, 208, 0.2784313725);
+}
+* > body article > div > ul li p {
+  margin: 0;
+  width: 14%;
+  text-align: center;
+}
+* > body article > div > ul li ~ li {
+  border-radius: 8px;
+}
+* > body article > div > ul li ~ li:nth-child(even) {
+  background: #f4f7fe;
+}
+* > body article > div > ul li ~ li > p > span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+* > body article > div > ul li button {
+  cursor: pointer;
+  padding: 8px 16px;
+  margin: 0;
+  width: 100%;
+  border: none;
+  border-radius: 84px;
+  background-color: #4318ff;
+  color: white;
+  font-family: "Poppins";
+  text-align: center;
+  letter-spacing: 0.5px;
+}
 @media (max-width: 1140px) {
   * > body article > div > ul {
     flex-direction: row;
     justify-content: space-between;
+    row-gap: 10px;
   }
   * > body article > div > ul > li:nth-child(1) {
     display: none;
@@ -199,6 +239,10 @@
     width: 49%;
     flex-direction: column;
     align-items: end;
+    border: 1px solid rgba(163, 174, 208, 0.2784313725);
+  }
+  * > body article > div > ul > li ~ li:nth-child(even) {
+    background: none;
   }
   * > body article > div > ul > li ~ li > p {
     display: flex;
@@ -219,6 +263,7 @@
     content: "Waktu";
   }
   * > body article > div > ul > li ~ li > p::before {
+    font-weight: bold;
     color: black;
   }
 }
@@ -227,53 +272,17 @@
     width: 100%;
   }
 }
-* > body article > div > ul li {
-  padding: 15px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5px;
-  flex-wrap: nowrap;
-}
-* > body article > div > ul li p {
-  margin: 0;
-  width: 14%;
-  text-align: center;
-}
-* > body article > div > ul li ~ li {
-  margin-bottom: 20px;
-  color: #2b3674;
-  font-weight: bold;
-  box-shadow: 0px 0px 6px 4px rgba(112, 144, 176, 0.0823529412);
-}
-* > body article > div > ul li ~ li > p > span {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-}
-* > body article > div > ul li button {
-  cursor: pointer;
-  padding: 8px 16px;
-  margin: 0;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  background-color: #4318ff;
-  color: white;
-  font-family: "Poppins";
-  text-align: center;
-  letter-spacing: 0.5px;
-}
 * > body article > div div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
   flex-wrap: wrap;
+}
+@media (max-width: 540px) {
+  * > body article > div div {
+    width: 100%;
+  }
 }
 * > body article > div div button {
   font-size: medium;
@@ -282,7 +291,12 @@
   color: white;
   border: none;
   margin: 10px 0;
-  border-radius: 5px;
+  border-radius: 84px;
+}
+@media (max-width: 540px) {
+  * > body article > div div button {
+    width: 100%;
+  }
 }
 * > body article > div div #delete-history-btn {
   background: #d04848;
@@ -293,75 +307,41 @@
 * > body article > div > div.search-section {
   display: flex;
   justify-content: start;
-  gap: 5px;
-  margin: 10px 0;
+  gap: 12px;
+  margin: 20px 0;
 }
 * > body article > div > div.search-section > button {
   margin: auto 0 0 0 !important;
-  border-radius: 8px;
+  border-radius: 84px;
   background: #4318ff;
   border: none;
   padding: 8px 16px;
   color: white;
+}
+@media (max-width: 540px) {
+  * > body article > div > div.search-section > button {
+    width: 100%;
+  }
 }
 * > body article > div > div.search-section > div {
-  display: inline-block;
-}
-* > body article > div > div.search-section > div textarea {
-  max-height: 100px;
-}
-* > body article > div > div.search-section > div:nth-child(2) {
   display: flex;
+  gap: 12px;
 }
-* > body article > div > div.search-section > div:nth-child(2) > div > div {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
+@media (max-width: 540px) {
+  * > body article > div > div.search-section > div {
+    width: 100%;
+  }
 }
-* > body article > div > div.search-section > div:nth-child(2) > div > div:nth-child(1) {
-  padding-top: 12%;
-  border-radius: 10px;
-  border: 3px rgb(229, 229, 229) dashed;
-  background: rgb(254, 254, 254);
-}
-* > body article > div > div.search-section > div:nth-child(2) > div > div:nth-child(1) iconify-icon {
-  margin: 0 auto !important;
-}
-* > body article > div > div.search-section > div:nth-child(2) > div > div:nth-child(1) > p {
-  margin: 0;
-  text-align: center;
-  margin-top: 10px;
-}
-* > body article > div > div.search-section > div:nth-child(2) > div > div:nth-child(1) > p:nth-child(2) {
-  font-weight: bold;
-  font-size: medium;
-  color: #4318ff;
-}
-* > body article > div > div.search-section > div:nth-child(2) > div > div:nth-child(2) {
-  padding-right: 0;
-}
-* > body article > div > div.search-section > div:nth-child(2) > div > div:nth-child(2) > p:nth-child(1) {
-  font-weight: bold;
-  font-size: large;
-  color: #2b3674;
-}
-* > body article > div > div.search-section > div:nth-child(2) > div > div:nth-child(2) > button {
-  border-radius: 10px;
-  background: #4318ff;
-  border: none;
-  padding: 8px 16px;
-  color: white;
+@media (max-width: 768px) {
+  * > body article > div > div.search-section > div input[type=date] {
+    width: 100% !important;
+  }
 }
 * > body article > div div#pagination {
   padding-left: 2%;
   display: flex;
   justify-content: space-between;
   align-items: end;
-}
-* > body article > div div#pagination > p > form > select {
-  width: 100%;
 }
 * > body article > div div#pagination > nav > ul > li > a {
   cursor: pointer;

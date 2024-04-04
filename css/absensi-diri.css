@@ -326,19 +326,31 @@
 * > body article > div:nth-child(2) > div > div {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   align-items: end;
+}
+* > body article > div:nth-child(2) > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  * > body article > div:nth-child(2) > div > div > div {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 * > body article > div:nth-child(2) > div > div > div > label {
   padding: 0 !important;
   margin: 0 !important;
 }
 * > body article > div:nth-child(2) > div > div > div > input[type=date] {
-  border: none;
-  color: #2b3674;
-  border-bottom: 1px solid gray;
-  border-radius: 0px;
   margin: 0 !important;
+}
+@media (max-width: 768px) {
+  * > body article > div:nth-child(2) > div > div > div > input[type=date] {
+    width: 100%;
+  }
 }
 * > body article > div:nth-child(2) > div > div > div:nth-child(3) {
   padding: 0 !important;
@@ -349,8 +361,13 @@
   background-color: #4318ff;
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 8px 16px;
+  border-radius: 84px;
+}
+@media (max-width: 768px) {
+  * > body article > div:nth-child(2) > div > div > div:nth-child(3) > button {
+    width: 100%;
+  }
 }
 * > body article > div:nth-child(2) > div > p {
   font-weight: bold;
@@ -370,8 +387,10 @@
 }
 * > body article > div:nth-child(2) > div > ul li {
   text-align: center;
+  font-weight: bold;
   padding: 15px;
   width: 100%;
+  border-bottom: 1px solid rgba(163, 174, 208, 0.2784313725);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -384,10 +403,13 @@
   width: 14%;
 }
 * > body article > div:nth-child(2) > div > ul li ~ li {
-  margin-bottom: 20px;
-  color: #2b3674;
-  font-weight: bold;
-  box-shadow: 0px 0px 6px 4px rgba(112, 144, 176, 0.0823529412);
+  font-weight: normal;
+  color: black;
+  border: none;
+  border-radius: 8px;
+}
+* > body article > div:nth-child(2) > div > ul li ~ li:nth-child(even) {
+  background: #f4f7fe;
 }
 * > body article > div:nth-child(2) > div > ul li ~ li p > span {
   display: flex;
@@ -397,12 +419,12 @@
   gap: 3px;
 }
 * > body article > div:nth-child(2) > div > ul li button {
+  border-radius: 84px;
   cursor: pointer;
   padding: 8px 16px;
   margin: 0;
   width: 100%;
   border: none;
-  border-radius: 5px;
   background-color: #4318ff;
   color: white;
   font-family: "Poppins";
@@ -414,6 +436,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    row-gap: 10px;
   }
   * > body article > div:nth-child(2) > div > ul > li {
     flex-direction: column;
@@ -421,8 +444,12 @@
     display: none;
   }
   * > body article > div:nth-child(2) > div > ul > li ~ li {
+    border: rgba(163, 174, 208, 0.2784313725) 1px solid;
     width: 49.5%;
     display: flex;
+  }
+  * > body article > div:nth-child(2) > div > ul > li ~ li:nth-child(even) {
+    background: white;
   }
 }
 @media (max-width: 1140px) and (max-width: 540px) {
@@ -455,7 +482,7 @@
   }
   * > body article > div:nth-child(2) > div > ul > li ~ li p::before {
     color: black;
-    font-weight: normal;
+    font-weight: bold;
   }
   * > body article > div:nth-child(2) > div > ul > li p {
     text-align: end;
