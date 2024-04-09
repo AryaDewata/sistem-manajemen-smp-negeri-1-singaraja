@@ -531,8 +531,11 @@
             p.style.left = `${$(`#${id}`)[0].getBoundingClientRect().left - $("#denah")[0].getBoundingClientRect().left + 15}px`;
             p.style.zIndex = "99";
             p.style.width = "max-content";
-            p.style.fontSize = "12px";
+            p.style.fontSize = "16px";
             p.style.fontFamily = "Monospace";
+            p.style.fontWeight = "bold";
+            p.style.color = "white";
+            p.style.textShadow = "0.5px 0.5px 3px black";
             $("#denah").append(p);
             if (id.slice(-3) !== "l-2") {
                 p.style.filter = "opacity(1)"
