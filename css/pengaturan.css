@@ -182,7 +182,7 @@
 * > body article > div > form > .form-check > input[type=checkbox]:checked {
   background-color: #4318ff;
   border-color: #4318ff;
-  --bs-form-switch-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
 * > body article > div > form > .form-input-text {
   display: flex;
@@ -199,11 +199,38 @@
   align-items: center;
   gap: 10px;
 }
-* > body article > div > form > .form-input-text > div > input[type=number]:focus, * > body article > div > form > .form-input-text > div input[type=text]:focus {
+* > body article > div > form > .form-input-text > div > input[type=number]:focus,
+* > body article > div > form > .form-input-text > div input[type=text]:focus {
   box-shadow: 0px 0px 0px 5px rgba(66, 24, 255, 0.168627451);
   border: 1px solid rgba(66, 24, 255, 0.6196078431);
 }
+* > body article > div > form .form-input-password {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  flex-wrap: wrap;
+}
+* > body article > div > form .form-input-password > * {
+  width: auto;
+}
+* > body article > div > form .form-input-password > div > input[type=password]:focus, * > body article > div > form .form-input-password > div > input[type=text]:focus {
+  box-shadow: 0px 0px 0px 5px rgba(66, 24, 255, 0.168627451);
+  border: 1px solid rgba(66, 24, 255, 0.6196078431);
+}
+* > body article > div > form .form-input-password > div > span {
+  cursor: pointer;
+}
 * > body article > div > form button[type=submit] {
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 84px;
+  border: none;
+  background: #4318ff;
+  padding: 8px 16px;
+  color: white;
+}
+* > body article > div > form button[type=button] {
   width: -moz-max-content;
   width: max-content;
   border-radius: 84px;
