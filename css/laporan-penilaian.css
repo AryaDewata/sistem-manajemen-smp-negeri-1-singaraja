@@ -239,53 +239,69 @@
     row-gap: 18px;
   }
 }
-* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p {
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p,
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div {
   width: 12.5%;
 }
-* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(1), * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(7) {
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(1), * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(7),
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(1),
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(7) {
   width: 5%;
   text-align: center;
 }
-* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(2) {
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(2),
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(2) {
   width: 12%;
 }
-* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(3), * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(4) {
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(3), * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(4),
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(3),
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(4) {
   width: 12%;
 }
-* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(5), * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(6) {
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(5), * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(6),
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(5),
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(6) {
   width: 10.75%;
 }
-* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(8) {
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(8),
+* > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(8) {
   width: 32.5%;
   text-align: left;
 }
 @media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(1)::before {
     content: "No";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(2)::before {
     content: "Nama Modul";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(3)::before {
     content: "Keterangan";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(4)::before {
     content: "Pemilik";
     color: black;
     text-align: left;
   }
-  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(5)::before {
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(5)::before,
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(5)::before {
     content: "Waktu Pengunggahan";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(6)::before {
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(6)::before,
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(6)::before {
     content: "Perubahan Terakhir";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(7)::before {
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > p:nth-child(7)::before,
+  * > body > main > article > ul:nth-child(2)#riwayat-penilaian > li > div:nth-child(7)::before {
     content: "Tautan";
     color: black;
   }
@@ -377,23 +393,31 @@
     width: 100%;
   }
 }
-* > body > main > article > ul:nth-child(2) > li > p {
+* > body > main > article > ul:nth-child(2) > li > p,
+* > body > main > article > ul:nth-child(2) > li > div {
   width: 14.28%;
 }
-* > body > main > article > ul:nth-child(2) > li > p:nth-child(1), * > body > main > article > ul:nth-child(2) > li > p:last-child {
+* > body > main > article > ul:nth-child(2) > li > p:nth-child(1), * > body > main > article > ul:nth-child(2) > li > p:last-child,
+* > body > main > article > ul:nth-child(2) > li > div:nth-child(1),
+* > body > main > article > ul:nth-child(2) > li > div:last-child {
   width: 5%;
   text-align: center;
 }
-* > body > main > article > ul:nth-child(2) > li > p:nth-child(2) {
+* > body > main > article > ul:nth-child(2) > li > p:nth-child(2),
+* > body > main > article > ul:nth-child(2) > li > div:nth-child(2) {
   width: 11.72%;
 }
-* > body > main > article > ul:nth-child(2) > li > p:nth-child(3) {
+* > body > main > article > ul:nth-child(2) > li > p:nth-child(3),
+* > body > main > article > ul:nth-child(2) > li > div:nth-child(3) {
   width: 28%;
 }
-* > body > main > article > ul:nth-child(2) > li > p:nth-child(4), * > body > main > article > ul:nth-child(2) > li > p:nth-child(5) {
+* > body > main > article > ul:nth-child(2) > li > p:nth-child(4), * > body > main > article > ul:nth-child(2) > li > p:nth-child(5),
+* > body > main > article > ul:nth-child(2) > li > div:nth-child(4),
+* > body > main > article > ul:nth-child(2) > li > div:nth-child(5) {
   width: 18%;
 }
-* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
+* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button),
+* > body > main > article > ul:nth-child(2) > li > div:last-child:has(button) {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -401,20 +425,24 @@
   gap: 8px;
   flex-wrap: nowrap;
 }
-* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:first-of-type {
+* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:first-of-type,
+* > body > main > article > ul:nth-child(2) > li > div:last-child:has(button) button:first-of-type {
   background-color: #256fff;
 }
-* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:has(i.fa-cancel) {
+* > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) button:has(i.fa-cancel),
+* > body > main > article > ul:nth-child(2) > li > div:last-child:has(button) button:has(i.fa-cancel) {
   background-color: #d04848;
 }
 @media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button) {
+  * > body > main > article > ul:nth-child(2) > li > p:last-child:has(button),
+  * > body > main > article > ul:nth-child(2) > li > div:last-child:has(button) {
     justify-content: space-between;
     gap: 0;
   }
 }
 @media (max-width: 1140px) {
-  * > body > main > article > ul:nth-child(2) > li > p {
+  * > body > main > article > ul:nth-child(2) > li > p,
+  * > body > main > article > ul:nth-child(2) > li > div {
     padding: 4px 0;
     width: 100% !important;
     display: flex;
@@ -427,33 +455,40 @@
     font-weight: bold;
     text-align: right;
   }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(1)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(1)::before,
+  * > body > main > article > ul:nth-child(2) > li > div:nth-child(1)::before {
     content: "No";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(2)::before,
+  * > body > main > article > ul:nth-child(2) > li > div:nth-child(2)::before {
     content: "Nama Modul";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(3)::before,
+  * > body > main > article > ul:nth-child(2) > li > div:nth-child(3)::before {
     content: "Keterangan";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(4)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(4)::before,
+  * > body > main > article > ul:nth-child(2) > li > div:nth-child(4)::before {
     content: "Pemilik";
     color: black;
   }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(5)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(5)::before,
+  * > body > main > article > ul:nth-child(2) > li > div:nth-child(5)::before {
     content: "Waktu Pengunggahan";
     color: black;
     text-align: left;
   }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(6)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(6)::before,
+  * > body > main > article > ul:nth-child(2) > li > div:nth-child(6)::before {
     content: "Perubahan Terakhir";
     color: black;
     text-align: left;
   }
-  * > body > main > article > ul:nth-child(2) > li > p:nth-child(7)::before {
+  * > body > main > article > ul:nth-child(2) > li > p:nth-child(7)::before,
+  * > body > main > article > ul:nth-child(2) > li > div:nth-child(7)::before {
     content: "Tautan";
     color: black;
   }
