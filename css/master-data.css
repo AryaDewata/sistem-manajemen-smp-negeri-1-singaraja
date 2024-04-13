@@ -44,7 +44,8 @@
   color: #d04848;
 }
 * > body input,
-* > body select {
+* > body select,
+* > body textarea {
   padding: 6px 8px;
   min-width: 248px;
   outline: none;
@@ -55,7 +56,8 @@
   font-family: "Poppins";
 }
 * > body input:disabled,
-* > body select:disabled {
+* > body select:disabled,
+* > body textarea:disabled {
   background-color: rgba(163, 174, 208, 0.2784313725);
 }
 * > body button {
