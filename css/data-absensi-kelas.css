@@ -494,6 +494,10 @@
 * > body article > #history > div > ul > li ~ li > p.text-danger {
   font-weight: bold;
 }
+* > body article > #history > div > ul > li ~ li > p:has(button) {
+  gap: 5px;
+  flex-direction: column;
+}
 * > body article > #history > div > ul > li ~ li:nth-child(odd) {
   background: rgba(163, 174, 208, 0.2784313725);
 }
@@ -505,12 +509,16 @@
 }
 * > body article > #history > div > ul > li ~ li > p > button {
   background: #4318ff;
+  width: 100%;
   padding: 8px 16px;
   margin: 0;
   color: white;
   border: none;
-  margin: 10px 0;
   border-radius: 28px;
+}
+* > body article > #history > div > ul > li ~ li > p > button:first-child {
+  background: #256FFF;
+  color: white;
 }
 @media (max-width: 1024px) {
   * > body article > #history > div > ul {
