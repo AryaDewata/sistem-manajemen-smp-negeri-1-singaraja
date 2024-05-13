@@ -247,6 +247,8 @@
                 <button onclick="location.reload();"><i class="fas fa-arrows-rotate"></i> Muat Ulang</button>
                 <button onclick="fullscreen();" id="fullscreen-button">
                     <i class="fas fa-laptop"></i> Mode Layar Penuh</button>
+                <input type="checkbox" id="switch-denah">
+                <label for="switch-denah">Switch Denah</label>
             </div>
 
             <!-- Color Status -->
@@ -561,19 +563,17 @@
         }
 
         if (fullscreenStatus == "true") {
-            document.querySelector("#denah").style.position = "fixed";
-            document.querySelector("#denah").style.top = "0";
-            document.querySelector("#denah").style.left = "0";
-            document.querySelector("#denah").style.zIndex = "9999";
-            document.querySelector("#denah").style.backgroundColor = "white";
-            document.querySelector("#denah").style.width = "100vw";
-            document.querySelector("#denah").style.height = "100vh";
+            document.querySelector("article").style.position = "fixed";
+            document.querySelector("article").style.top = "0";
+            document.querySelector("article").style.left = "0";
+            document.querySelector("article").style.zIndex = "9999";
+            document.querySelector("article").style.width = "100vw";
+            document.querySelector("article").style.height = "100vh";
+            document.querySelector("article").style.overflowY = "scroll";
 
-            document.querySelector("#fullscreen-button").style.position = "fixed";
-            document.querySelector("#fullscreen-button").style.bottom = "18px";
-            document.querySelector("#fullscreen-button").style.left = "50%";
-            document.querySelector("#fullscreen-button").style.zIndex = "99999";
-            document.querySelector("#fullscreen-button").style.transform = "translate(-50%, -50%)";
+            document.querySelector("#denah").style.margin = "0 auto";
+
+            document.querySelector("#fullscreen-button").innerHTML = "<i class='fas fa-laptop'></i> Mode Normal";
 
             let tampilanLantai = localStorage.getItem("tampilan-lantai");
             if (tampilanLantai) {
